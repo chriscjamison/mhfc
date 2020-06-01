@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.4 44" style="enable-background:new 0 0 36.4 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#679436;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#679436;}
+</style>
+<polygon id="Outline" class="st0" points="1.1,43 1.1,29.8 5.7,25.9 5.7,24.1 13,17.4 18.2,9.3 23.4,17.4 30.7,24 30.7,25.9 
+	35.4,29.8 35.4,43 "/>
+<g id="Cross">
+	<line id="Horizontal_Beam" class="st0" x1="16.1" y1="3" x2="20.4" y2="3"/>
+	<line id="Vertical_Beam" class="st0" x1="18.2" y1="9.3" x2="18.2" y2="1"/>
+</g>
+<g id="Outside_Pillars">
+	<line id="Right" class="st0" x1="30.7" y1="25.6" x2="30.7" y2="43"/>
+	<line id="Left" class="st0" x1="5.7" y1="25.9" x2="5.7" y2="43"/>
+	<line id="Horizontal" class="st0" x1="13" y1="17.4" x2="23.4" y2="17.4"/>
+</g>
+<path id="Door" class="st0" d="M15.6,43l0-9.5c0-2.2,5.4-2.2,5.4,0l0,9.5H15.6z"/>
+<g id="Window">
+	<path class="st1" d="M18.2,23.3c1,0,1.9,0.9,1.9,1.9s-0.9,1.9-1.9,1.9s-1.9-0.9-1.9-1.9S17.2,23.3,18.2,23.3 M18.2,21.8
+		c-1.9,0-3.4,1.5-3.4,3.4s1.5,3.4,3.4,3.4s3.4-1.5,3.4-3.4S20.1,21.8,18.2,21.8L18.2,21.8z"/>
+</g>
+</svg>

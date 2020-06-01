@@ -1,0 +1,76 @@
+/* main.scss - Contains all styling for mhfcommunities.org */
+/****** COLORS ******/
+/******* COMMON ELEMENTS ****** */
+:root {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  z-index: 0; }
+
+header {
+  z-index: 1; }
+  header #header-ellipses {
+    width: 100%;
+    height: 31%;
+    top: -16.5%;
+    position: absolute; }
+  header .ellipse_shape {
+    width: 94%;
+    height: 100%;
+    position: absolute;
+    border-radius: 100%; }
+  header #ellipse-white {
+    width: 93%;
+    top: -3%;
+    left: 6.5%;
+    background-color: #fff;
+    z-index: 4; }
+  header #ellipse-kente {
+    left: 6%;
+    background-image: url("/assets/img/common/borders/kente.jpg");
+    background-repeat: repeat;
+    z-index: 3; }
+  header #ellipse-dark_green {
+    width: 43%;
+    top: -39%;
+    left: -17%;
+    border: 10px solid #88cf2b;
+    background-color: #05668d;
+    transform: rotate(22deg);
+    z-index: 2; }
+
+/****** NAVIGATION ******/
+#nav-desktop-top {
+  width: 960px;
+  margin-left: -480px;
+  display: flex;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  z-index: 5; }
+  #nav-desktop-top #nav-logo-desktop {
+    display: block;
+    flex: auto; }
+  #nav-desktop-top #nav-ul {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex: auto;
+    align-items: flex-end; }
+    #nav-desktop-top #nav-ul li {
+      width: 100px;
+      margin-bottom: 23px;
+      flex: auto;
+      list-style-type: none;
+      text-align: center; }
+    #nav-desktop-top #nav-ul .nav-a {
+      text-decoration: none; }
+      #nav-desktop-top #nav-ul .nav-a img {
+        width: 36px; }
+    #nav-desktop-top #nav-ul .nav-span {
+      display: block;
+      font-family: eurostile;
+      text-transform: uppercase;
+      color: #679136; }
+
+/*# sourceMappingURL=main.css.map */
