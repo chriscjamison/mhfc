@@ -1,5 +1,89 @@
 /* main.scss - Contains all styling for mhfcommunities.org */
 /****** COLORS ******/
+/****** FONTS ******/
+/****** SPACERS ******/
+/****** SHADOWS ******/
+button {
+  box-shadow: 0 0 7px #427aa1; }
+
+.carousel-cta {
+  box-shadow: 0 0 7px #427aa1; }
+
+/****** TYPOGRAPHY STYLING ******/
+#nav-ul .nav-a .nav-span {
+  font-family: eurostile, sans-serif; }
+
+#nav-ul .nav-a .nav-span {
+  font-weight: normal; }
+
+#nav-ul .nav-a .nav-span {
+  color: #679136; }
+
+#nav-ul .nav-a .nav-span {
+  text-transform: uppercase; }
+
+.carousel-item .carousel-cta p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #05668d; }
+
+button {
+  font-family: eurostile, sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: #ebf2fa; }
+
+p {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  color: #05668d; }
+
+.container p {
+  font-size: 1.1rem; }
+.container .p-first:first-line {
+  font-size: 1.7rem;
+  font-weight: 700; }
+
+/****** COLOR STYLING ******/
+button {
+  background-color: #679136; }
+
+#header-ellipses #ellipse-dark_green,
+#homepage-ellipses #ellipse-dark_green {
+  background-color: #05668d; }
+
+#header-ellipses #ellipse-white {
+  background-color: #fff; }
+
+#homepage-ellipses #ellipse-blue {
+  background-color: #ebf2fa; }
+
+.carousel-cta {
+  background-color: #ebf2fa; }
+  .carousel-cta .cta-border-top {
+    background-color: #679136; }
+  .carousel-cta p {
+    background-color: #ebf2fa; }
+
+/****** BORDERS ******/
+button {
+  border: 2px solid #ebf2fa;
+  border-radius: 8px; }
+
+#header-ellipses #ellipse-dark_green,
+#homepage-ellipses #ellipse-dark_green {
+  border: 10px solid #88cf2b; }
+
+#homepage-ellipses #ellipse-blue {
+  border: 10px solid #67B3C6; }
+
+.carousel-cta {
+  border-radius: 5px; }
+  .carousel-cta .cta-border-top {
+    border-radius: 5px 5px 0 0; }
+
 /******* COMMON ELEMENTS ****** */
 :root {
   margin: 0;
@@ -7,10 +91,15 @@
   background-color: #fff;
   z-index: 0; }
 
+button {
+  margin: 1.5rem;
+  padding: 0.5rem; }
+
+/******* HEADER ******/
 header {
-  z-index: 1; }
+  z-index: 2; }
   header #header-ellipses {
-    width: 100%;
+    width: 99.5%;
     height: 31%;
     top: -16.5%;
     position: absolute; }
@@ -23,21 +112,18 @@ header {
     width: 93%;
     top: -3%;
     left: 6.5%;
-    background-color: #fff;
-    z-index: 4; }
+    z-index: 5; }
   header #ellipse-kente {
     left: 6%;
     background-image: url("/assets/img/common/borders/kente.jpg");
     background-repeat: repeat;
-    z-index: 3; }
+    z-index: 4; }
   header #ellipse-dark_green {
     width: 43%;
     top: -39%;
     left: -17%;
-    border: 10px solid #88cf2b;
-    background-color: #05668d;
     transform: rotate(22deg);
-    z-index: 2; }
+    z-index: 3; }
 
 /****** NAVIGATION ******/
 #nav-desktop-top {
@@ -47,7 +133,7 @@ header {
   position: absolute;
   top: 2%;
   left: 50%;
-  z-index: 5; }
+  z-index: 6; }
   #nav-desktop-top #nav-logo-desktop {
     display: block;
     flex: auto; }
@@ -67,10 +153,73 @@ header {
       text-decoration: none; }
       #nav-desktop-top #nav-ul .nav-a img {
         width: 36px; }
-    #nav-desktop-top #nav-ul .nav-span {
-      display: block;
-      font-family: eurostile;
-      text-transform: uppercase;
-      color: #679136; }
+      #nav-desktop-top #nav-ul .nav-a .nav-span {
+        display: block; }
+
+/****** CAROUSEL ******/
+.carousel {
+  z-index: 2; }
+
+.carousel-item img {
+  width: 100%;
+  height: auto; }
+.carousel-item .carousel-cta {
+  width: 18rem;
+  position: absolute;
+  left: 19.5%;
+  bottom: 19.5%; }
+.carousel-item .carousel-cta .cta-border-top {
+  height: 5px; }
+.carousel-item .carousel-cta p {
+  margin: 1.5rem; }
+.carousel-item .carousel-cta .button-cta {
+  margin: 0 0 1.5rem 1.5rem;
+  display: relative; }
+
+/****** HOMEPAGE ELLIPSES ******/
+#homepage-ellipses {
+  width: 99.5%;
+  height: 56px;
+  z-index: 1; }
+  #homepage-ellipses .ellipse_shape {
+    height: 112px;
+    position: relative;
+    border-radius: 100%; }
+  #homepage-ellipses #ellipse-blue {
+    width: 77.5%;
+    top: -56px;
+    left: 23%;
+    z-index: 1; }
+  #homepage-ellipses #ellipse-dark_green {
+    width: 100%;
+    top: -168px;
+    left: -10px;
+    z-index: 0; }
+
+/****** COPY ******/
+.container {
+  margin-top: 36px;
+  display: flex; }
+  .container .col-6 {
+    display: flex;
+    flex: auto; }
+
+#p-homepage-background-top-left {
+  background-image: url("/assets/img/copy/desktop/background_homepage_copy_top.svg");
+  background-repeat: no-repeat; }
+  #p-homepage-background-top-left p {
+    margin-left: 54px; }
+  #p-homepage-background-top-left .p-first {
+    padding-top: 54px; }
+
+#p-homepage-background-top-right {
+  width: 100%;
+  margin-top: 50px;
+  background-image: url("/assets/img/copy/desktop/background_homepage_video.svg");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 50% 0; }
+  #p-homepage-background-top-right iframe {
+    margin: 21px 0 0 63px; }
 
 /*# sourceMappingURL=main.css.map */
