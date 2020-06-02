@@ -173,8 +173,7 @@ header {
 .carousel-item .carousel-cta p {
   margin: 1.5rem; }
 .carousel-item .carousel-cta .button-cta {
-  margin: 0 0 1.5rem 1.5rem;
-  display: relative; }
+  margin: 0 0 1.5rem 1.5rem; }
 
 /****** HOMEPAGE ELLIPSES ******/
 #homepage-ellipses {
@@ -186,9 +185,9 @@ header {
     position: relative;
     border-radius: 100%; }
   #homepage-ellipses #ellipse-blue {
-    width: 77.5%;
+    width: 88.5%;
     top: -56px;
-    left: 23%;
+    left: 12%;
     z-index: 1; }
   #homepage-ellipses #ellipse-dark_green {
     width: 100%;
@@ -202,7 +201,12 @@ header {
   display: flex; }
   .container .col-6 {
     display: flex;
-    flex: auto; }
+    flex: auto;
+    flex-direction: column; }
+  .container .col-left p {
+    margin: 36px 0 0 54px; }
+  .container .col-right p {
+    margin: 36px 0 0 62px; }
 
 #p-homepage-background-top-left {
   background-image: url("/assets/img/copy/desktop/background_homepage_copy_top.svg");
@@ -214,12 +218,19 @@ header {
 
 #p-homepage-background-top-right {
   width: 100%;
+  height: 261px;
   margin-top: 50px;
   background-image: url("/assets/img/copy/desktop/background_homepage_video.svg");
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 60%;
   background-position: 50% 0; }
   #p-homepage-background-top-right iframe {
     margin: 21px 0 0 63px; }
+
+#img-copy-homepage-left {
+  margin-top: 36px; }
+
+#img-copy-homepage-right {
+  margin: 70px 0 0 62px; }
 
 /*# sourceMappingURL=main.css.map */
