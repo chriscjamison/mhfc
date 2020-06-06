@@ -57,7 +57,7 @@
 
 <!-- CALL TO ACTION -->
           <div class="carousel-cta" id="cta-landing">
-            <div class="cta-border-top">&nbsp;</div>
+            <div class="cta-border-top-div">&nbsp;</div>
             <p>
               Find African-American, faith-based mental health providers, resources, and support groups in your community
             </p>
@@ -86,7 +86,7 @@
 <!-- CONTAINER FOR CONTENT -->
     <main class="container">
       <div class="col-6 col-left">
-        <div id="p-homepage-background-top-left">
+        <div id="homepage-background-top-left-p">
           <p class="p-first">
             Mental Health Friendly Communities provides a listing of online resources describing 
             mental health conditions and possible treatments to lead yourself or your loved one 
@@ -103,19 +103,44 @@
           If you need information but aren&rsquo;t sure where to look on the site or aren&rsquo;t sure about your 
           or your loved one&rsquo;s mental condition, please fill out the questionnaire below.
         </p>
+        <div class="questionnaire-div" id="questionnaire-homepage">
+          <div class="questionnaire-border-top-div">&nbsp;</div>
+          <p class="questionnaire-p">
+            Are you looking for help for yourself or for a friend or loved one?
+          </p>
+          <div class="questionnaire-border-div-1">&nbsp;</div>
+          <form>
+            <div class="questionnaire-question-div" id="questionaire-question-homepage-1">
+              <div class="questionnaire-outline-radio">
+                <input type="radio" name="help_for" value="yourself" class="questionnaire-radio_button" id="questionnaire-radio-yourself">
+                <label class="questionnaire-label">Yourself</label>
+              </div>
+              <div class="questionnaire-outline-radio">
+                <input type="radio" name="help_for" value="other" class="questionnaire-radio_button" id="questionnaire-radio-other">
+                <label class="questionnaire-label">A friend or loved one</label>
+              </div>
+              <button class="questionnaire-button" id="questionnaire-homepage-button-1">Next Question</button>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="col-6 col-right">
         <div id="p-homepage-background-top-right">
           <iframe width="395" height="215" src="https://www.youtube.com/embed/XidXi3EqPko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <img src="/assets/img/copy/desktop/photo_homepage_right.jpg" alt="Mental Health Friendly Communities bring families back together." id="img-copy-homepage-right">
+        <img src="/assets/img/copy/desktop/photo_homepage_right.jpg" alt="Mental Health Friendly Communities bring families back together." id="img-copy-homepage-top-right">
         <p>
           Otherwise, you may start browsing our listings and directories using the search field below. 
         </p>
         <p>
           You may also find links to our information using the main menu.
         </p>
-        <div class="copy-border-1">&nbsp;</div>
+        <div class="copy-border-div1">&nbsp;</div>
+        <form id="copy-form-search">
+          <input type="search" value="Type in search terms" id="form-search-input-text">
+          <input type="submit" value="Search" id="form-search-submit">
+        </form>
+        <img src="/assets/img/copy/desktop/photo_homepage_questionaire.jpg" alt="Mental Health Friendly Communities bring families back together." id="img-copy-homepage-bottom-right">
       </div>
     </main>
 
