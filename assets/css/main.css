@@ -24,32 +24,46 @@ input[type=search],
 #footer-copyright-span,
 .footer-links-a,
 .about_us-quote-blockquote,
-.about_us-quote-figcaption {
+.about_us-quote-figcaption,
+h2,
+.about_us-community-ol li,
+.about_us-community-a,
+.about_us-training_team-individual-span,
+h1 {
   font-family: myriad-pro, sans-serif; }
 
 #nav-ul .nav-a .nav-span,
 p,
 .contact_info-listing-info-span,
 #footer-copyright-span,
-.about_us-quote-figcaption {
+.about_us-quote-figcaption,
+.about_us-community-ol li,
+.about_us-community-a {
   font-weight: 400; }
 
 .carousel-item .carousel-cta p,
 .questionnaire-p,
 .contact_info-listing-title-span,
 #footer-copyright-span,
-.about_us-quote-blockquote {
+.about_us-quote-blockquote,
+.about_us-training_team-individual-span {
   font-weight: 600; }
 
 button,
 .p-first:first-line,
-input[type=submit] {
+input[type=submit],
+h2,
+h1 {
   font-weight: 700; }
 
 button,
 input[type=submit],
-#footer-copyright-span {
+#footer-copyright-span,
+.about_us-training_team-individual-span {
   font-size: 0.8rem; }
+
+.about_us-training_team-individual-span {
+  font-size: 0.9rem; }
 
 .carousel-item .carousel-cta p,
 .container p,
@@ -57,15 +71,21 @@ input[type=search],
 .questionnaire-label,
 .footer-contact_info-listing-div,
 .footer-links-a,
-.about_us-quote-figcaption {
+.about_us-quote-figcaption,
+.about_us-community-ol li,
+.about_us-community-a {
   font-size: 1.1rem; }
 
 .container .questionnaire-p {
   font-size: 1.5rem; }
 
 .p-first:first-line,
-.about_us-quote-blockquote {
+.about_us-quote-blockquote,
+h2 {
   font-size: 1.7rem; }
+
+h1 {
+  font-size: 2.25rem; }
 
 .questionnaire-radio_button::before {
   font-size: 23.8em; }
@@ -79,12 +99,19 @@ p,
 .footer-contact_info-listing-div,
 #footer-copyright-span,
 .about_us-quote-blockquote,
-.about_us-quote-figcaption {
+.about_us-quote-figcaption,
+h2,
+.about_us-community-ol li,
+.about_us-training_team-individual-span {
   color: #05668d; }
+
+h1 {
+  color: #427aa1; }
 
 #nav-ul .nav-a .nav-span,
 .contact_info-listing-info-a,
-.footer-links-a {
+.footer-links-a,
+.about_us-community-a {
   color: #679136; }
 
 input[type=search] {
@@ -97,7 +124,8 @@ input[type=search] {
   line-height: 1.3; }
 
 .contact_info-listing-info-a,
-.footer-links-a {
+.footer-links-a,
+.about_us-community-a {
   text-decoration: underline; }
 
 #nav-ul .nav-a .nav-span,
@@ -108,17 +136,20 @@ input[type=submit] {
 .about_us-quote-blockquote {
   font-style: italic; }
 
-.questionnaire-p {
+.questionnaire-p,
+h1 {
   letter-spacing: -0.7px; }
 
-.about_us-quote-blockquote {
+.about_us-quote-blockquote,
+.about_us-training_team-individual-span {
   letter-spacing: -0.3px; }
 
 .p-first:first-line {
   letter-spacing: 0; }
 
 p,
-.about_us-quote-figcaption {
+.about_us-quote-figcaption,
+.about_us-community-ol li {
   letter-spacing: 0.2px; }
 
 button,
@@ -126,13 +157,15 @@ input[type=submit] {
   letter-spacing: 1.1px; }
 
 .contact_info-listing-info-a,
-.footer-links-a {
+.footer-links-a,
+.about_us-community-a {
   transition-property: color;
   transition-duration: 0.25s;
   transition-timing-function: ease-out; }
 
 .contact_info-listing-info-a:hover,
-.footer-links-a:hover {
+.footer-links-a:hover,
+.about_us-community-a:hover {
   color: #88cf2b; }
 
 /****** COLOR STYLING ******/
@@ -150,6 +183,7 @@ input[type=submit],
   background-color: #fff; }
 
 #homepage-ellipses #ellipse-blue,
+#header-ellipses #ellipse-blue,
 .questionnaire-radio_button,
 #footer-background-div,
 #footer-ellipses #ellipse-blue {
@@ -198,16 +232,22 @@ input[type=submit] {
 #footer-ellipses #ellipse-blue {
   border: 10px solid #67B3C6; }
 
+#header-ellipses #ellipse-blue {
+  border: 10px solid #8bbdd0; }
+
 .carousel-cta,
 .questionnaire-div,
-.copy-questionnaire-img {
+.copy-questionnaire-img,
+#copy-about_us-right-img {
   border-radius: 5px; }
   .carousel-cta .cta-border-top-div,
   .carousel-cta .questionnaire-border-top-div,
   .questionnaire-div .cta-border-top-div,
   .questionnaire-div .questionnaire-border-top-div,
   .copy-questionnaire-img .cta-border-top-div,
-  .copy-questionnaire-img .questionnaire-border-top-div {
+  .copy-questionnaire-img .questionnaire-border-top-div,
+  #copy-about_us-right-img .cta-border-top-div,
+  #copy-about_us-right-img .questionnaire-border-top-div {
     border-radius: 5px 5px 0 0; }
 
 .copy-border-div-1,
@@ -257,18 +297,29 @@ header {
     width: 93%;
     top: -3%;
     left: 6.5%;
-    z-index: 5; }
+    z-index: 6; }
   header #ellipse-kente {
     left: 6%;
     background-image: url("/assets/img/common/borders/kente.jpg");
     background-repeat: repeat;
-    z-index: 4; }
+    z-index: 5; }
   header #ellipse-dark_green {
     width: 43%;
     top: -39%;
     left: -17%;
     transform: rotate(22deg);
+    z-index: 4; }
+  header #ellipse-blue {
+    width: 64%;
+    top: 20%;
+    left: -14%;
+    transform: rotate(5deg);
     z-index: 3; }
+  header h1 {
+    position: absolute;
+    top: 13.5%;
+    left: 21%;
+    z-index: 4; }
 
 /****** NAVIGATION ******/
 #nav-desktop-top {
@@ -278,7 +329,7 @@ header {
   position: absolute;
   top: 2%;
   left: 50%;
-  z-index: 6; }
+  z-index: 7; }
   #nav-desktop-top #nav-logo-desktop {
     display: block;
     flex: auto; }
@@ -385,8 +436,12 @@ header {
   .container .col-left p,
   .container .col-left img,
   .container .col-left .questionnaire-div,
+  .container .col-left h2,
+  .container .col-left #about_us-training_team-div,
+  .container .col-left .copy-border-div-1 {
+    margin: 16px 0 0 54px; }
   .container .col-left #about_us-background-left-div {
-    margin: 36px 0 0 54px; }
+    margin: 36px 0 36px 54px; }
   .container .col-left .questionnaire-p {
     margin: 13px 26px; }
   .container .col-left form {
@@ -401,16 +456,17 @@ header {
   .container .col-right img,
   .container .col-right iframe,
   .container .col-right .copy-border-div-1,
-  .container .col-right form {
-    margin: 36px 0 0 62px; }
+  .container .col-right form,
+  .container .col-right h2,
+  .container .col-right .about_us-community-ol {
+    margin: 16px 0 0 62px; }
   .container .col-right p,
   .container .col-right img,
   .container .col-right .copy-border-div-1,
-  .container .col-right input[type=search] {
+  .container .col-right input[type=search],
+  .container .col-right h2,
+  .container .col-right .about_us-community-ol {
     width: 395px; }
-  .container .col-right .copy-border-div-1 {
-    height: 5px;
-    margin-top: 13px; }
   .container .col-right #copy-form-search {
     height: 48px; }
   .container .col-right input[type=submit] {
@@ -418,6 +474,10 @@ header {
     position: relative;
     top: -46px;
     left: 317px; }
+
+.copy-border-div-1 {
+  height: 5px;
+  margin-top: 13px; }
 
 #homepage-background-top-left-div {
   background-image: url("/assets/img/copy/desktop/background_homepage_copy_top.svg");
@@ -451,6 +511,34 @@ header {
     transform: translate(30px, 70px); }
   #about_us-background-left-div .about_us-quote-figcaption {
     transform: translate(53px, 55px); }
+
+#copy-about_us-right-img {
+  margin-top: 31px; }
+
+.about_us-community-ol {
+  padding-left: 16px; }
+  .about_us-community-ol li {
+    margin-bottom: 16px; }
+
+#about_us-training_team-div {
+  display: flex; }
+  #about_us-training_team-div .about_us-training_team-member-div {
+    width: 170px;
+    height: 205px;
+    margin-right: 25px;
+    display: inline-flex;
+    flex: auto;
+    flex-direction: column; }
+  #about_us-training_team-div .about_us-training_team-member-div:last-of-type {
+    margin-right: 0; }
+  #about_us-training_team-div .about_us-training_team-photo-div {
+    width: 140px;
+    height: 184px;
+    background-image: url("/assets/img/copy/desktop/photo_about_us_training_clergy.jpg"); }
+  #about_us-training_team-div #training_team-photo-mt {
+    background-position-x: -140px; }
+  #about_us-training_team-div #training_team-photo-hj {
+    background-position-x: -280px; }
 
 /****** FOOTER ELLIPSES ******/
 #footer-ellipses {

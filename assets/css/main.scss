@@ -73,7 +73,12 @@ input[type=search],
 #footer-copyright-span, 
 .footer-links-a, 
 .about_us-quote-blockquote, 
-.about_us-quote-figcaption {
+.about_us-quote-figcaption, 
+h2, 
+.about_us-community-ol li, 
+.about_us-community-a, 
+.about_us-training_team-individual-span, 
+h1 {
   font-family: $myriad_pro;
 }
 
@@ -81,7 +86,9 @@ input[type=search],
 p, 
 .contact_info-listing-info-span, 
 #footer-copyright-span, 
-.about_us-quote-figcaption {
+.about_us-quote-figcaption, 
+.about_us-community-ol li, 
+.about_us-community-a {
   font-weight: 400;
 }
 
@@ -89,20 +96,28 @@ p,
 .questionnaire-p, 
 .contact_info-listing-title-span, 
 #footer-copyright-span, 
-.about_us-quote-blockquote {
+.about_us-quote-blockquote, 
+.about_us-training_team-individual-span {
   font-weight: 600;
 }
 
 button, 
 .p-first:first-line, 
-input[type=submit] { 
+input[type=submit], 
+h2, 
+h1 { 
   font-weight: 700;
 }
 
 button, 
 input[type=submit], 
-#footer-copyright-span { 
+#footer-copyright-span, 
+.about_us-training_team-individual-span { 
   font-size: 0.8rem;
+}
+
+.about_us-training_team-individual-span {
+  font-size: 0.9rem;
 }
 
 .carousel-item .carousel-cta p, 
@@ -111,7 +126,9 @@ input[type=search],
 .questionnaire-label, 
 .footer-contact_info-listing-div, 
 .footer-links-a, 
-.about_us-quote-figcaption {
+.about_us-quote-figcaption, 
+.about_us-community-ol li, 
+.about_us-community-a {
   font-size: 1.1rem;
 }
 
@@ -120,8 +137,13 @@ input[type=search],
 }
 
 .p-first:first-line, 
-.about_us-quote-blockquote {
+.about_us-quote-blockquote, 
+h2 {
   font-size: 1.7rem;
+}
+
+h1 {
+  font-size: 2.25rem;
 }
 
 .questionnaire-radio_button::before {
@@ -138,13 +160,21 @@ p,
 .footer-contact_info-listing-div, 
 #footer-copyright-span, 
 .about_us-quote-blockquote, 
-.about_us-quote-figcaption {
+.about_us-quote-figcaption, 
+h2, 
+.about_us-community-ol li, 
+.about_us-training_team-individual-span {
   color: $dark_blue_1;
+}
+
+h1 {
+  color: $dark_blue_2;
 }
 
 #nav-ul .nav-a .nav-span, 
 .contact_info-listing-info-a, 
-.footer-links-a {
+.footer-links-a, 
+.about_us-community-a {
   color: $dark_green_1;
 }
 
@@ -161,7 +191,8 @@ input[type=search] {
 }
 
 .contact_info-listing-info-a, 
-.footer-links-a {
+.footer-links-a, 
+.about_us-community-a {
   text-decoration: underline;
 }
 
@@ -175,11 +206,13 @@ input[type=submit] {
   font-style: italic;
 }
 
-.questionnaire-p {
+.questionnaire-p, 
+h1 {
   letter-spacing: -0.7px;
 }
 
-.about_us-quote-blockquote {
+.about_us-quote-blockquote, 
+.about_us-training_team-individual-span {
   letter-spacing: -0.3px;
 }
 
@@ -188,7 +221,8 @@ input[type=submit] {
 }
 
 p, 
-.about_us-quote-figcaption {
+.about_us-quote-figcaption, 
+.about_us-community-ol li {
   letter-spacing: 0.2px;
 }
 
@@ -198,14 +232,16 @@ input[type=submit] {
 }
 
 .contact_info-listing-info-a, 
-.footer-links-a {
+.footer-links-a, 
+.about_us-community-a {
   transition-property: color;
   transition-duration: 0.25s;
   transition-timing-function: ease-out;
 }
 
 .contact_info-listing-info-a:hover, 
-.footer-links-a:hover {
+.footer-links-a:hover, 
+.about_us-community-a:hover {
   color: $light_green_1;
 }
 
@@ -229,6 +265,7 @@ input[type=submit],
 }
 
 #homepage-ellipses #ellipse-blue, 
+#header-ellipses #ellipse-blue, 
 .questionnaire-radio_button, 
 #footer-background-div, 
 #footer-ellipses #ellipse-blue {
@@ -290,9 +327,14 @@ input[type=submit] {
   border: 10px solid $light_blue_2;
 }
 
+#header-ellipses #ellipse-blue {
+  border: 10px solid $light_blue_3;
+}
+
 .carousel-cta, 
 .questionnaire-div, 
-.copy-questionnaire-img {
+.copy-questionnaire-img, 
+#copy-about_us-right-img {
   border-radius: 5px;
 
   .cta-border-top-div, 
@@ -366,14 +408,14 @@ header {
     width: 93%;
     top: -3%;
     left: 6.5%;
-    z-index: 5;
+    z-index: 6;
   }
   
   #ellipse-kente {
     left: 6%;
     background-image: url('/assets/img/common/borders/kente.jpg');
     background-repeat: repeat;
-    z-index: 4;
+    z-index: 5;
   }
 
   #ellipse-dark_green {
@@ -381,7 +423,22 @@ header {
     top: -39%;
     left: -17%;
     transform: rotate(22deg);
+    z-index: 4;
+  }
+
+  #ellipse-blue {
+    width: 64%;
+    top: 20%;
+    left: -14%;
+    transform: rotate(5deg);
     z-index: 3;
+  }
+
+  h1 {
+    position: absolute;
+    top: 13.5%;
+    left: 21%;
+    z-index: 4;
   }
 }
 
@@ -396,7 +453,7 @@ header {
   position: absolute;
   top: 2%;
   left: 50%;
-  z-index: 6;
+  z-index: 7;
 
   #nav-logo-desktop {
     display: block;
@@ -568,9 +625,15 @@ header {
   .col-left {
     p, 
     img, 
-    .questionnaire-div, 
+    .questionnaire-div,  
+    h2, 
+    #about_us-training_team-div, 
+    .copy-border-div-1 {
+      margin: $margin_sm_2_px 0 0 $margin_lg_1_px;
+    }
+
     #about_us-background-left-div {
-      margin: $margin_med_2_px 0 0 $margin_lg_1_px;
+      margin: $margin_med_2_px 0 $margin_med_2_px $margin_lg_1_px;
     }
     
     .questionnaire-p {
@@ -597,20 +660,19 @@ header {
     img, 
     iframe, 
     .copy-border-div-1, 
-    form {
-      margin: $margin_med_2_px 0 0 $margin_lg_2_px;
+    form, 
+    h2, 
+    .about_us-community-ol {
+      margin: $margin_sm_2_px 0 0 $margin_lg_2_px;
     }
 
     p, 
     img, 
     .copy-border-div-1, 
-    input[type=search] {
+    input[type=search], 
+    h2, 
+    .about_us-community-ol {
       width: 395px;
-    }
-
-    .copy-border-div-1 {
-      height: 5px;
-      margin-top: $margin_sm_1_px;
     }
 
     #copy-form-search {
@@ -624,6 +686,11 @@ header {
       left: 317px;
     }
   }
+}
+
+.copy-border-div-1 {
+  height: 5px;
+  margin-top: $margin_sm_1_px;
 }
 
 #homepage-background-top-left-div {
@@ -670,6 +737,50 @@ header {
   .about_us-quote-figcaption {
     transform: translate(53px, 55px);
   }
+}
+
+#copy-about_us-right-img {
+  margin-top: 31px;
+}
+
+.about_us-community-ol {
+  padding-left: 16px;
+
+  li {
+    margin-bottom: $margin_sm_2_px;
+  }
+}
+
+#about_us-training_team-div {
+  display: flex;
+
+  .about_us-training_team-member-div {
+    width: 170px;
+    height: 205px;
+    margin-right: 25px;
+    display: inline-flex;
+    flex: auto;
+    flex-direction: column;
+  }
+
+  .about_us-training_team-member-div:last-of-type {
+    margin-right: 0;
+  }
+
+  .about_us-training_team-photo-div {
+    width: 140px;
+    height: 184px;
+    background-image: url('/assets/img/copy/desktop/photo_about_us_training_clergy.jpg');
+  }
+
+  #training_team-photo-mt {
+    background-position-x: -140px;
+  }
+
+  #training_team-photo-hj {
+    background-position-x: -280px;
+  }
+
 }
 
 
