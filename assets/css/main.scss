@@ -16,6 +16,7 @@ $light_green_2: #77b826;
 $dark_green_1: #679136;
 
 $dark_gray_1: #9397a0;
+$dark_gray_2: #1d1e28;
 
 
 
@@ -48,11 +49,14 @@ $margin_lg_2_px: 62px;
 $shadow_distance: 7px;
 
 button, 
+.cta-a, 
 .carousel-cta, 
 input[type=search], 
 input[type=submit], 
 .questionnaire-div, 
-.questionnaire-radio_button {
+.questionnaire-radio_button, 
+.questionnaire-input-text, 
+.questionnaire-input-textarea {
   box-shadow: 0 0 $shadow_distance $dark_blue_2;
 }
 
@@ -62,6 +66,7 @@ input[type=submit],
 
 #nav-ul .nav-a .nav-span, 
 button, 
+.cta-a, 
 input[type=submit] {
   font-family: $eurostile;
 }
@@ -78,7 +83,12 @@ h2,
 .about_us-community-ol li, 
 .about_us-community-a, 
 .about_us-training_team-individual-span, 
-h1 {
+h1, 
+.cta-contact_us-contact_info, 
+.cta-contact_us-contact_info a, 
+.questionnaire-contact_form-label, 
+.questionnaire-input-text, 
+.questionnaire-input-textarea {
   font-family: $myriad_pro;
 }
 
@@ -88,7 +98,10 @@ p,
 #footer-copyright-span, 
 .about_us-quote-figcaption, 
 .about_us-community-ol li, 
-.about_us-community-a {
+.about_us-community-a, 
+.cta-contact_us-contact_info, 
+.questionnaire-input-text, 
+.questionnaire-input-textarea {
   font-weight: 400;
 }
 
@@ -97,11 +110,13 @@ p,
 .contact_info-listing-title-span, 
 #footer-copyright-span, 
 .about_us-quote-blockquote, 
-.about_us-training_team-individual-span {
+.about_us-training_team-individual-span, 
+.questionnaire-contact_form-label {
   font-weight: 600;
 }
 
 button, 
+.cta-a, 
 .p-first:first-line, 
 input[type=submit], 
 h2, 
@@ -110,6 +125,7 @@ h1 {
 }
 
 button, 
+.cta-a, 
 input[type=submit], 
 #footer-copyright-span, 
 .about_us-training_team-individual-span { 
@@ -128,7 +144,11 @@ input[type=search],
 .footer-links-a, 
 .about_us-quote-figcaption, 
 .about_us-community-ol li, 
-.about_us-community-a {
+.about_us-community-a, 
+.cta-contact_us-contact_info, 
+.questionnaire-contact_form-label, 
+.questionnaire-input-text, 
+.questionnaire-input-textarea {
   font-size: 1.1rem;
 }
 
@@ -151,6 +171,7 @@ h1 {
 }
 
 button, 
+.cta-a, 
 input[type=submit] {
   color: $light_blue_1;
 }
@@ -163,7 +184,9 @@ p,
 .about_us-quote-figcaption, 
 h2, 
 .about_us-community-ol li, 
-.about_us-training_team-individual-span {
+.about_us-training_team-individual-span, 
+.cta-contact_us-contact_info, 
+.questionnaire-contact_form-label {
   color: $dark_blue_1;
 }
 
@@ -174,12 +197,20 @@ h1 {
 #nav-ul .nav-a .nav-span, 
 .contact_info-listing-info-a, 
 .footer-links-a, 
-.about_us-community-a {
+.about_us-community-a, 
+.cta-contact_us-contact_info a {
   color: $dark_green_1;
 }
 
-input[type=search] {
+input[type=search], 
+.questionnaire-input-text, 
+.questionnaire-input-textarea {
   color: $dark_gray_1;
+}
+
+.questionnaire-input-text, 
+.questionnaire-input-textarea {
+  color: $dark_gray_2;
 }
 
 .questionnaire-p {
@@ -192,12 +223,14 @@ input[type=search] {
 
 .contact_info-listing-info-a, 
 .footer-links-a, 
-.about_us-community-a {
+.about_us-community-a, 
+.cta-contact_us-contact_info a {
   text-decoration: underline;
 }
 
 #nav-ul .nav-a .nav-span, 
 button, 
+.cta-a, 
 input[type=submit] {
   text-transform: uppercase;
 }
@@ -222,11 +255,13 @@ h1 {
 
 p, 
 .about_us-quote-figcaption, 
-.about_us-community-ol li {
+.about_us-community-ol li, 
+.cta-contact_us-contact_info {
   letter-spacing: 0.2px;
 }
 
 button, 
+.cta-a, 
 input[type=submit] {
   letter-spacing: 1.1px;
 }
@@ -245,10 +280,16 @@ input[type=submit] {
   color: $light_green_1;
 }
 
+.cta-a:hover {
+  color: $light_blue_1;
+  text-decoration: none;
+}
+
 
 /****** COLOR STYLING ******/
 
 button, 
+.cta-a, 
 input[type=submit], 
 .questionnaire-radio_button::before {
   background-color: $dark_green_1;
@@ -295,6 +336,7 @@ input[type=submit],
 }
 
 button, 
+.cta-a, 
 input[type=submit] {
   transition-property: background-color;
   transition-duration: 0.2s;
@@ -302,6 +344,7 @@ input[type=submit] {
 }
 
 button:hover, 
+.cta-a:hover, 
 input[type=submit]:hover {
   background-color: $light_green_2;
 }
@@ -311,6 +354,7 @@ input[type=submit]:hover {
 /****** BORDERS ******/
 
 button, 
+.cta-a, 
 input[type=submit] {
   border: 2px solid $light_blue_1;
   border-radius: 8px;
@@ -334,7 +378,8 @@ input[type=submit] {
 .carousel-cta, 
 .questionnaire-div, 
 .copy-questionnaire-img, 
-#copy-about_us-right-img {
+#copy-about_us-right-img, 
+#copy-contact_us-right-img {
   border-radius: 5px;
 
   .cta-border-top-div, 
@@ -348,7 +393,9 @@ input[type=submit] {
   border-radius: 0 0 5px 5px;
 }
 
-input[type=search] {
+input[type=search], 
+.questionnaire-input-text, 
+.questionnaire-input-textarea {
   border: 2px solid $light_blue_1;
   border-radius: 5px;
 }
@@ -375,6 +422,7 @@ input[type=search] {
 }
 
 button, 
+.cta-a, 
 input[type=submit] {
   margin: 40px;
   padding: 11px;
@@ -521,11 +569,11 @@ header {
     }
 
     p {
-      margin: 1.5rem; // 40px;
+      margin: $margin_med_2_px;
     }
 
     .button-cta {
-      margin: 0 0 1.5rem 1.5rem; // 0 0 40px 40px
+      margin: 0 0 $margin_med_2_px $margin_med_2_px;
     }
   }
 }
@@ -536,6 +584,20 @@ header {
 
 #cta-about_us {
   width: 405px;
+}
+
+#cta-contact_us {
+  width: 318px;
+  
+  .cta-a {
+    width: 238px;
+    margin: $margin_med_1_px 0 $margin_med_2_px $margin_med_2_px;
+    display: block;
+  }
+}
+
+#contact_info-phone_number {
+  margin: $margin_med_1_px 0 $margin_sm_1_px $margin_med_2_px;
 }
 
 
@@ -576,6 +638,20 @@ header {
     .questionnaire-label {
       margin: $margin_sm_2_px 0 0 $margin_sm_1_px;
     }
+  }
+
+  .questionnaire-contact_form-div {
+    margin-bottom: $margin_med_1_px;
+  }
+
+  .questionnaire-contact_form-label {
+    display: block;
+    margin: $margin_sm_1_px 0;
+  }
+
+  .questionnaire-input-text,
+  .questionnaire-input-textarea {
+    padding: 5px 8px 7px 8px;
   }
 }
 
@@ -652,6 +728,15 @@ header {
 
     .questionnaire-button {
       margin: $margin_sm_1_px 0 $margin_med_1_px 0;
+    }
+
+    .questionnaire-input-text, 
+    .questionnaire-input-textarea {
+      width: 416px;
+    }
+
+    .questionnaire-input-textarea {
+      height: 286px;
     }
   }
 
@@ -780,7 +865,10 @@ header {
   #training_team-photo-hj {
     background-position-x: -280px;
   }
+}
 
+.cta-contact_us-contact_info {
+  margin: 0 0 $margin_sm_1_px $margin_med_2_px;
 }
 
 
