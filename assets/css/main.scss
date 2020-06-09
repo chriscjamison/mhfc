@@ -203,8 +203,8 @@ h1 {
 }
 
 input[type=search], 
-.questionnaire-input-text, 
-.questionnaire-input-textarea {
+.questionnaire-input-text::placeholder, 
+.questionnaire-input-textarea::placeholder {
   color: $dark_gray_1;
 }
 
@@ -569,21 +569,27 @@ header {
     }
 
     p {
-      margin: $margin_med_2_px;
+      margin: $margin_med_1_px;
     }
 
-    .button-cta {
-      margin: 0 0 $margin_med_2_px $margin_med_2_px;
+    .cta-button, 
+    .cta-a {
+      margin: 0 0 $margin_med_1_px $margin_med_1_px;
+      display: block;
     }
   }
 }
 
-#cta-landing {
-  width: 320px;
+#cta-homepage {
+  width: 322px;
 }
 
 #cta-about_us {
-  width: 405px;
+  width: 378px;
+
+  .cta-a {
+    width: 173px;
+  }
 }
 
 #cta-contact_us {
@@ -592,7 +598,6 @@ header {
   .cta-a {
     width: 238px;
     margin: $margin_med_1_px 0 $margin_med_2_px $margin_med_2_px;
-    display: block;
   }
 }
 
@@ -711,6 +716,10 @@ header {
     #about_us-background-left-div {
       margin: $margin_med_2_px 0 $margin_med_2_px $margin_lg_1_px;
     }
+
+    #questionnaire-homepage {
+      margin: $margin_med_1_px 0 0 $margin_lg_1_px;
+    }
     
     .questionnaire-p {
       margin: $margin_sm_1_px $margin_med_1_px;
@@ -762,6 +771,7 @@ header {
 
     #copy-form-search {
       height: 48px;
+      margin: $margin_med_1_px 0 $margin_sm_1_px $margin_lg_2_px;
     }
 
     input[type=submit] {
@@ -804,6 +814,10 @@ header {
   iframe {
     margin-top: 21px;
   }
+}
+
+#copy-homepage-top-right-img {
+  margin: $margin_sm_2_px 0 $margin_sm_2_px $margin_lg_2_px;
 }
 
 #about_us-background-left-div {

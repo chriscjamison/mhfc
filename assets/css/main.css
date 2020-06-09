@@ -138,8 +138,8 @@ h1 {
   color: #679136; }
 
 input[type=search],
-.questionnaire-input-text,
-.questionnaire-input-textarea {
+.questionnaire-input-text::placeholder,
+.questionnaire-input-textarea::placeholder {
   color: #9397a0; }
 
 .questionnaire-input-text,
@@ -416,22 +416,25 @@ header {
 .carousel-item .carousel-cta .cta-border-top-div {
   height: 8px; }
 .carousel-item .carousel-cta p {
-  margin: 36px; }
-.carousel-item .carousel-cta .button-cta {
-  margin: 0 0 36px 36px; }
+  margin: 26px; }
+.carousel-item .carousel-cta .cta-button,
+.carousel-item .carousel-cta .cta-a {
+  margin: 0 0 26px 26px;
+  display: block; }
 
-#cta-landing {
-  width: 320px; }
+#cta-homepage {
+  width: 322px; }
 
 #cta-about_us {
-  width: 405px; }
+  width: 378px; }
+  #cta-about_us .cta-a {
+    width: 173px; }
 
 #cta-contact_us {
   width: 318px; }
   #cta-contact_us .cta-a {
     width: 238px;
-    margin: 26px 0 36px 36px;
-    display: block; }
+    margin: 26px 0 36px 36px; }
 
 #contact_info-phone_number {
   margin: 26px 0 13px 36px; }
@@ -507,6 +510,8 @@ header {
     margin: 16px 0 0 54px; }
   .container .col-left #about_us-background-left-div {
     margin: 36px 0 36px 54px; }
+  .container .col-left #questionnaire-homepage {
+    margin: 26px 0 0 54px; }
   .container .col-left .questionnaire-p {
     margin: 13px 26px; }
   .container .col-left form {
@@ -538,7 +543,8 @@ header {
   .container .col-right .about_us-community-ol {
     width: 395px; }
   .container .col-right #copy-form-search {
-    height: 48px; }
+    height: 48px;
+    margin: 26px 0 13px 62px; }
   .container .col-right input[type=submit] {
     margin: 0;
     position: relative;
@@ -568,6 +574,9 @@ header {
   background-position: 50% 0; }
   #homepage-background-top-right-div iframe {
     margin-top: 21px; }
+
+#copy-homepage-top-right-img {
+  margin: 16px 0 16px 62px; }
 
 #about_us-background-left-div {
   height: 252px;
