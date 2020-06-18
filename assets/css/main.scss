@@ -90,7 +90,8 @@ h1,
 .cta-contact_us-contact_info a, 
 .questionnaire-contact_form-label, 
 .questionnaire-input-text, 
-.questionnaire-input-textarea {
+.questionnaire-input-textarea, 
+.cta-link-a {
   font-family: $myriad_pro;
 }
 
@@ -113,7 +114,8 @@ p,
 #footer-copyright-span, 
 .about_us-quote-blockquote, 
 .about_us-training_team-individual-span, 
-.questionnaire-contact_form-label {
+.questionnaire-contact_form-label, 
+.cta-link-a {
   font-weight: 600;
 }
 
@@ -150,7 +152,8 @@ input[type=search],
 .cta-contact_us-contact_info, 
 .questionnaire-contact_form-label, 
 .questionnaire-input-text, 
-.questionnaire-input-textarea {
+.questionnaire-input-textarea, 
+.cta-link-a {
   font-size: 1.1rem;
 }
 
@@ -200,7 +203,8 @@ h1 {
 .contact_info-listing-info-a, 
 .footer-links-a, 
 .about_us-community-a, 
-.cta-contact_us-contact_info a {
+.cta-contact_us-contact_info a, 
+.cta-link-a {
   color: $dark_green_1;
 }
 
@@ -270,7 +274,8 @@ input[type=submit] {
 
 .contact_info-listing-info-a, 
 .footer-links-a, 
-.about_us-community-a {
+.about_us-community-a, 
+.cta-link-a {
   transition-property: color;
   transition-duration: 0.25s;
   transition-timing-function: ease-out;
@@ -278,7 +283,8 @@ input[type=submit] {
 
 .contact_info-listing-info-a:hover, 
 .footer-links-a:hover, 
-.about_us-community-a:hover {
+.about_us-community-a:hover, 
+.cta-link-a:hover {
   color: $light_green_1;
 }
 

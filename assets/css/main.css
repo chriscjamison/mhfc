@@ -38,7 +38,8 @@ h1,
 .cta-contact_us-contact_info a,
 .questionnaire-contact_form-label,
 .questionnaire-input-text,
-.questionnaire-input-textarea {
+.questionnaire-input-textarea,
+.cta-link-a {
   font-family: myriad-pro, sans-serif; }
 
 #nav-ul .nav-a .nav-span,
@@ -59,7 +60,8 @@ p,
 #footer-copyright-span,
 .about_us-quote-blockquote,
 .about_us-training_team-individual-span,
-.questionnaire-contact_form-label {
+.questionnaire-contact_form-label,
+.cta-link-a {
   font-weight: 600; }
 
 button,
@@ -92,7 +94,8 @@ input[type=search],
 .cta-contact_us-contact_info,
 .questionnaire-contact_form-label,
 .questionnaire-input-text,
-.questionnaire-input-textarea {
+.questionnaire-input-textarea,
+.cta-link-a {
   font-size: 1.1rem; }
 
 .container .questionnaire-p {
@@ -134,7 +137,8 @@ h1 {
 .contact_info-listing-info-a,
 .footer-links-a,
 .about_us-community-a,
-.cta-contact_us-contact_info a {
+.cta-contact_us-contact_info a,
+.cta-link-a {
   color: #679136; }
 
 input[type=search],
@@ -191,14 +195,16 @@ input[type=submit] {
 
 .contact_info-listing-info-a,
 .footer-links-a,
-.about_us-community-a {
+.about_us-community-a,
+.cta-link-a {
   transition-property: color;
   transition-duration: 0.25s;
   transition-timing-function: ease-out; }
 
 .contact_info-listing-info-a:hover,
 .footer-links-a:hover,
-.about_us-community-a:hover {
+.about_us-community-a:hover,
+.cta-link-a:hover {
   color: #88cf2b; }
 
 .cta-a:hover {
