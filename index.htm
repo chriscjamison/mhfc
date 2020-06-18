@@ -7,34 +7,61 @@
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- STYLESHEET REFERENCE LINK -->
-		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
 <!-- HEADER INCLUDING NAVIGATION -->
     <header>
 
-<!-- MAIN NAVIGATION -->
-      <nav id="nav-desktop-top">
+<!-- DESKTOP MAIN NAVIGATION -->
+      <nav class="visible-desktop" id="top-desktop-nav">
         <a href="/" title="Home"><img src="/assets/img/common/logo/logo.png" alt="Mental Health Friendly Communities" id="nav-logo-desktop"></a>
         <ul id="nav-ul">
           <li>
-            <a href="/" title="Home" class="nav-a" id="nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="nav-span-home">Home</span></a>
+            <a href="/" title="Home" class="nav-a" id="nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="desktop-nav-span-home">Home</span></a>
           </li>
           <li>
-            <a href="/about-us.htm" title="About Us" class="nav-a" id="nav-a-about_us"><img src="/assets/img/common/icons/about_us.svg" alt="About Us"><span class="nav-span" id="nav-span-about_us">About Us</span></a>
+            <a href="/about-us.htm" title="About Us" class="nav-a" id="nav-a-about_us"><img src="/assets/img/common/icons/about_us.svg" alt="About Us"><span class="nav-span" id="desktop-nav-span-about_us">About Us</span></a>
           </li>
           <li>
-            <a href="/directory.htm" title="Directory" class="nav-a" id="nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="nav-span-directory">Directory</span></a>
+            <a href="/directory.htm" title="Directory" class="nav-a" id="nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="desktop-nav-span-directory">Directory</span></a>
           </li>
           <li>
-            <a href="/resources.htm" title="Resources" class="nav-a" id="nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="nav-span-resources">Resources</span></a>
+            <a href="/resources.htm" title="Resources" class="nav-a" id="nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="desktop-nav-span-resources">Resources</span></a>
           </li>
           <li>
-            <a href="/contact-us.htm" title="Contact Us" class="nav-a" id="nav-a-contact_us"><img src="/assets/img/common/icons/contact_us.svg" alt="Contact Us"><span class="nav-span" id="nav-span-contact_us">Contact Us</span></a>
+            <a href="/contact-us.htm" title="Contact Us" class="nav-a" id="nav-a-contact_us"><img src="/assets/img/common/icons/contact_us.svg" alt="Contact Us"><span class="nav-span" id="desktop-nav-span-contact_us">Contact Us</span></a>
           </li>
         </ul>
       </nav>
+
+<!-- MOBILE MAIN NAVIGATION -->
+      <nav class="visible-mobile col-12" id="top-mobile-nav">
+        <ul id="nav-ul">
+          <li>
+            <a href="#menu" title="Menu" class="nav-a" id="mobile-nav-a-home"><img src="/assets/img/common/icons/menu.svg" alt="Menu"><span class="nav-span" id="mobile-nav-span-menu">Menu</span></a>
+          </li>
+          <li>
+            <a href="/" title="Home" class="nav-a" id="mobile-nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="mobile-nav-span-home">Home</span></a>
+          </li>
+          <li>
+            <a href="/directory.htm" title="Directory" class="nav-a" id="mobile-nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="mobile-nav-span-directory">Directory</span></a>
+          </li>
+          <li>
+            <a href="/resources.htm" title="Resources" class="nav-a" id="mobile-nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="mobile-nav-span-resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="/training.htm" title="Training" class="nav-a" id="mobile-nav-a-training"><img src="/assets/img/common/icons/training.svg" alt="Training"><span class="nav-span" id="mobile-nav-span-training">Training</span></a>
+          </li>
+        </ul>
+      </nav>
+      
+      <img src="/assets/img/common/logo/logo.png" alt="Mental Health Friendly Communities" id="nav-logo-mobile">
+        
       
 <!-- HEADER BACKGROUND -->
       <div id="header-ellipses">
@@ -49,15 +76,25 @@
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" id="carousel-item-landing">
 
-<!-- CALL TO ACTION -->
-          <div class="carousel-cta" id="cta-homepage">
+<!-- DESKTOP CALL TO ACTION -->
+          <div class="carousel-cta visible-desktop" id="cta-homepage">
             <div class="cta-border-top-div">&nbsp;</div>
             <p>
               Find African American, faith-based mental health providers, resources, and support groups in your community
             </p>
             <button class="cta-button" id="cta-action">View Calendar Events</button>
           </div>
-          <img class="d-block img-fluid" src="/assets/img/hero_levels/home.jpg" alt="Welcome to Mental Health Friendly Communities!">
+          <img class="d-block img-fluid visible-desktop" src="/assets/img/hero_levels/home.jpg" alt="Welcome to Mental Health Friendly Communities!">
+
+<!-- MOBILE CALL TO ACTION -->
+          <div class="carousel-cta visible-mobile" id="cta-homepage">
+            <div class="cta-border-top-div">&nbsp;</div>
+            <p>
+              Find African American, faith-based mental health providers, resources, and support groups in your community
+            </p>
+            <button class="cta-button" id="cta-action">View Calendar Events</button>
+          </div>
+          <img class="d-block img-fluid visible-mobile" src="/assets/img/hero_levels/mobile/homepage.jpg" alt="Welcome to Mental Health Friendly Communities!">
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -71,7 +108,7 @@
     </div>
 
 <!-- ELLIPSES VIEWABLE ON HOME PAGE -->
-    <div id="homepage-ellipses">
+    <div class="visible-desktop" id="homepage-ellipses">
       <div class="ellipse_shape" id="ellipse-blue">&nbsp;</div>
       <div class="ellipse_shape" id="ellipse-dark_green">&nbsp;</div>
     </div>
@@ -79,7 +116,7 @@
 
 <!-- CONTAINER FOR CONTENT -->
     <main class="container">
-      <div class="col-6 col-left">
+      <div class="col-6 col-left visible-desktop">
         <div id="homepage-background-top-left-div">
           <p class="p-first">
             Mental Health Friendly Communities provides a listing of online resources describing 
@@ -118,7 +155,7 @@
           </form>
         </div>
       </div>
-      <div class="col-6 col-right">
+      <div class="col-6 col-right visible-desktop">
         <div id="homepage-background-top-right-div">
           <iframe width="395" height="215" src="https://www.youtube.com/embed/XidXi3EqPko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -136,11 +173,14 @@
         </form>
         <img src="/assets/img/copy/desktop/photo_homepage_questionaire.jpg" alt="Mental Health Friendly Communities bring families back together." class="copy-questionnaire-img" id="copy-homepage-bottom-right-img">
       </div>
+      <div class="visible-mobile">
+        <iframe width="100%" src="https://www.youtube.com/embed/XidXi3EqPko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </main>
 
 <!-- FOOTER -->
     <footer>
-      <div id="footer-background-div">
+      <div class="visible-desktop" id="footer-background-div">
         <div class="container" id="footer-container-div">
           <div class="col-9" id="footer-column-left-div">
             <a href="/" title="Home"><img src="/assets/img/common/logo/logo.png" alt="Mental Health Friendly Communities" id="nav-logo-desktop"></a>
@@ -179,7 +219,7 @@
       </div>
 
 <!-- ELLIPSES BORDERS -->
-      <div id="footer-ellipses">
+      <div class="visible-desktop" id="footer-ellipses">
         <div class="ellipse_shape" id="ellipse-blue">&nbsp;</div>
         <div class="ellipse_shape" id="ellipse-dark_green">&nbsp;</div>
       </div>

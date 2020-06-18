@@ -76,7 +76,8 @@ button,
 .cta-a,
 input[type=submit],
 #footer-copyright-span,
-.about_us-training_team-individual-span {
+.about_us-training_team-individual-span,
+#nav-ul .nav-a .nav-span {
   font-size: 0.8rem; }
 
 .about_us-training_team-individual-span {
@@ -263,6 +264,9 @@ button:hover,
 input[type=submit]:hover {
   background-color: #77b826; }
 
+#top-mobile-nav {
+  background-color: #fff; }
+
 /****** BORDERS ******/
 button,
 .cta-a,
@@ -281,6 +285,9 @@ input[type=submit] {
 
 #header-ellipses #ellipse-blue {
   border: 10px solid #8bbdd0; }
+
+#top-mobile-nav {
+  border-bottom: 2px solid #88cf2b; }
 
 .carousel-cta,
 .questionnaire-div,
@@ -334,14 +341,20 @@ input[type=submit] {
 input[type=search] {
   padding: 9px 16px 8px 16px; }
 
+.visible-desktop {
+  display: block !important; }
+
+.visible-mobile {
+  display: none !important; }
+
 /******* HEADER ******/
 header {
   z-index: 2; }
   header #header-ellipses {
     width: 99.5%;
     height: 31%;
-    top: -16.5%;
-    position: absolute; }
+    position: absolute;
+    top: -16.5%; }
   header .ellipse_shape {
     width: 94%;
     height: 100%;
@@ -375,7 +388,7 @@ header {
     z-index: 4; }
 
 /****** NAVIGATION ******/
-#nav-desktop-top {
+#top-desktop-nav {
   width: 960px;
   margin-left: -480px;
   display: flex;
@@ -383,29 +396,29 @@ header {
   top: 2%;
   left: 50%;
   z-index: 7; }
-  #nav-desktop-top #nav-logo-desktop {
+  #top-desktop-nav #nav-logo-desktop {
     display: block;
     flex: auto; }
-  #nav-desktop-top #nav-ul {
+  #top-desktop-nav #nav-ul {
     width: 100%;
     margin-top: 0;
     display: flex;
     flex: auto;
     align-items: flex-end; }
-    #nav-desktop-top #nav-ul li {
+    #top-desktop-nav #nav-ul li {
       width: 100px;
       margin-bottom: 23px;
       flex: auto;
       list-style-type: none;
       text-align: center; }
-    #nav-desktop-top #nav-ul .nav-a {
+    #top-desktop-nav #nav-ul .nav-a {
       text-decoration: none; }
-      #nav-desktop-top #nav-ul .nav-a img {
+      #top-desktop-nav #nav-ul .nav-a img {
         width: 36px; }
-      #nav-desktop-top #nav-ul .nav-a .nav-span {
+      #top-desktop-nav #nav-ul .nav-a .nav-span {
         display: block; }
-    #nav-desktop-top #nav-ul #nav-a-about_us img,
-    #nav-desktop-top #nav-ul #nav-a-contact_us img {
+    #top-desktop-nav #nav-ul #nav-a-about_us img,
+    #top-desktop-nav #nav-ul #nav-a-contact_us img {
       margin-bottom: 5px; }
 
 /****** CAROUSEL ******/
@@ -692,5 +705,101 @@ footer {
     margin-bottom: 18px;
     list-style-type: none;
     text-align: right; }
+
+/****** BREAKPOINTS ******/
+@media screen and (max-width: 414px) {
+  /***** COMMON ELEMENTS ******/
+  .visible-desktop {
+    display: none !important; }
+
+  .visible-mobile {
+    display: block !important; }
+
+  /****** HEADER ******/
+  #nav-logo-mobile {
+    width: 238px;
+    height: auto;
+    margin-left: -119px;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    z-index: 8; }
+
+  /****** NAVIGATION ******/
+  #top-mobile-nav {
+    height: 72px;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    z-index: 7; }
+
+  #nav-ul {
+    width: 100%;
+    height: 68px;
+    padding: 0 18px;
+    display: flex;
+    flex: auto;
+    align-items: flex-end;
+    list-style-type: none; }
+    #nav-ul li {
+      width: 85px;
+      margin-right: 15px;
+      text-align: center; }
+    #nav-ul li:last-of-type {
+      margin-right: 0; }
+    #nav-ul .nav-a img {
+      width: 29px;
+      margin: 0 auto;
+      display: block; }
+    #nav-ul #mobile-nav-a-training img {
+      width: 36px; }
+
+  /****** HEADER ELLIPSES ******/
+  header .ellipse_shape {
+    width: 91%; }
+  header #header-ellipses {
+    top: -10.5%; }
+  header #ellipse-white {
+    width: 87%;
+    top: -3%;
+    left: 13%; }
+  header #ellipse-kente {
+    left: 11%; }
+  header #ellipse-dark_green {
+    width: 43%;
+    top: -3%;
+    left: -8%;
+    transform: rotate(-44deg); }
+
+  /****** CAROUSEL ******/
+  .carousel-item .carousel-cta {
+    left: 0;
+    bottom: 0;
+    border-radius: 0; }
+    .carousel-item .carousel-cta .cta-border-top-div {
+      border-radius: 0; }
+  .carousel-item img {
+    margin-top: 72px; }
+
+  #cta-homepage {
+    width: 100%; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  /****** COMMON ELEMENTS ******/
+  /****** CONTAINER ******/
+  .container {
+    margin-top: 0; }
+
+  .col-12 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /****** COPY ******/
+  iframe {
+    width: 375px;
+    height: 202px;
+    padding: 0;
+    position: relative;
+    left: -15px; } }
 
 /*# sourceMappingURL=main.css.map */

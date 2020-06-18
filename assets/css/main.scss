@@ -32,16 +32,18 @@ $font_weight_bold: 700;
 
 /****** SPACERS ******/
 
-$margin_sm_1: 4px;
-$margin_sm_2: 9px;
-$margin_sm_3: 13px;
-$margin_sm_4: 16px;
+$spacer_sm_1: 4px;
+$spacer_sm_2: 9px;
+$spacer_sm_3: 13px;
+$spacer_sm_4: 15px;
+$spacer_sm_5: 16px;
+$spacer_sm_6: 18px;
 
-$margin_med_1: 26px;
-$margin_med_2: 36px;
+$spacer_med_1: 26px;
+$spacer_med_2: 36px;
 
-$margin_lg_1: 54px;
-$margin_lg_2: 62px;
+$spacer_lg_1: 54px;
+$spacer_lg_2: 62px;
 
 
 
@@ -132,7 +134,8 @@ button,
 .cta-a, 
 input[type=submit], 
 #footer-copyright-span, 
-.about_us-training_team-individual-span { 
+.about_us-training_team-individual-span, 
+#nav-ul .nav-a .nav-span { 
   font-size: 0.8rem;
 }
 
@@ -357,6 +360,10 @@ input[type=submit]:hover {
   background-color: $light_green_2;
 }
 
+#top-mobile-nav {
+  background-color: $white;
+}
+
 
 
 /****** BORDERS ******/
@@ -381,6 +388,10 @@ input[type=submit] {
 
 #header-ellipses #ellipse-blue {
   border: 10px solid $light_blue_3;
+}
+
+#top-mobile-nav {
+  border-bottom: 2px solid $light_green_1;
 }
 
 .carousel-cta, 
@@ -440,6 +451,14 @@ input[type=search] {
   padding: 9px 16px 8px 16px;
 }
 
+.visible-desktop {
+  display: block !important;
+}
+
+.visible-mobile {
+  display: none !important;
+}
+
 
 
 /******* HEADER ******/
@@ -450,8 +469,8 @@ header {
   #header-ellipses {
     width: 99.5%;
     height: 31%;
-    top: -16.5%;
     position: absolute;
+    top: -16.5%;
   }
   
   .ellipse_shape {
@@ -502,7 +521,7 @@ header {
 
 /****** NAVIGATION ******/
 
-#nav-desktop-top {
+#top-desktop-nav {
   width: 960px;
   margin-left: -480px;
   display: flex;
@@ -577,12 +596,12 @@ header {
     }
 
     p {
-      margin: $margin_med_1;
+      margin: $spacer_med_1;
     }
 
     .cta-button, 
     .cta-a {
-      margin: 0 0 $margin_med_1 $margin_med_1;
+      margin: 0 0 $spacer_med_1 $spacer_med_1;
       display: block;
     }
   }
@@ -605,7 +624,7 @@ header {
   
   .cta-a {
     width: 238px;
-    margin: $margin_med_1 0 $margin_med_2 $margin_med_2;
+    margin: $spacer_med_1 0 $spacer_med_2 $spacer_med_2;
   }
 }
 
@@ -618,7 +637,7 @@ header {
 }
 
 #contact_info-phone_number {
-  margin: $margin_med_1 0 $margin_sm_3 $margin_med_2;
+  margin: $spacer_med_1 0 $spacer_sm_3 $spacer_med_2;
 }
 
 
@@ -630,7 +649,7 @@ header {
   }
 
   .questionnaire-outline-radio {
-    margin-bottom: $margin_sm_3;
+    margin-bottom: $spacer_sm_3;
     display: flex;
   
     .questionnaire-radio_button {
@@ -658,21 +677,21 @@ header {
 
     .questionnaire-label {
       width: 350px;
-      margin: $margin_sm_4 0 0 $margin_sm_3;
+      margin: $spacer_sm_5 0 0 $spacer_sm_3;
     }
 
     .questionnaire-label-two_lines {
-      margin: $margin_sm_1 0 0 $margin_sm_3;
+      margin: $spacer_sm_1 0 0 $spacer_sm_3;
     }
   }
 
   .questionnaire-contact_form-div {
-    margin-bottom: $margin_med_1;
+    margin-bottom: $spacer_med_1;
   }
 
   .questionnaire-contact_form-label {
     display: block;
-    margin: $margin_sm_3 0;
+    margin: $spacer_sm_3 0;
   }
 
   .questionnaire-input-text,
@@ -715,7 +734,7 @@ header {
 /****** COPY ******/
 
 .container {
-  margin-top: $margin_med_2;
+  margin-top: $spacer_med_2;
   display: flex;
 
   .col-6 {
@@ -731,33 +750,33 @@ header {
     h2, 
     #about_us-training_team-div, 
     .copy-border-div-1 {
-      margin: $margin_sm_4 0 0 $margin_lg_1;
+      margin: $spacer_sm_5 0 0 $spacer_lg_1;
     }
 
     #about_us-background-left-div {
-      margin: $margin_med_2 0 $margin_med_2 $margin_lg_1;
+      margin: $spacer_med_2 0 $spacer_med_2 $spacer_lg_1;
     }
 
     #questionnaire-homepage {
-      margin: $margin_med_1 0 0 $margin_lg_1;
+      margin: $spacer_med_1 0 0 $spacer_lg_1;
     }
     
     .questionnaire-p {
-      margin: $margin_sm_3 $margin_med_1;
+      margin: $spacer_sm_3 $spacer_med_1;
     }
 
     form {
-      margin-left: $margin_med_1;
+      margin-left: $spacer_med_1;
     }
 
     .questionnaire-border-div-1 {
       width: 90%;
       height: 5px;
-      margin: $margin_sm_3 auto;
+      margin: $spacer_sm_3 auto;
     }
 
     .questionnaire-button {
-      margin: $margin_sm_3 0 $margin_med_1 0;
+      margin: $spacer_sm_3 0 $spacer_med_1 0;
     }
 
     .questionnaire-input-text, 
@@ -778,11 +797,11 @@ header {
     form, 
     h2, 
     .about_us-community-ol {
-      margin: $margin_sm_4 0 0 $margin_lg_2;
+      margin: $spacer_sm_5 0 0 $spacer_lg_2;
     }
 
     .search-h2 {
-      margin: $margin_sm_2 0 0 $margin_lg_2;
+      margin: $spacer_sm_2 0 0 $spacer_lg_2;
     }
 
     p, 
@@ -796,7 +815,7 @@ header {
 
     #copy-form-search {
       height: 48px;
-      margin: $margin_med_1 0 $margin_sm_3 $margin_lg_2;
+      margin: $spacer_med_1 0 $spacer_sm_3 $spacer_lg_2;
     }
 
     input[type=submit] {
@@ -810,7 +829,7 @@ header {
 
 .copy-border-div-1 {
   height: 5px;
-  margin-top: $margin_sm_3;
+  margin-top: $spacer_sm_3;
 }
 
 #homepage-background-top-left-div {
@@ -818,12 +837,12 @@ header {
   background-repeat: no-repeat;
 
   p {
-    margin-left: $margin_lg_1;
+    margin-left: $spacer_lg_1;
   }
 
   .p-first {
     margin-top: 0;
-    padding-top: $margin_lg_1;
+    padding-top: $spacer_lg_1;
   }
 }
 
@@ -842,7 +861,7 @@ header {
 }
 
 #copy-homepage-top-right-img {
-  margin: $margin_sm_4 0 $margin_sm_4 $margin_lg_2;
+  margin: $spacer_sm_5 0 $spacer_sm_5 $spacer_lg_2;
 }
 
 #about_us-background-left-div {
@@ -871,7 +890,7 @@ header {
   padding-left: 16px;
 
   li {
-    margin-bottom: $margin_sm_4;
+    margin-bottom: $spacer_sm_5;
   }
 }
 
@@ -907,7 +926,7 @@ header {
 }
 
 .cta-contact_us-contact_info {
-  margin: 0 0 $margin_sm_3 $margin_med_2;
+  margin: 0 0 $spacer_sm_3 $spacer_med_2;
 }
 
 
@@ -968,7 +987,7 @@ footer {
 }
 
 .footer-contact_info-listing-div {
-  margin-bottom: $margin_sm_4;
+  margin-bottom: $spacer_sm_5;
 
   .contact_info-listing-title-span, 
   .contact_info-listing-info-span {
@@ -978,7 +997,7 @@ footer {
 
 #footer-copyright-span {
   display: block;
-  margin: $margin_sm_4 0 $margin_lg_1;
+  margin: $spacer_sm_5 0 $spacer_lg_1;
 }
 
 #footer-links-ul {
@@ -991,3 +1010,170 @@ footer {
     text-align: right;
   }
 }
+
+
+
+/****** BREAKPOINTS ******/
+
+@media screen and (max-width: 414px)  {
+
+  /***** COMMON ELEMENTS ******/
+  
+  .visible-desktop {
+    display: none !important;
+  }
+
+  .visible-mobile {
+    display: block !important;
+  }
+
+
+
+  /****** HEADER ******/
+  
+  #nav-logo-mobile {
+    width: 238px;
+    height: auto;
+    margin-left: -119px;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    z-index: 8;
+  }
+  
+  /****** NAVIGATION ******/
+
+  #top-mobile-nav {
+    height: 72px;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    z-index: 7;
+  }
+
+  #nav-ul {
+    width: 100%;
+    height: 68px;
+    padding: 0 $spacer_sm_6;
+    display: flex;
+    flex: auto;
+    align-items: flex-end;
+    list-style-type: none;
+
+    li {
+      width: 85px;
+      margin-right: $spacer_sm_4;
+      text-align: center;
+    }
+
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .nav-a {
+      img {
+        width: 29px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    #mobile-nav-a-training img { 
+      width: 36px;
+    }
+  }
+
+
+
+  /****** HEADER ELLIPSES ******/
+
+  header { 
+    .ellipse_shape {
+      width: 91%;
+    }
+
+    #header-ellipses {
+      top: -10.5%;
+    }
+
+    #ellipse-white {
+      width: 87%;
+      top: -3%;
+      left: 13%;
+    }
+
+    #ellipse-kente {
+      left: 11%;
+    }
+
+    #ellipse-dark_green {
+      width: 43%;
+      top: -3%;
+      left: -8%;
+      transform: rotate(-44deg);
+    }
+  }
+
+
+
+  /****** CAROUSEL ******/
+
+  .carousel-item {
+    .carousel-cta {
+      left: 0;
+      bottom: 0; 
+      border-radius: 0;     
+
+      .cta-border-top-div {
+        border-radius: 0;
+      }
+    }
+
+    img {
+      margin-top: 72px;
+    }
+  }
+
+  #cta-homepage {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 375px)  {
+  
+  /****** COMMON ELEMENTS ******/
+
+  
+  
+
+  /****** CONTAINER ******/
+
+  .container {
+    margin-top: 0;
+  }
+
+  .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  
+  /****** COPY ******/
+
+  iframe {
+    width: 375px;
+    height: 202px;
+    padding: 0;
+    position: relative;
+    left: -15px;
+  }
+
+
+
+}
+
+
