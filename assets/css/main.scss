@@ -32,14 +32,16 @@ $font_weight_bold: 700;
 
 /****** SPACERS ******/
 
-$margin_sm_1_px: 13px;
-$margin_sm_2_px: 16px;
+$margin_sm_1: 4px;
+$margin_sm_2: 9px;
+$margin_sm_3: 13px;
+$margin_sm_4: 16px;
 
-$margin_med_1_px: 26px;
-$margin_med_2_px: 36px;
+$margin_med_1: 26px;
+$margin_med_2: 36px;
 
-$margin_lg_1_px: 54px;
-$margin_lg_2_px: 62px;
+$margin_lg_1: 54px;
+$margin_lg_2: 62px;
 
 
 
@@ -569,12 +571,12 @@ header {
     }
 
     p {
-      margin: $margin_med_1_px;
+      margin: $margin_med_1;
     }
 
     .cta-button, 
     .cta-a {
-      margin: 0 0 $margin_med_1_px $margin_med_1_px;
+      margin: 0 0 $margin_med_1 $margin_med_1;
       display: block;
     }
   }
@@ -597,12 +599,20 @@ header {
   
   .cta-a {
     width: 238px;
-    margin: $margin_med_1_px 0 $margin_med_2_px $margin_med_2_px;
+    margin: $margin_med_1 0 $margin_med_2 $margin_med_2;
+  }
+}
+
+#cta-directory {
+  width: 477px;
+
+  .cta-a {
+    width: 184px;
   }
 }
 
 #contact_info-phone_number {
-  margin: $margin_med_1_px 0 $margin_sm_1_px $margin_med_2_px;
+  margin: $margin_med_1 0 $margin_sm_3 $margin_med_2;
 }
 
 
@@ -614,7 +624,7 @@ header {
   }
 
   .questionnaire-outline-radio {
-    margin-bottom: $margin_sm_1_px;
+    margin-bottom: $margin_sm_3;
     display: flex;
   
     .questionnaire-radio_button {
@@ -641,17 +651,22 @@ header {
     }
 
     .questionnaire-label {
-      margin: $margin_sm_2_px 0 0 $margin_sm_1_px;
+      width: 350px;
+      margin: $margin_sm_4 0 0 $margin_sm_3;
+    }
+
+    .questionnaire-label-two_lines {
+      margin: $margin_sm_1 0 0 $margin_sm_3;
     }
   }
 
   .questionnaire-contact_form-div {
-    margin-bottom: $margin_med_1_px;
+    margin-bottom: $margin_med_1;
   }
 
   .questionnaire-contact_form-label {
     display: block;
-    margin: $margin_sm_1_px 0;
+    margin: $margin_sm_3 0;
   }
 
   .questionnaire-input-text,
@@ -694,7 +709,7 @@ header {
 /****** COPY ******/
 
 .container {
-  margin-top: $margin_med_2_px;
+  margin-top: $margin_med_2;
   display: flex;
 
   .col-6 {
@@ -710,33 +725,33 @@ header {
     h2, 
     #about_us-training_team-div, 
     .copy-border-div-1 {
-      margin: $margin_sm_2_px 0 0 $margin_lg_1_px;
+      margin: $margin_sm_4 0 0 $margin_lg_1;
     }
 
     #about_us-background-left-div {
-      margin: $margin_med_2_px 0 $margin_med_2_px $margin_lg_1_px;
+      margin: $margin_med_2 0 $margin_med_2 $margin_lg_1;
     }
 
     #questionnaire-homepage {
-      margin: $margin_med_1_px 0 0 $margin_lg_1_px;
+      margin: $margin_med_1 0 0 $margin_lg_1;
     }
     
     .questionnaire-p {
-      margin: $margin_sm_1_px $margin_med_1_px;
+      margin: $margin_sm_3 $margin_med_1;
     }
 
     form {
-      margin-left: $margin_med_1_px;
+      margin-left: $margin_med_1;
     }
 
     .questionnaire-border-div-1 {
       width: 90%;
       height: 5px;
-      margin: $margin_sm_1_px auto;
+      margin: $margin_sm_3 auto;
     }
 
     .questionnaire-button {
-      margin: $margin_sm_1_px 0 $margin_med_1_px 0;
+      margin: $margin_sm_3 0 $margin_med_1 0;
     }
 
     .questionnaire-input-text, 
@@ -757,7 +772,11 @@ header {
     form, 
     h2, 
     .about_us-community-ol {
-      margin: $margin_sm_2_px 0 0 $margin_lg_2_px;
+      margin: $margin_sm_4 0 0 $margin_lg_2;
+    }
+
+    .search-h2 {
+      margin: $margin_sm_2 0 0 $margin_lg_2;
     }
 
     p, 
@@ -771,7 +790,7 @@ header {
 
     #copy-form-search {
       height: 48px;
-      margin: $margin_med_1_px 0 $margin_sm_1_px $margin_lg_2_px;
+      margin: $margin_med_1 0 $margin_sm_3 $margin_lg_2;
     }
 
     input[type=submit] {
@@ -785,7 +804,7 @@ header {
 
 .copy-border-div-1 {
   height: 5px;
-  margin-top: $margin_sm_1_px;
+  margin-top: $margin_sm_3;
 }
 
 #homepage-background-top-left-div {
@@ -793,12 +812,12 @@ header {
   background-repeat: no-repeat;
 
   p {
-    margin-left: $margin_lg_1_px;
+    margin-left: $margin_lg_1;
   }
 
   .p-first {
     margin-top: 0;
-    padding-top: $margin_lg_1_px;
+    padding-top: $margin_lg_1;
   }
 }
 
@@ -817,7 +836,7 @@ header {
 }
 
 #copy-homepage-top-right-img {
-  margin: $margin_sm_2_px 0 $margin_sm_2_px $margin_lg_2_px;
+  margin: $margin_sm_4 0 $margin_sm_4 $margin_lg_2;
 }
 
 #about_us-background-left-div {
@@ -846,7 +865,7 @@ header {
   padding-left: 16px;
 
   li {
-    margin-bottom: $margin_sm_2_px;
+    margin-bottom: $margin_sm_4;
   }
 }
 
@@ -882,7 +901,7 @@ header {
 }
 
 .cta-contact_us-contact_info {
-  margin: 0 0 $margin_sm_1_px $margin_med_2_px;
+  margin: 0 0 $margin_sm_3 $margin_med_2;
 }
 
 
@@ -943,7 +962,7 @@ footer {
 }
 
 .footer-contact_info-listing-div {
-  margin-bottom: $margin_sm_2_px;
+  margin-bottom: $margin_sm_4;
 
   .contact_info-listing-title-span, 
   .contact_info-listing-info-span {
@@ -953,7 +972,7 @@ footer {
 
 #footer-copyright-span {
   display: block;
-  margin: $margin_sm_2_px 0 $margin_lg_1_px;
+  margin: $margin_sm_4 0 $margin_lg_1;
 }
 
 #footer-links-ul {
