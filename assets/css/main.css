@@ -256,7 +256,8 @@ input[type=submit],
 #footer-background-div,
 #footer-ellipses #ellipse-blue,
 #copy-middle,
-#copy-bottom {
+#copy-bottom,
+.sub_page-main {
   background-color: #ebf2fa; }
 
 .carousel-cta,
@@ -760,7 +761,19 @@ footer {
 
 /****** BREAKPOINTS ******/
 @media screen and (max-width: 414px) {
-  /***** COMMON ELEMENTS ******/
+  /****** SHADOWS ******/
+  .questionnaire-div {
+    box-shadow: none; }
+
+  /****** BORDERS ******/
+  header h1 {
+    border-bottom: 9px double #88cf2b; }
+
+  /******* TYPOGRAPHICAL ELEMENTS ******/
+  .questionnaire-p {
+    letter-spacing: -0.3px; }
+
+  /****** COMMON ELEMENTS ******/
   .visible-desktop,
   .visible-desktop-flex {
     display: none !important; }
@@ -770,6 +783,33 @@ footer {
 
   .copy-action-a {
     display: block; }
+
+  .sub_page-div {
+    top: 236px; }
+
+  .questionnaire-div {
+    padding: 0 15px; }
+    .questionnaire-div .questionnaire-outline-radio {
+      margin-bottom: 26px; }
+      .questionnaire-div .questionnaire-outline-radio .questionnaire-radio_button {
+        width: 67px;
+        height: 50px; }
+      .questionnaire-div .questionnaire-outline-radio .questionnaire-radio_button::before {
+        width: 34px;
+        height: 34px; }
+      .questionnaire-div .questionnaire-outline-radio .questionnaire-label {
+        margin: 13px 0 0 13px; }
+      .questionnaire-div .questionnaire-outline-radio .questionnaire-label-two_lines,
+      .questionnaire-div .questionnaire-outline-radio .questionnaire-label-three_lines {
+        margin: 0 0 0 13px; }
+      .questionnaire-div .questionnaire-outline-radio .questionnaire-label-three_lines {
+        position: relative;
+        top: -14px; }
+    .questionnaire-div .questionnaire-outline-three_lines {
+      height: 52px; }
+    .questionnaire-div button {
+      width: 100%;
+      margin: 0; }
 
   /****** HEADER ******/
   #nav-logo-mobile {
@@ -781,6 +821,9 @@ footer {
     top: 80px;
     left: 50%;
     z-index: 8; }
+
+  header h1 {
+    top: 167px; }
 
   /****** NAVIGATION ******/
   #top-mobile-nav {
@@ -815,7 +858,8 @@ footer {
   header .ellipse_shape {
     width: 91%; }
   header #header-ellipses {
-    top: -10.5%; }
+    top: -10.5%;
+    overflow: hidden; }
   header #ellipse-white {
     width: 87%;
     top: -3%;
@@ -842,6 +886,9 @@ footer {
     width: 100%; }
 
   /****** COPY ******/
+  .container {
+    height: -webkit-fill-available; }
+
   .homepage-mobile-copy-div {
     position: relative;
     left: -15px; }
@@ -906,6 +953,10 @@ footer {
     margin-top: 26px; } }
 @media screen and (min-width: 360px) and (max-width: 375px) {
   /****** COMMON ELEMENTS ******/
+  /****** HEADER ******/
+  header h1 {
+    left: 31px; }
+
   /****** CONTAINER ******/
   .container {
     height: 1679px;
@@ -916,16 +967,18 @@ footer {
     padding-right: 0; }
 
   /****** COPY ******/
-  iframe {
-    width: 375px;
-    height: 202px;
-    padding: 0;
-    position: relative;
-    left: -15px; }
-
+  iframe,
   .homepage-mobile-copy-div,
   .copy-img {
     width: 375px; }
+
+  iframe {
+    height: 202px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -15px;
+    overflow: hidden; }
 
   #copy-form-search #form-search-input-text {
     width: 313px; }

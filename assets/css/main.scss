@@ -350,7 +350,8 @@ input[type=submit],
 #footer-background-div, 
 #footer-ellipses #ellipse-blue, 
 #copy-middle, 
-#copy-bottom {
+#copy-bottom, 
+.sub_page-main {
   background-color: $light_blue_1;
 }
 
@@ -1081,7 +1082,32 @@ footer {
 
 @media screen and (max-width: 414px)  {
 
-  /***** COMMON ELEMENTS ******/
+  /****** SHADOWS ******/
+
+  .questionnaire-div {
+    box-shadow: none;
+  }
+  
+
+
+  /****** BORDERS ******/
+
+  header {
+    h1 {
+      border-bottom: 9px double $light_green_1;
+    }
+  }
+
+
+
+  /******* TYPOGRAPHICAL ELEMENTS ******/
+
+  .questionnaire-p {
+    letter-spacing: -0.3px;
+  }
+  
+  
+  /****** COMMON ELEMENTS ******/
   
   .visible-desktop, 
   .visible-desktop-flex {
@@ -1096,6 +1122,53 @@ footer {
     display: block;
   }
 
+  .sub_page-div {
+    top: 236px;
+  }
+
+  .questionnaire-div {
+    padding: 0 $spacer_sm_4;
+
+    .questionnaire-outline-radio { 
+      margin-bottom: $spacer_med_1;
+      
+      .questionnaire-radio_button {
+        width: 67px;
+        height: 50px;
+      }
+
+      .questionnaire-radio_button::before {
+        width: 34px;
+        height: 34px;
+      }
+
+      .questionnaire-label {
+        margin: $spacer_sm_3 0 0 $spacer_sm_3;
+      }
+
+      .questionnaire-label-two_lines, 
+      .questionnaire-label-three_lines {
+        margin: 0 0 0 $spacer_sm_3;
+      }
+
+      .questionnaire-label-three_lines {
+        position: relative;
+        top: -14px;
+      }
+    }
+
+    .questionnaire-outline-three_lines {
+      height: 52px;
+    }
+
+    button {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  
+
 
   /****** HEADER ******/
   
@@ -1108,6 +1181,10 @@ footer {
     top: 80px;
     left: 50%;
     z-index: 8;
+  }
+
+  header h1 {
+    top: 167px;
   }
   
 
@@ -1165,6 +1242,7 @@ footer {
 
     #header-ellipses {
       top: -10.5%;
+      overflow: hidden;
     }
 
     #ellipse-white {
@@ -1212,6 +1290,10 @@ footer {
 
 
   /****** COPY ******/
+
+  .container {
+    height: -webkit-fill-available;
+  }
 
   .homepage-mobile-copy-div {
     position: relative;
@@ -1298,6 +1380,8 @@ footer {
   #copy-nav-bottom {
     margin-top: $spacer_med_1;
   }
+
+
 }
 
 
@@ -1307,6 +1391,14 @@ footer {
   /****** COMMON ELEMENTS ******/
 
   
+
+  /****** HEADER ******/
+
+  header {
+    h1 {
+      left: 31px;
+    }
+  }
   
 
   /****** CONTAINER ******/
@@ -1325,17 +1417,19 @@ footer {
   
   /****** COPY ******/
 
-  iframe {
-    width: 375px;
-    height: 202px;
-    padding: 0;
-    position: relative;
-    left: -15px;
-  }
-
+  iframe, 
   .homepage-mobile-copy-div, 
   .copy-img {
     width: 375px;
+  }
+
+  iframe {
+    height: 202px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -15px;
+    overflow: hidden;
   }
 
   #copy-form-search {
