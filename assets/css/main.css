@@ -257,7 +257,7 @@ input[type=submit],
 #footer-ellipses #ellipse-blue,
 #copy-middle,
 #copy-bottom,
-.sub_page-main {
+.mobile-sub_page-main {
   background-color: #ebf2fa; }
 
 .carousel-cta,
@@ -765,6 +765,9 @@ footer {
   .questionnaire-div {
     box-shadow: none; }
 
+  header #ellipse-kente {
+    box-shadow: 0 0 27px #427aa1; }
+
   /****** BORDERS ******/
   header h1 {
     border-bottom: 9px double #88cf2b; }
@@ -784,8 +787,9 @@ footer {
   .copy-action-a {
     display: block; }
 
-  .sub_page-div {
-    top: 236px; }
+  .mobile-sub_page-div {
+    top: 236px;
+    height: fit-content; }
 
   .questionnaire-div {
     padding: 0 15px; }
@@ -855,11 +859,13 @@ footer {
       width: 36px; }
 
   /****** HEADER ELLIPSES ******/
-  header .ellipse_shape {
-    width: 91%; }
   header #header-ellipses {
+    height: 34%;
     top: -10.5%;
     overflow: hidden; }
+  header .ellipse_shape {
+    width: 91%;
+    height: 91%; }
   header #ellipse-white {
     width: 87%;
     top: -3%;
@@ -985,5 +991,9 @@ footer {
   #copy-form-search #form-search-submit {
     top: -46px;
     left: 232px; } }
+@media screen and (width: 375px) and (height: 812px) {
+  #mobile-directory-main,
+  #mobile-resources-main {
+    height: 811px; } }
 
 /*# sourceMappingURL=main.css.map */

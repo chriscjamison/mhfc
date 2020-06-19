@@ -8,39 +8,61 @@
 
     <!-- STYLESHEET REFERENCE LINK -->
 		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-		
-		<!-- jQUERY REFERENCE LINKS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-		<!-- THEME JAVASCRIPT REFERENCE LINK -->
+    <!-- THEME JAVASCRIPT REFERENCE LINK -->
 		<script src="/assets/js/main.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
 <!-- HEADER INCLUDING NAVIGATION -->
     <header>
 
-<!-- MAIN NAVIGATION -->
-      <nav id="nav-desktop-top">
+<!-- DESKTOP MAIN NAVIGATION -->
+      <nav class="visible-desktop-flex" id="top-desktop-nav">
         <a href="/" title="Home"><img src="/assets/img/common/logo/logo.png" alt="Mental Health Friendly Communities" id="nav-logo-desktop"></a>
         <ul id="nav-ul">
           <li>
-            <a href="/" title="Home" class="nav-a" id="nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="nav-span-home">Home</span></a>
+            <a href="/" title="Home" class="nav-a" id="nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="desktop-nav-span-home">Home</span></a>
           </li>
           <li>
-            <a href="/about-us.htm" title="About Us" class="nav-a" id="nav-a-about_us"><img src="/assets/img/common/icons/about_us.svg" alt="About Us"><span class="nav-span" id="nav-span-about_us">About Us</span></a>
+            <a href="/about-us.htm" title="About Us" class="nav-a" id="nav-a-about_us"><img src="/assets/img/common/icons/about_us.svg" alt="About Us"><span class="nav-span" id="desktop-nav-span-about_us">About Us</span></a>
           </li>
           <li>
-            <a href="/directory.htm" title="Directory" class="nav-a" id="nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="nav-span-directory">Directory</span></a>
+            <a href="/directory.htm" title="Directory" class="nav-a" id="nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="desktop-nav-span-directory">Directory</span></a>
           </li>
           <li>
-            <a href="/resources.htm" title="Resources" class="nav-a" id="nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="nav-span-resources">Resources</span></a>
+            <a href="/resources.htm" title="Resources" class="nav-a" id="nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="desktop-nav-span-resources">Resources</span></a>
           </li>
           <li>
-            <a href="/contact-us.htm" title="Contact Us" class="nav-a" id="nav-a-contact_us"><img src="/assets/img/common/icons/contact_us.svg" alt="Contact Us"><span class="nav-span" id="nav-span-contact_us">Contact Us</span></a>
+            <a href="/contact-us.htm" title="Contact Us" class="nav-a" id="nav-a-contact_us"><img src="/assets/img/common/icons/contact_us.svg" alt="Contact Us"><span class="nav-span" id="desktop-nav-span-contact_us">Contact Us</span></a>
           </li>
         </ul>
       </nav>
+
+<!-- MOBILE MAIN NAVIGATION -->
+      <nav class="visible-mobile col-12" id="top-mobile-nav">
+        <ul id="nav-ul">
+          <li>
+            <a href="#menu" title="Menu" class="nav-a" id="mobile-nav-a-home"><img src="/assets/img/common/icons/menu.svg" alt="Menu"><span class="nav-span" id="mobile-nav-span-menu">Menu</span></a>
+          </li>
+          <li>
+            <a href="/" title="Home" class="nav-a" id="mobile-nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="mobile-nav-span-home">Home</span></a>
+          </li>
+          <li>
+            <a href="/directory.htm" title="Directory" class="nav-a" id="mobile-nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="mobile-nav-span-directory">Directory</span></a>
+          </li>
+          <li>
+            <a href="/resources.htm" title="Resources" class="nav-a" id="mobile-nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="mobile-nav-span-resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="/training.htm" title="Training" class="nav-a" id="mobile-nav-a-training"><img src="/assets/img/common/icons/training.svg" alt="Training"><span class="nav-span" id="mobile-nav-span-training">Training</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <img src="/assets/img/common/logo/logo.png" alt="Mental Health Friendly Communities" class="visible-mobile" id="nav-logo-mobile">
       
 <!-- HEADING -->
       <h1 class="carousel-h1">Resources</h1>
@@ -50,12 +72,12 @@
         <div class="ellipse_shape" id="ellipse-white">&nbsp;</div>
         <div class="ellipse_shape" id="ellipse-kente">&nbsp;</div>
         <div class="ellipse_shape" id="ellipse-dark_green">&nbsp;</div>
-        <div class="ellipse_shape" id="ellipse-blue">&nbsp;</div>
+        <div class="ellipse_shape visible-desktop" id="ellipse-blue">&nbsp;</div>
       </div>
     </header>
 
 <!-- HERO IMAGE -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> 
+    <div id="carouselExampleControls" class="carousel slide visible-desktop" data-ride="carousel"> 
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" id="carousel-item-directory">
 
@@ -91,8 +113,8 @@
     </div>
 
 <!-- CONTAINER FOR CONTENT -->
-    <main class="container">
-      <div class="col-6 col-left">
+    <main class="container mobile-sub_page-main" id="mobile-resources-main">
+      <div class="col-6 col-left visible-desktop">
         <div class="questionnaire-div" id="questionnaire-directory">
           <div class="questionnaire-border-top-div">&nbsp;</div>
           <p class="questionnaire-p">
@@ -122,7 +144,7 @@
           </form>
         </div>
       </div>
-      <div class="col-6 col-right">
+      <div class="col-6 col-right visible-desktop">
         <h2 class="search-h2">Search</h2>
         <div class="copy-border-div-1">&nbsp;</div>
         <form id="copy-form-search">
@@ -131,10 +153,37 @@
         </form>
         <img src="/assets/img/copy/desktop/photo_resources_questionaire.jpg" alt="Mental Health Friendly Communities bring families back together." class="copy-questionnaire-img" id="copy-homepage-bottom-right-img">
       </div>
+      <div class="col-12 mobile-sub_page-div visible-mobile">
+        <div class="questionnaire-div" id="questionnaire-directory">
+          <p class="questionnaire-p">
+            What type of information are you searching for?
+          </p>
+          <form>
+            <div class="questionnaire-question-div" id="questionaire-question-resources-1">
+              <div class="questionnaire-outline-radio">
+                <input type="radio" name="service" value="suicide" class="questionnaire-radio_button" id="questionnaire-radio-suicide">
+                <label class="questionnaire-label">Suicide prevention</label>
+              </div>
+              <div class="questionnaire-outline-radio">
+                <input type="radio" name="service" value="health_departments" class="questionnaire-radio_button" id="questionnaire-radio-health_departments">
+                <label class="questionnaire-label questionnaire-label-two_lines">Alameda County Health Departments</label>
+              </div>
+              <div class="questionnaire-outline-radio questionnaire-outline-three_lines">
+                <input type="radio" name="service" value="brochure" class="questionnaire-radio_button" id="questionnaire-radio-brochure">
+                <label class="questionnaire-label questionnaire-label-three_lines">Mental Health Friendly Congregations Downloadable Brochure</label>
+              </div>
+              <div class="questionnaire-outline-radio">
+                <input type="radio" name="service" value="other" class="questionnaire-radio_button" id="questionnaire-radio-other">
+                <label class="questionnaire-label">About a subject not listed above</label>
+              </div>
+              <button class="questionnaire-button" id="questionnaire-resources-button-1">Next Question</button>
+            </div>
+          </form>
+        </div>
     </main>
 
 <!-- FOOTER -->
-    <footer>
+    <footer class="visible-desktop">
       <div id="footer-background-div">
         <div class="container" id="footer-container-div">
           <div class="col-9" id="footer-column-left-div">
