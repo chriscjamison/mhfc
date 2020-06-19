@@ -10,6 +10,7 @@ $light_blue_2: #67B3C6;
 $light_blue_3: #8bbdd0;
 $dark_blue_1: #05668d;
 $dark_blue_2: #427aa1;
+$dark_blue_3: #325e83;
 
 $light_green_1: #88cf2b;
 $light_green_2: #77b826;
@@ -40,7 +41,8 @@ $spacer_sm_5: 16px;
 $spacer_sm_6: 18px;
 
 $spacer_med_1: 26px;
-$spacer_med_2: 36px;
+$spacer_med_2: 30px;
+$spacer_med_3: 36px;
 
 $spacer_lg_1: 54px;
 $spacer_lg_2: 62px;
@@ -60,8 +62,15 @@ input[type=submit],
 .questionnaire-div, 
 .questionnaire-radio_button, 
 .questionnaire-input-text, 
-.questionnaire-input-textarea {
+.questionnaire-input-textarea,
+.copy-action-a {
   box-shadow: 0 0 $shadow_distance $dark_blue_2;
+}
+
+#copy-top, 
+#copy-middle, 
+#copy-bottom-container-1 {
+  box-shadow: 0 2px 7px $dark_blue_2;
 }
 
 
@@ -71,7 +80,8 @@ input[type=submit],
 #nav-ul .nav-a .nav-span, 
 button, 
 .cta-a, 
-input[type=submit] {
+input[type=submit],
+.copy-action-a {
   font-family: $eurostile;
 }
 
@@ -126,7 +136,8 @@ button,
 .p-first:first-line, 
 input[type=submit], 
 h2, 
-h1 { 
+h1,
+.copy-action-a { 
   font-weight: 700;
 }
 
@@ -135,12 +146,19 @@ button,
 input[type=submit], 
 #footer-copyright-span, 
 .about_us-training_team-individual-span, 
-#nav-ul .nav-a .nav-span { 
+#top-mobile-nav #nav-ul .nav-a .nav-span,
+.copy-action-a { 
   font-size: 0.8rem;
 }
 
 .about_us-training_team-individual-span {
   font-size: 0.9rem;
+}
+
+#top-desktop-nav #nav-ul .nav-a .nav-span, 
+.homepage-mobile-copy-div p, 
+.homepage-mobile-copy-div input[type=search] {
+  font-size: 1rem !important;
 }
 
 .carousel-item .carousel-cta p, 
@@ -180,7 +198,9 @@ h1 {
 
 button, 
 .cta-a, 
-input[type=submit] {
+input[type=submit], 
+#copy-top p,
+.copy-action-a {
   color: $light_blue_1;
 }
 
@@ -240,7 +260,8 @@ input[type=search],
 #nav-ul .nav-a .nav-span, 
 button, 
 .cta-a, 
-input[type=submit] {
+input[type=submit],
+.copy-action-a {
   text-transform: uppercase;
 }
 
@@ -258,6 +279,10 @@ h1 {
   letter-spacing: -0.3px;
 }
 
+.homepage-mobile-copy-div p {
+  letter-spacing: -0.1px;
+}
+
 .p-first:first-line {
   letter-spacing: 0;
 }
@@ -271,7 +296,8 @@ p,
 
 button, 
 .cta-a, 
-input[type=submit] {
+input[type=submit],
+.copy-action-a {
   letter-spacing: 1.1px;
 }
 
@@ -291,7 +317,8 @@ input[type=submit] {
   color: $light_green_1;
 }
 
-.cta-a:hover {
+.cta-a:hover,
+.copy-action-a:hover {
   color: $light_blue_1;
   text-decoration: none;
 }
@@ -302,7 +329,8 @@ input[type=submit] {
 button, 
 .cta-a, 
 input[type=submit], 
-.questionnaire-radio_button::before {
+.questionnaire-radio_button::before,
+.copy-action-a {
   background-color: $dark_green_1;
 }
 
@@ -320,7 +348,9 @@ input[type=submit],
 #header-ellipses #ellipse-blue, 
 .questionnaire-radio_button, 
 #footer-background-div, 
-#footer-ellipses #ellipse-blue {
+#footer-ellipses #ellipse-blue, 
+#copy-middle, 
+#copy-bottom {
   background-color: $light_blue_1;
 }
 
@@ -348,7 +378,8 @@ input[type=submit],
 
 button, 
 .cta-a, 
-input[type=submit] {
+input[type=submit],
+.copy-action-a {
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
@@ -356,12 +387,17 @@ input[type=submit] {
 
 button:hover, 
 .cta-a:hover, 
-input[type=submit]:hover {
+input[type=submit]:hover,
+.copy-action-a:hover{
   background-color: $light_green_2;
 }
 
 #top-mobile-nav {
   background-color: $white;
+}
+
+#copy-top {
+  background-color: $dark_blue_3;
 }
 
 
@@ -370,7 +406,8 @@ input[type=submit]:hover {
 
 button, 
 .cta-a, 
-input[type=submit] {
+input[type=submit],
+.copy-action-a {
   border: 2px solid $light_blue_1;
   border-radius: 8px;
 }
@@ -390,8 +427,30 @@ input[type=submit] {
   border: 10px solid $light_blue_3;
 }
 
+.questionnaire-radio_button {
+  border: 4px solid $dark_green_1;
+}
+
 #top-mobile-nav {
   border-bottom: 2px solid $light_green_1;
+}
+
+iframe {
+  border-bottom: 5px solid $light_blue_3;
+}
+
+#copy-top, 
+#img-middle {
+  border-bottom: 5px solid $dark_green_1;
+}
+
+#copy-bottom-container-2 {
+  border-top: 5px solid $dark_green_1;
+}
+
+#copy-middle, 
+#copy-bottom-container-1 {
+  border-bottom: 5px solid $dark_blue_1;
 }
 
 .carousel-cta, 
@@ -419,10 +478,6 @@ input[type=search],
   border-radius: 5px;
 }
 
-.questionnaire-radio_button {
-  border: 4px solid $dark_green_1;
-}
-
 .ellipse_shape, 
 .questionnaire-radio_button, 
 .questionnaire-radio_button::before {
@@ -442,7 +497,8 @@ input[type=search],
 
 button, 
 .cta-a, 
-input[type=submit] {
+input[type=submit],
+.copy-action-a {
   margin: 40px;
   padding: 11px;
 }
@@ -453,6 +509,10 @@ input[type=search] {
 
 .visible-desktop {
   display: block !important;
+}
+
+.visible-desktop-flex {
+  display: flex !important;
 }
 
 .visible-mobile {
@@ -624,7 +684,7 @@ header {
   
   .cta-a {
     width: 238px;
-    margin: $spacer_med_1 0 $spacer_med_2 $spacer_med_2;
+    margin: $spacer_med_1 0 $spacer_med_3 $spacer_med_3;
   }
 }
 
@@ -637,7 +697,7 @@ header {
 }
 
 #contact_info-phone_number {
-  margin: $spacer_med_1 0 $spacer_sm_3 $spacer_med_2;
+  margin: $spacer_med_1 0 $spacer_sm_3 $spacer_med_3;
 }
 
 
@@ -734,7 +794,7 @@ header {
 /****** COPY ******/
 
 .container {
-  margin-top: $spacer_med_2;
+  margin-top: $spacer_med_3;
   display: flex;
 
   .col-6 {
@@ -754,7 +814,7 @@ header {
     }
 
     #about_us-background-left-div {
-      margin: $spacer_med_2 0 $spacer_med_2 $spacer_lg_1;
+      margin: $spacer_med_3 0 $spacer_med_3 $spacer_lg_1;
     }
 
     #questionnaire-homepage {
@@ -846,6 +906,10 @@ header {
   }
 }
 
+#copy-homepage-left-img {
+  margin-left: 0;
+}
+
 #homepage-background-top-right-div {
   width: 100%;
   height: 261px;
@@ -926,7 +990,7 @@ header {
 }
 
 .cta-contact_us-contact_info {
-  margin: 0 0 $spacer_sm_3 $spacer_med_2;
+  margin: 0 0 $spacer_sm_3 $spacer_med_3;
 }
 
 
@@ -1019,7 +1083,8 @@ footer {
 
   /***** COMMON ELEMENTS ******/
   
-  .visible-desktop {
+  .visible-desktop, 
+  .visible-desktop-flex {
     display: none !important;
   }
 
@@ -1027,6 +1092,9 @@ footer {
     display: block !important;
   }
 
+  .copy-action-a {
+    display: block;
+  }
 
 
   /****** HEADER ******/
@@ -1042,6 +1110,8 @@ footer {
     z-index: 8;
   }
   
+
+
   /****** NAVIGATION ******/
 
   #top-mobile-nav {
@@ -1138,6 +1208,96 @@ footer {
   #cta-homepage {
     width: 100%;
   }
+
+
+
+  /****** COPY ******/
+
+  .homepage-mobile-copy-div {
+    position: relative;
+    left: -15px;
+
+    p {
+      padding: $spacer_sm_6 $spacer_med_2 0 $spacer_med_2;
+      margin-bottom: 0;
+    }
+  }
+
+  .homepage-mobile-copy-nav-div {
+    width: 86px;
+    height: 42px;
+    margin: $spacer_sm_5 auto 0 auto;
+
+    .mobile-copy-a {
+      width: 16px;
+      height: 16px;
+      margin-right: $spacer_sm_3;
+      display: inline-block;
+      background-image: url('/assets/img/common/nav/mobile-dots.png');
+      background-position: 0 0;
+    }
+
+    .mobile-copy-a:last-of-type {
+      margin-right: 0;
+    }
+
+    .copy-visible-a {
+      background-position: -16px 0;
+    }
+  }
+
+  #copy-top {
+    top: -6px;
+    z-index: 5;
+  }
+
+  #copy-middle {
+    top: -5px;
+    z-index: 4;
+  }
+
+  .copy-img {
+    display: block;
+    position: relative;
+    top: -5px;
+    left: -15px;
+  }
+
+  #img-middle {
+    z-index: 3;
+  }
+
+  #copy-bottom {
+    top: -5px;
+    z-index: 2;
+
+    #copy-questionnaire-a {
+      width: 176px;
+      margin: $spacer_sm_5 auto $spacer_med_1 auto;
+    }
+
+    #copy-form-search {
+      height: 49px;
+      margin: $spacer_sm_5 0;
+      padding-left: $spacer_med_2;
+      padding-right: $spacer_med_2;
+
+      #form-search-submit {
+        height: 46px;
+        margin: 0;
+        position: relative;
+      }
+    }
+  }
+
+  #img-bottom {
+    top: 0;
+    left: 0;
+  }
+
+  #copy-nav-bottom {
+    margin-top: $spacer_med_1;
+  }
 }
 
 
@@ -1152,6 +1312,7 @@ footer {
   /****** CONTAINER ******/
 
   .container {
+    height: 1679px;
     margin-top: 0;
   }
 
@@ -1172,8 +1333,19 @@ footer {
     left: -15px;
   }
 
+  .homepage-mobile-copy-div, 
+  .copy-img {
+    width: 375px;
+  }
 
+  #copy-form-search {
+    #form-search-input-text {
+      width: 313px;
+    }
 
+    #form-search-submit {
+      top: -46px;
+      left: 232px;
+    }
+  }
 }
-
-
