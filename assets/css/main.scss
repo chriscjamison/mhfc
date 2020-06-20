@@ -167,7 +167,8 @@ input[type=submit],
 .homepage-mobile-copy-div p, 
 .homepage-mobile-copy-div input[type=search], 
 .copy-border-div-1 + p, 
-.menu-option-a {
+.menu-option-a, 
+.col-sm-12 p {
   font-size: 1rem !important;
 }
 
@@ -188,7 +189,8 @@ input[type=search],
   font-size: 1.1rem;
 }
 
-.container .questionnaire-p {
+.container .questionnaire-p, 
+.col-sm-12 .p-first:first-line {
   font-size: 1.5rem;
 }
 
@@ -540,6 +542,9 @@ input[type=search] {
   display: none !important;
 }
 
+.visible-mobile-menu {
+  display: none;
+}
 
 
 /******* HEADER ******/
@@ -1143,6 +1148,11 @@ footer {
   .questionnaire-p {
     letter-spacing: -0.3px;
   }
+
+  .cta-contact_us-contact_info, 
+  .questionnaire-contact_form-label {
+    font-size: 1rem;
+  }
   
   
   /****** COMMON ELEMENTS ******/
@@ -1166,7 +1176,7 @@ footer {
   }
 
   .questionnaire-div {
-    padding: 0 $spacer_sm_4;
+    padding: 0;
 
     .questionnaire-outline-radio { 
       margin-bottom: $spacer_med_1;
@@ -1204,15 +1214,21 @@ footer {
       width: 100%;
       margin: 0;
     }
+
+    .questionnaire-input-text, 
+    .questionnaire-input-textarea {
+      width: 100%;
+    }
   }
 
-  .mobile-h2, 
-  .mobile-sub_page-div p {
-    padding-left: $spacer_sm_4;
-    padding-right: $spacer_sm_4;
+  body {
+    overflow-x: hidden;
   }
 
-  
+  .overflow-hidden-body {
+    overflow: hidden;
+  }
+
 
 
   /****** HEADER ******/
@@ -1230,6 +1246,7 @@ footer {
 
   header h1 {
     top: 167px;
+    z-index: 3;
   }
   
 
@@ -1387,6 +1404,56 @@ footer {
 
   .container {
     height: -webkit-fill-available;
+
+    .quesionnaire-p {
+      padding: 0;
+    }
+
+    .col-left p, 
+    .col-right p {
+      margin: 0 0 $spacer_med_1 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .col-left, 
+    .col-right {
+      h2 {
+        margin: $spacer_sm_5 0;
+      }
+    }
+
+    .col-left {
+      #about_us-background-left-div {
+        margin: $spacer_med_3 0 $spacer_med_1 0;
+      }
+    }
+
+    .col-right { 
+      .about_us-community-ol { 
+        margin: 0 0 $spacer_med_2 0;
+        
+        li, 
+        .about_us-community-a {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    #about_us-background-left-div {
+      .about_us-quote-blockquote {
+        line-height: 1.2;
+        transform: translate(10px, 16px);
+      }
+
+      .about_us-quote-figcaption {
+        transform: translate(53px, 2px)
+      }
+    }
+  }
+
+  #mobile-about_us-main {
+    flex-direction: column;
   }
 
   .homepage-mobile-copy-div {
@@ -1477,7 +1544,6 @@ footer {
 
   #about_us-training_team-div {
     margin-top: $spacer_sm_5;
-    padding: 0 $spacer_sm_4;
 
     .about_us-training_team-member-div {
       width: 88px;
@@ -1499,15 +1565,19 @@ footer {
     }
   }
 
-  .copy-border-div-1 {
-    margin-left: $spacer_sm_4;
-    margin-right: $spacer_sm_4;
-  }
-
   .copy-border-div-1 + p {
     margin-top: $spacer_sm_4;
   }
 
+  #contact_info-phone_number, 
+  .cta-contact_us-contact_info {
+    margin: 0 0 $spacer_sm_3 0;
+  }
+
+  #contact_info-instagram + .copy-border-div-1 {
+    margin-top: $spacer_sm_5;
+    margin-bottom: $spacer_sm_2;
+  }
 }
 
 
@@ -1533,14 +1603,32 @@ footer {
   .container {
     height: 1679px;
     margin-top: 0;
+
+    .col-right { 
+      .about_us-community-ol, 
+      p { 
+        width: 315px;
+      }
+    }
   }
 
-  .col-12 {
-    padding-left: 0;
-    padding-right: 0;
+  #mobile-about_us-main {
+    height: 3396px;
   }
 
+  #mobile-training-main {
+    height: 888px;
+  }
 
+  #mobile-directory-main, 
+  #mobile-resources-main {
+    height: 811px;
+  }
+
+  #mobile-contact_us-main {
+    height: 1070px;
+  }
+  
   
   /****** COPY ******/
 
@@ -1569,24 +1657,27 @@ footer {
       left: 232px;
     }
   }
+
+  #about_us-background-left-div {
+    height: 168px;
+  }
 }
 
 
 
 @media screen and (width: 375px) and (height: 812px)  {
   
-  #mobile-directory-main, 
-  #mobile-resources-main {
-    height: 811px;
-  }
-
-  #mobile-training-main {
-    height: 881px;
-  }
-
   /****** MENU ******/
 
   #mobile-menu-options-div { 
     height: 737px;
+  }
+
+
+
+  /****** CONTACT FORM ******/
+
+  .questionnaire-input-textarea {
+    height: 170px;
   }
 }

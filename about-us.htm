@@ -11,36 +11,58 @@
 		
 		<!-- jQUERY REFERENCE LINKS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-		<!-- THEME JAVASCRIPT REFERENCE LINK -->
-		<script src="/assets/js/main.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
 <!-- HEADER INCLUDING NAVIGATION -->
     <header>
 
-<!-- MAIN NAVIGATION -->
-      <nav id="nav-desktop-top">
+<!-- DESKTOP MAIN NAVIGATION -->
+      <nav class="visible-desktop-flex" id="top-desktop-nav">
         <a href="/" title="Home"><img src="/assets/img/common/logo/logo.png" alt="Mental Health Friendly Communities" id="nav-logo-desktop"></a>
         <ul id="nav-ul">
           <li>
-            <a href="/" title="Home" class="nav-a" id="nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="nav-span-home">Home</span></a>
+            <a href="/" title="Home" class="nav-a" id="nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="desktop-nav-span-home">Home</span></a>
           </li>
           <li>
-            <a href="/about-us.htm" title="About Us" class="nav-a" id="nav-a-about_us"><img src="/assets/img/common/icons/about_us.svg" alt="About Us"><span class="nav-span" id="nav-span-about_us">About Us</span></a>
+            <a href="/about-us.htm" title="About Us" class="nav-a" id="nav-a-about_us"><img src="/assets/img/common/icons/about_us.svg" alt="About Us"><span class="nav-span" id="desktop-nav-span-about_us">About Us</span></a>
           </li>
           <li>
-            <a href="/directory.htm" title="Directory" class="nav-a" id="nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="nav-span-directory">Directory</span></a>
+            <a href="/directory.htm" title="Directory" class="nav-a" id="nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="desktop-nav-span-directory">Directory</span></a>
           </li>
           <li>
-            <a href="/resources.htm" title="Resources" class="nav-a" id="nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="nav-span-resources">Resources</span></a>
+            <a href="/resources.htm" title="Resources" class="nav-a" id="nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="desktop-nav-span-resources">Resources</span></a>
           </li>
           <li>
-            <a href="/contact-us.htm" title="Contact Us" class="nav-a" id="nav-a-contact_us"><img src="/assets/img/common/icons/contact_us.svg" alt="Contact Us"><span class="nav-span" id="nav-span-contact_us">Contact Us</span></a>
+            <a href="/contact-us.htm" title="Contact Us" class="nav-a" id="nav-a-contact_us"><img src="/assets/img/common/icons/contact_us.svg" alt="Contact Us"><span class="nav-span" id="desktop-nav-span-contact_us">Contact Us</span></a>
           </li>
         </ul>
       </nav>
+
+<!-- MOBILE MAIN NAVIGATION -->
+      <nav class="visible-mobile col-12" id="top-mobile-nav">
+        <ul id="nav-ul">
+          <li>
+            <a href="#menu" title="Menu" class="nav-a" id="mobile-nav-a-home"><img src="/assets/img/common/icons/menu.svg" alt="Menu" id="mobile-nav-icon-img"><span class="nav-span" id="mobile-nav-span-menu">Menu</span></a>
+          </li>
+          <li>
+            <a href="/" title="Home" class="nav-a" id="mobile-nav-a-home"><img src="/assets/img/common/icons/home.svg" alt="Home"><span class="nav-span" id="mobile-nav-span-home">Home</span></a>
+          </li>
+          <li>
+            <a href="/directory.htm" title="Directory" class="nav-a" id="mobile-nav-a-directory"><img src="/assets/img/common/icons/directory.svg" alt="Directory"><span class="nav-span" id="mobile-nav-span-directory">Directory</span></a>
+          </li>
+          <li>
+            <a href="/resources.htm" title="Resources" class="nav-a" id="mobile-nav-a-resources"><img src="/assets/img/common/icons/resources.svg" alt="Resources"><span class="nav-span" id="mobile-nav-span-resources">Resources</span></a>
+          </li>
+          <li>
+            <a href="/training.htm" title="Training" class="nav-a" id="mobile-nav-a-training"><img src="/assets/img/common/icons/training.svg" alt="Training"><span class="nav-span" id="mobile-nav-span-training">Training</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <img src="/assets/img/common/logo/logo.png" alt="Mental Health Friendly Communities" class="visible-mobile" id="nav-logo-mobile">
       
 <!-- HEADING -->
       <h1 class="carousel-h1">About Us</h1>
@@ -50,12 +72,42 @@
         <div class="ellipse_shape" id="ellipse-white">&nbsp;</div>
         <div class="ellipse_shape" id="ellipse-kente">&nbsp;</div>
         <div class="ellipse_shape" id="ellipse-dark_green">&nbsp;</div>
-        <div class="ellipse_shape" id="ellipse-blue">&nbsp;</div>
+        <div class="ellipse_shape visible-desktop" id="ellipse-blue">&nbsp;</div>
       </div>
     </header>
+    
+<!-- MOBILE MENU OPTIONS -->
+    <div class="visible-mobile-menu" id="mobile-menu-options-div">
+      <div id="mobile-menu-options-container-div">
+        <div class="menu-option-category-div" id="option-category-directory">
+          <a href="/directory.htm" title="Directory" class="menu-option-a" id="menu-option-directory">Directory</a>
+          <div class="menu-option-subcategory-div" id="option-subcategory-directory">
+            <a href="/partners.htm" title="MHFC Community Partners" class="menu-suboption-a" id="menu-suboption-partners">MHFC Community Partners</a>
+            <a href="/mhfc-congregations.htm" title="MHFC Congregations" class="menu-suboption-a" id="menu-suboption-congregations">MHFC Congregations</a>
+            <a href="/agencies.htm" title="Alameda County Behavior Agencies" class="menu-suboption-a" id="menu-suboption-agencies">Alameda County Behavior Agencies</a>
+          </div>
+        </div>
+        <div class="menu-option-category-div" id="option-category-resources">
+          <a href="/resources.htm" title="Resources" class="menu-option-a" id="menu-option-resources">Resources</a>
+          <div class="menu-option-subcategory-div" id="option-subcategory-resources">
+            <a href="/suicide-hotlines.htm" title="Suicide hotlines and prevention" class="menu-suboption-a" id="menu-suboption-hotlines">Suicide hotlines and prevention</a>
+            <a href="/brochure.htm" title="MHFC Downloadable Brochure" class="menu-suboption-a" id="menu-suboption-brochure">MHFC Downloadable Brochure</a>
+          </div>
+        </div>
+        <a href="/contact-us.htm" title="Contact Us" class="menu-option-a" id="menu-option-contact_us">Contact Us</a>
+        <div class="menu-option-category-div" id="option-category-about_us">
+          <a href="/about-us.htm" title="About Us" class="menu-option-a" id="menu-option-about_us">About Us</a>
+          <div class="menu-option-subcategory-div" id="option-subcategory-resources">
+            <a href="/purpose-statement.htm" title="Purpose Statement" class="menu-suboption-a" id="menu-suboption-purpose">Purpose Statement</a>
+            <a href="/training.htm" title="Training Team" class="menu-suboption-a" id="menu-suboption-training">Training Team</a>
+          </div>
+        </div>
+        <span class="menu-footer-span" id="menu-footer-copyright">Mental Health Friendly Communities &copy; 2020</span>  
+      </div>
+    </div>
 
 <!-- HERO IMAGE -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> 
+    <div id="carouselExampleControls" class="carousel slide visible-desktop" data-ride="carousel"> 
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" id="carousel-item-landing">
 
@@ -84,8 +136,8 @@
     </div>
 
 <!-- CONTAINER FOR CONTENT -->
-    <main class="container" id="about_us">
-      <div class="col-6 col-left">
+    <main class="container mobile-sub_page-main" id="mobile-about_us-main">
+      <div class="col-sm-12 col-lg-6 col-left mobile-sub_page-div">
         <p class="p-first">
           MHFC includes and addresses the externalized and internalized stigma around mental illness 
           and how it impacts the mental wellness of the African American community. Two of our signature 
@@ -124,8 +176,8 @@
           and spirituality have been widely and historically identified as primary protective factors and wellness tools 
           for many African Americans experiencing personal, family and community challenges
         </p>
-        <h2>Training and Technical Team</h2>
-        <div id="about_us-training_team-div">
+        <h2 class="visible-desktop">Training and Technical Team</h2>
+        <div class="visible-desktop" id="about_us-training_team-div">
           <div class="about_us-training_team-member-div" id="training_team-gc">
             <div class="about_us-training_team-photo-div" id="training_team-photo-gc">&nbsp;</div>
             <span class="about_us-training_team-individual-span">Gigi Crowder, L.E.</span>
@@ -139,8 +191,8 @@
             <span class="about_us-training_team-individual-span">Pastor Horacio Jones</span>
           </div>
         </div>
-        <div class="copy-border-div-1">&nbsp;</div>
-        <p>
+        <div class="copy-border-div-1 visible-desktop">&nbsp;</div>
+        <p class="visible-desktop">
           The MHFC Team, Gigi Crowder, Min. Monique Tarver and Pastor Horacio Jones, has worked with over 50 African American 
           Congregations, over 10 County Behavioral Health Departments impacting at least 20,000 persons 
           and are recognized as subject matter experts by consumer and family groups,community stakeholders, 
@@ -149,8 +201,8 @@
           of faith/spirituality and mental wellness for the African American community.
         </p>
       </div>
-      <div class="col-6 col-right">
-        <img src="/assets/img/copy/desktop/photo_about_us_copy.jpg" alt="Becoming a Mental Health Friendly Community" id="copy-about_us-right-img">
+      <div class="col-sm-12 col-lg-6 col-right mobile-sub_page-div">
+        <img src="/assets/img/copy/desktop/photo_about_us_copy.jpg" alt="Becoming a Mental Health Friendly Community" class="visible-desktop" id="copy-about_us-right-img">
         <h2>Becoming a Mental Health Friendly Community</h2>
         <p>
           Mental Health Friendly Communities for African Americans are formed out of a firm commitment 
@@ -201,7 +253,7 @@
     </main>
 
 <!-- FOOTER -->
-    <footer>
+    <footer class="visible-desktop">
       <div id="footer-background-div">
         <div class="container" id="footer-container-div">
           <div class="col-9" id="footer-column-left-div">
