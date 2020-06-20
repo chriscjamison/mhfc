@@ -891,13 +891,13 @@ footer {
   /****** MENU ******/
   #mobile-menu-options-div {
     width: 100%;
+    display: none;
     position: absolute;
     top: 75px;
-    visibility: hidden;
     z-index: 3; }
 
   .menu-visible {
-    visibility: visible !important; }
+    display: block !important; }
 
   #mobile-menu-options-container-div {
     margin-left: 30px;
