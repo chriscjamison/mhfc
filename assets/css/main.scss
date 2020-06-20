@@ -103,7 +103,10 @@ h1,
 .questionnaire-contact_form-label, 
 .questionnaire-input-text, 
 .questionnaire-input-textarea, 
-.cta-link-a {
+.cta-link-a, 
+.menu-option-a, 
+.menu-suboption-a, 
+.menu-footer-span {
   font-family: $myriad_pro;
 }
 
@@ -116,7 +119,9 @@ p,
 .about_us-community-a, 
 .cta-contact_us-contact_info, 
 .questionnaire-input-text, 
-.questionnaire-input-textarea {
+.questionnaire-input-textarea, 
+.menu-option-a, 
+.menu-suboption-a {
   font-weight: 400;
 }
 
@@ -137,7 +142,8 @@ button,
 input[type=submit], 
 h2, 
 h1,
-.copy-action-a { 
+.copy-action-a, 
+.menu-footer-span { 
   font-weight: 700;
 }
 
@@ -147,17 +153,21 @@ input[type=submit],
 #footer-copyright-span, 
 .about_us-training_team-individual-span, 
 #top-mobile-nav #nav-ul .nav-a .nav-span,
-.copy-action-a { 
+.copy-action-a, 
+.menu-footer-span { 
   font-size: 0.8rem;
 }
 
-.about_us-training_team-individual-span {
+.about_us-training_team-individual-span, 
+.menu-suboption-a {
   font-size: 0.9rem;
 }
 
 #top-desktop-nav #nav-ul .nav-a .nav-span, 
 .homepage-mobile-copy-div p, 
-.homepage-mobile-copy-div input[type=search] {
+.homepage-mobile-copy-div input[type=search], 
+.copy-border-div-1 + p, 
+.menu-option-a {
   font-size: 1rem !important;
 }
 
@@ -200,7 +210,10 @@ button,
 .cta-a, 
 input[type=submit], 
 #copy-top p,
-.copy-action-a {
+.copy-action-a, 
+.menu-option-a, 
+.menu-suboption-a, 
+.menu-footer-span {
   color: $light_blue_1;
 }
 
@@ -279,7 +292,8 @@ h1 {
   letter-spacing: -0.3px;
 }
 
-.homepage-mobile-copy-div p {
+.homepage-mobile-copy-div p, 
+.menu-suboption-a {
   letter-spacing: -0.1px;
 }
 
@@ -290,7 +304,8 @@ h1 {
 p, 
 .about_us-quote-figcaption, 
 .about_us-community-ol li, 
-.cta-contact_us-contact_info {
+.cta-contact_us-contact_info, 
+.menu-suboption-a {
   letter-spacing: 0.2px;
 }
 
@@ -314,6 +329,11 @@ input[type=submit],
 .footer-links-a:hover, 
 .about_us-community-a:hover, 
 .cta-link-a:hover {
+  color: $light_green_1;
+}
+
+.menu-option-a:active, 
+.menu-suboption-a:active {
   color: $light_green_1;
 }
 
@@ -1092,10 +1112,22 @@ footer {
     #ellipse-kente {
       box-shadow: 0 0 27px $dark_blue_2;
     }
+
+    .menu-ellipse-kente-shadow {
+      box-shadow: 0 0 27px $dark_blue_3 !important;
+    }
   }
   
 
 
+  /****** COLOR STYLING ******/
+
+  #mobile-menu-options-div {
+    background-color: $dark_blue_2;
+  }
+  
+  
+  
   /****** BORDERS ******/
 
   header {
@@ -1174,6 +1206,12 @@ footer {
     }
   }
 
+  .mobile-h2, 
+  .mobile-sub_page-div p {
+    padding-left: $spacer_sm_4;
+    padding-right: $spacer_sm_4;
+  }
+
   
 
 
@@ -1240,6 +1278,52 @@ footer {
 
 
 
+  /****** MENU ******/
+
+  #mobile-menu-options-div {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    visibility: hidden;
+    z-index: 3;
+  }
+
+  .menu-visible {
+    visibility: visible !important;
+  }
+
+  #mobile-menu-options-container-div {
+    margin-left: $spacer_med_2;
+    position: relative;
+    top: 127px;
+
+    .menu-option-a, 
+    .menu-suboption-a {
+      display: block;
+      margin-bottom: $spacer_sm_1;
+    }
+  }
+
+  .menu-option-category-div {
+    margin-bottom: $spacer_sm_4;
+  }
+
+  .menu-option-subcategory-div {
+    margin-left: $spacer_sm_4;
+  }
+
+  #menu-option-contact_us {
+    margin-bottom: $spacer_sm_4 !important;
+  }
+
+  .menu-footer-span {
+    display: block;
+    position: relative;
+    transform: translateY(232px);
+  }
+
+
+
   /****** HEADER ELLIPSES ******/
 
   header { 
@@ -1247,6 +1331,7 @@ footer {
       height: 34%;
       top: -10.5%;
       overflow: hidden;
+      z-index: 6;
     }
 
     .ellipse_shape {
@@ -1390,6 +1475,38 @@ footer {
     margin-top: $spacer_med_1;
   }
 
+  #about_us-training_team-div {
+    margin-top: $spacer_sm_5;
+    padding: 0 $spacer_sm_4;
+
+    .about_us-training_team-member-div {
+      width: 88px;
+      height: 156px;
+    }
+
+    .about_us-training_team-photo-div {
+      width: 88px;
+      height: 114px;
+      background-image: url("/assets/img/copy/mobile/photo_about_us_training_clergy.jpg")
+    }
+
+    #training_team-photo-mt {
+      background-position-x: -88px;
+    }
+
+    #training_team-photo-hj {
+      background-position-x: -174px;
+    }
+  }
+
+  .copy-border-div-1 {
+    margin-left: $spacer_sm_4;
+    margin-right: $spacer_sm_4;
+  }
+
+  .copy-border-div-1 + p {
+    margin-top: $spacer_sm_4;
+  }
 
 }
 
@@ -1410,6 +1527,7 @@ footer {
   }
   
 
+    
   /****** CONTAINER ******/
 
   .container {
@@ -1460,5 +1578,15 @@ footer {
   #mobile-directory-main, 
   #mobile-resources-main {
     height: 811px;
+  }
+
+  #mobile-training-main {
+    height: 881px;
+  }
+
+  /****** MENU ******/
+
+  #mobile-menu-options-div { 
+    height: 737px;
   }
 }
