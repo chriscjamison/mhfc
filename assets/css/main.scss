@@ -1249,7 +1249,7 @@ header {
     margin-bottom: $spacer_sm_8;
   }
 
-  .quesionnaire-p {
+  .questionnaire-p {
     margin-bottom: $spacer_med_1;
   }
 
@@ -1428,6 +1428,571 @@ footer {
   #questionnaire-directory, 
   #questionnaire-contact_form {
     margin: $spacer_sm_8 0 0 $spacer_med_1;
+  }
+}
+
+
+
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  
+  /****** COLOR STYLING ******/
+
+  header, 
+  h1 {
+    background-color: $white;
+  }
+  
+  
+  
+  /****** BORDERS ******/
+
+  h1 {
+    border-radius: 0 0 5px 5px;
+  }
+  
+  
+  /****** COMMON ELEMENTS ******/
+
+  body {
+    overflow-x: hidden;
+  }
+
+
+
+  /****** HEADER ******/
+
+  header {
+    height: 105px;
+
+    h1 {
+      top: 103px;
+      left: 47px;
+      padding: $spacer_sm_3 $spacer_sm_8 $spacer_sm_8 $spacer_sm_8;
+    }
+
+    #header-ellipses {
+      display: none !important;
+    }    
+  }
+
+  .header-results {
+    height: 139px;
+  }
+
+
+
+  /****** NAVIGATION ******/
+
+  #top-desktop-nav {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+
+    #nav-logo-desktop {
+      width: 209px;
+    }
+
+    #nav-ul {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+
+
+  /****** CTA ******/
+
+  .carousel-item {
+    .carousel-cta {
+      left: 36px;
+      bottom: 36px;
+    }
+  }
+
+
+
+  /****** CONTAINER ******/
+
+  #resources-listings-main, 
+  #directory-listings-main {
+    width: 100%;
+
+    .col-6 {
+      max-width: 46%;
+    }
+
+    .col-left {
+      margin-right: $spacer_med_1;
+    }
+
+    .col-right {
+      margin-left: 24px;
+    }
+  }
+
+  .container {
+    margin-top: $spacer_sm_8;
+
+    .col-left { 
+      padding-left: 0;
+
+      p {
+        margin: $spacer_sm_8 0;
+      }
+
+      .questionnaire-p {
+        width: 385px;
+      }
+
+      #questionnaire-homepage {
+        margin: $spacer_med_1 0 0 0;
+      }
+    }
+
+    .col-right {
+      padding-right: 0;
+
+      p, 
+      iframe, 
+      img, 
+      .copy-border-div-1 {
+        margin: $spacer_sm_8 0 0 $spacer_med_1;
+      }
+
+      #copy-form-search {
+        margin: $spacer_med_1 0 $spacer_sm_6 $spacer_med_1;
+      }
+
+      h2, 
+      p, 
+      .about_us-community-ol, 
+      .search-h2, img {
+        margin: $spacer_sm_8 0 0 0;
+      }
+    }
+  }
+
+   
+
+  /****** COPY ******/
+
+  #homepage-background-top-left-div {
+    p {
+      margin-left: 0;
+    }
+  }
+
+  #copy-homepage-left-img {
+    margin-bottom: $spacer_sm_8;
+  }
+
+  #copy-homepage-top-right-img {
+    margin: $spacer_sm_8 0 $spacer_sm_8 $spacer_med_1;
+  }
+
+  #copy-about_us-right-img {
+    margin: $spacer_med_1 0 0 0;
+  }
+  
+
+  /****** SEARCH LISTINGS ******/
+
+  .results-header-div {
+    margin-bottom: $spacer_sm_8;
+  }
+
+  .results-listing-div {
+    .listing-contact_info_container-div {
+      width: 100%;
+      margin-top: $spacer_sm_8;
+    }
+  }
+
+
+
+  /****** FOOTER ******/
+
+  footer {
+    height: 272px;
+  }
+
+  #footer-container-div {
+    #nav-logo-desktop {
+      width: 209px;
+    }
+
+    #footer-contact_info-div {
+      margin-left: 97px;
+    }
+
+    #footer-column-left-div {
+      margin-left: $spacer_sm_8;
+      padding-left: 0;
+    }
+  
+    #footer-links-div {
+      padding-right: 0;
+    }
+
+    #footer-links-ul {
+      width: 170px;
+
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (width: 1024px) {
+
+  /****** NAVIGATION ******/
+
+  #top-desktop-nav {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+
+    #nav-logo-desktop {
+      margin-left: 65px;
+    }
+
+    #nav-ul {
+      padding-right: 50px;
+    }
+  }
+
+
+
+  /****** CAROUSEL ******/
+
+  #cta-directory {
+    width: 525px;
+  }
+
+
+
+  /****** COPY ******/
+
+  #copy-homepage-left-img {
+    width: 435px;
+    margin-bottom: $spacer_med_1;
+  }
+
+  .container {
+    .col-left {
+      #about_us-background-left-div {
+        margin: $spacer_med_3 0;
+      }
+
+      .questionnaire-div, 
+      h2, 
+      #about_us-training_team-div, 
+      .copy-border-div-1 {
+        margin: $spacer_sm_8 0 0 0;
+      }
+
+      .questionnaire-contact_form-div {
+        .questionnaire-input-text, 
+        .questionnaire-input-textarea {
+          width: 400px;
+        }
+
+        .questionnaire-input-textarea {
+          height: 332px;
+        }
+      }
+    }
+
+    .col-right {
+      h2, 
+      img, 
+      .about_us-community-ol, 
+      .copy-border-div-1, 
+      input[type=search] {
+        width: 422px;
+      }
+
+      .copy-border-div-1, 
+      #copy-form-search {
+        margin: $spacer_sm_8 0 0 0;
+      }
+
+      #form-search-submit {
+        left: 341px;
+      }
+    }
+  }
+
+  #directory-main {
+    .col-left {
+      padding-right: $spacer_sm_8;
+    }
+
+    .col-right {
+      padding-left: $spacer_sm_8
+    }
+  }
+
+  #resources-listings-main, 
+  #directory-listings-main {
+    margin-top: $spacer_med_1;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #about_us-training_team-div {
+    .about_us-training_team-photo-div {
+      width: 132px;
+      background-size: 412px;
+    }
+  }
+
+
+
+  /****** FOOTER ******/
+
+  #footer-ellipses {
+    transform: translateY(-268px);
+  }
+
+  #directory-listings-main + footer, 
+  #resources-listings-main + footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
+
+@media screen and (width: 768px) {
+
+  /****** COMMON ELEMENTS ******/
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /****** HEADER ******/
+
+  header {
+    #header-ellipses {
+      display: none !important;
+    }    
+  }
+  
+  
+  
+  /****** NAVIGATION ******/
+
+  #top-desktop-nav {
+   #nav-logo-desktop {
+      margin-left: $spacer_med_3;
+    }
+
+    #nav-ul {
+      padding-right: $spacer_med_3;
+
+      li {
+        width: 98px;
+      }
+    }
+  }
+
+
+
+  /****** COMMON ELEMENTS ******/
+
+  .questionnaire-div {
+    .questionnaire-p {
+      width: 270px; 
+    }
+
+    .questionnaire-outline-radio {
+      .questionnaire-radio_button {
+        height: 50px;
+      }
+
+      .questionnaire-label {
+        margin: $spacer_sm_6 0 0 $spacer_sm_6;
+      }
+
+      .questionnaire-label-tablet-two_lines {
+        margin-top: 0 !important;
+      }
+    }
+
+    .questionnaire-contact_form-div:last-of-type {
+      margin-bottom: $spacer_sm_6;
+    }
+  }
+
+
+
+  /****** CAROUSEL ******/
+  
+  #cta-about_us {
+    width: 695px;
+  }
+
+  #cta-directory {
+    width: 695px;
+    bottom: 3px;
+  }
+  
+  #cta-contact_us {
+    bottom: 3px;
+  }
+
+
+  /****** CONTAINER ******/
+
+  .container {
+    .col-left {
+      .questionnaire-p {
+        width: 275px;
+      }
+
+      #about_us-background-left-div {
+        margin: $spacer_med_3 0;
+      }
+
+      h2 {
+        margin: $spacer_sm_8 0;
+      }
+
+      #about_us-training_team-div, 
+      .copy-border-div-1, 
+      .questionnaire-div {
+        margin: $spacer_sm_8 0 0 0;
+      }
+
+      .questionnaire-border-div-1, 
+      .questionnaire-input-text, 
+      .questionnaire-input-textarea {
+        width: 275px;
+      }
+
+      .questionnaire-input-textarea {
+        height: 175px;
+      }
+
+    }
+
+    .col-right {
+      p {
+        width: 315px;
+      }
+
+      #form-search-submit {
+        left: 235px;
+      }
+
+      #copy-form-search {
+        margin: $spacer_med_1 0 $spacer_sm_6 0;
+      }
+
+      .copy-border-div-1 {
+        margin: $spacer_sm_8 0 0 0;
+      }
+    }
+  }
+
+  #resources-main, 
+  #directory-main {
+    .col-right {
+      padding-left: 26px;
+    }
+  }
+
+  #resources-listings-main, 
+  #directory-listings-main {
+    margin-top: $spacer_med_1;
+    padding-left: 41px;
+    padding-right: 41px;
+
+    .col-6 {
+      max-width: 45%;
+    }
+
+    .col-left {
+      margin-right: 0;
+      padding-right: 15px;
+    }
+    
+  }
+
+
+
+  /****** COPY ******/
+
+  #copy-homepage-left-img, 
+  #homepage-background-top-right-div iframe, 
+  #copy-homepage-top-right-img, 
+  #copy-homepage-bottom-right-img, 
+  .container .col-right .copy-border-div-1, 
+  .container .col-right input[type=search] {
+    width: 315px;
+  }
+
+  .container .col-right img, 
+  .container .col-right .about_us-community-ol
+  .container .col-right .search-h2 {
+    width: 330px;
+  }
+
+  #about_us-background-left-div {
+    height: 164px;
+
+    .about_us-quote-blockquote {
+      transform: translate(-2px, 25px);
+    }
+
+    .about_us-quote-figcaption {
+      transform: translate($spacer_sm_8, $spacer_sm_6);
+    }
+  }
+
+  #about_us-training_team-div {
+    .about_us-training_team-member-div {
+      width: auto;
+      height: 155px;
+    }
+
+    .about_us-training_team-photo-div {
+      width: 87px;
+      height: 155px;
+      background-size: 263px;
+    }
+
+    #training_team-photo-mt {
+      background-position-x: -88px;
+    }
+
+    #training_team-photo-hj {
+      background-position-x: -176px;
+    }
+  }
+
+
+
+  /****** FOOTER ******/
+
+  #footer-container-div {
+    #footer-column-left-div {
+      margin-left: 0;
+    }
+
+    #footer-links-ul {
+      width: 136px;
+    }
+  }
+
+  #footer-ellipses {
+    transform: translateY(-263px);
   }
 }
 
@@ -2013,6 +2578,7 @@ footer {
   /****** RESULT LISTINGS ******/
 
   .results-header-div {
+    margin-bottom: $spacer_sm_8;
     padding-left: $spacer_sm_7;
     padding-right: $spacer_sm_7;
 
@@ -2215,6 +2781,67 @@ footer {
 
 
 
+
+@media screen and (width: 414px)  {
+
+  /****** CAROUSEL ******/
+
+  header h1 {
+    top: 184px;
+    left: 30px;
+  }
+
+
+
+  /****** CONTAINER ******/
+
+  .container {
+    margin-top: 180px;
+  }
+
+
+
+  /****** COMMON ELEMENTS ******/
+
+  .questionnaire-div .questionnaire-outline-radio .questionnaire-radio_button {
+    width: 58px;
+  }
+  
+
+  
+  /******* SEARCH LISTINGS ******/
+
+  .results-header-div .listing-h2 {
+    width: 189px;
+  }
+
+
+
+
+}
+
+
+
+@media screen and (width: 360px)  {
+  /****** COPY ******/
+
+  iframe {
+    width: 360px;
+  }
+
+  .results-header-div { 
+    .listing-h2 {
+      width: 138px;
+    }
+
+    .results-search_details-div {
+      margin-left: $spacer_sm_6;
+    }
+  }
+}
+
+
+
 @media screen and (width: 375px) and (height: 812px)  {
   
   /****** MENU ******/
@@ -2224,6 +2851,13 @@ footer {
   }
 
 
+  /****** HEADER ELLIPSES ******/
+
+  header {
+    #header-ellipses {
+      height: 34%;
+    }
+  }
 
   /****** CONTACT FORM ******/
 
