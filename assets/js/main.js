@@ -145,5 +145,123 @@ $(document).ready(
         // window.location.href = "http://mhfcommunitites.org/resources-listing.htm";
       }
     );
+
+    var search_details_mobile_selector = "";
+    var search_details_desktop_selector = ""
+    // String variables that will hold the CSS selectors for the HTML element that refers 
+    // to the link that allows the visitor to enter new search details are initialized.
+
+    var search_details_mobile_elements = {};
+    var search_details_desktop_elements = {};
+    // Object variables that will hold the jQuery objects that refers to the link that 
+    // allows the visitor to enter new search details are intialized.
+    
+    search_details_mobile_selector = "#mobile-results-a-search_details, #mobile-results-a-img";
+    search_details_desktop_selector = "#desktop-results-a-search_details, #desktop-results-a-img";
+    // CSS selectors for the HTML element that contains the link that allows 
+    // the visitor to enter new search details are passed on.
+
+    search_details_mobile_elements = $(search_details_mobile_selector);
+    search_details_desktop_elements = $(search_details_desktop_selector);
+    // jQuery objects that refer to the HTML elements that contains the link 
+    // that allows the visitor to enter new search details are passed on.
+
+    $(search_details_mobile_elements).click(
+      function () {
+        displaySearchDetails("mobile");
+      }
+    );
+
+    $(search_details_desktop_elements).click(
+      function () {
+        displaySearchDetails("desktop");
+      }
+    );
   }
 );
+
+function displaySearchDetails(form_type)  {
+/*  @params
+
+    FUNCTION - displaySearchDetails
+    PURPOSE - To toggle the visibility of the Search Details form and the 
+              search results on Resources and Directory search listing pages
+
+  ----------------------------------------------------------------------------- */
+ 
+  var search_details_div_selector = "";
+  var search_results_listing_selector = "";
+  // String variables that refer to the HTML elements that contain the content 
+  // on the search results pages are initialized.
+
+  var search_details_div_element = {};
+  var search_results_listing_element = {};
+  // Object variables that refer to jQuery objects that refer to the content 
+  // on the search results pages are initialized.
+
+  search_details_div_selector = "#" + form_type + "-results-search_details";
+  search_results_listing_selector = "#" + form_type + "-results-listings";
+  // CSS selectors that refer to the HTML elements that contain the content 
+  // on the search results pages are initialized.
+console.log("search_details_div_selector = " + search_details_div_selector);
+  search_details_div_element = $(search_details_div_selector);
+  search_results_listing_element = $(search_results_listing_selector);
+  // jQuery objects that refer to the HTML elements that contain the content 
+  // on the search results pages are passed on.
+
+  var search_details_icon_selector = "";
+  // A String variable that will hold the CSS selector that refers the HTML 
+  // element containing the 'arrow' icon is initialized.
+
+  var search_details_icon_element = {};
+  // An Object that will hold the jQuery object that refers to the HTML 
+  // element containing the 'arrow' icon is initialized.
+
+  search_details_icon_selector = "#" + form_type + "-results-a-img img";
+  // The CSS selector that refers to the HTML element containing the 'arrow' icon 
+  // is passed on.
+
+  search_details_icon_element = $(search_details_icon_selector);
+  // The jQuery object that refers to the 'arrow' icon is passed on.
+
+  var results_not_visible_class_value = "";
+  // A String that refers to the CSS class name that toggles the visibility 
+  // of the content on the search results pages is initialized.
+
+  results_not_visible_class_value = "results-not_visible";
+  // The CSS class name that will toggle the visibility of the content 
+  // on the search results pages is passed on.
+
+  var search_details_icon_up_src_value = "";
+  var search_details_icon_down_src_value = "";
+  // A String variable that will hold values for the attribute, 'src', 
+  // for the 'arrow' icon are initialized.
+
+  search_details_icon_up_src_value = "/assets/img/common/icons/hide_search_details.png";
+  search_details_icon_down_src_value = "/assets/img/common/icons/search_details.png";
+  // URL's that refer to image files that reflect the visibility of the search details 
+  // form are passed on.
+
+  var search_details_icon_current_src_value = "";
+  // A String variable that will hold the current value of the attribute 'src' 
+  // is initialized.
+
+  search_details_icon_current_src_value = $(search_details_icon_element).attr("src");
+
+  if (search_details_icon_current_src_value === search_details_icon_down_src_value) {
+    $(search_details_icon_element).attr("src", search_details_icon_up_src_value)
+  } else {
+    $(search_details_icon_element).attr("src", search_details_icon_down_src_value);
+  }
+  
+  if (form_type === "mobile") {
+    $(search_details_div_element).toggleClass(results_not_visible_class_value);
+    $(search_results_listing_element).toggleClass(results_not_visible_class_value);
+    // The visibility of the content of the search results pages is toggled.
+  } else {
+    $(search_details_div_element).toggleClass(results_not_visible_class_value);
+    // The visibility of the form that new search details can be entered 
+    // is toggled.
+  }
+  
+}
