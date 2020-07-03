@@ -118,8 +118,7 @@ button,
 .homepage-mobile-copy-div input[type=search],
 .copy-border-div-1 + p,
 .results-a,
-.menu-option-a,
-.col-sm-12 p {
+.menu-option-a {
   font-size: 1rem !important; }
 
 .carousel-item .carousel-cta p,
@@ -982,7 +981,15 @@ footer {
     left: 25.75%; }
 
   .carousel-item .carousel-cta {
-    left: 24.5%; } }
+    left: 24.5%; }
+
+  #resources-listings-main,
+  #directory-listings-main {
+    padding-left: 34px; } }
+@media screen and (min-width: 1367px) and (max-width: 1600px) {
+  /****** CTA ******/
+  .carousel-item .carousel-cta {
+    left: 17.75%; } }
 @media screen and (min-width: 1281px) and (max-width: 1366px) {
   nav {
     width: 824px;
@@ -1006,7 +1013,7 @@ footer {
   #questionnaire-directory,
   #questionnaire-contact_form {
     margin: 16px 0 0 26px; } }
-@media screen and (min-width: 415px) and (max-width: 1024px) {
+@media screen and (min-width: 415px) and (max-width: 1200px) {
   /****** COLOR STYLING ******/
   header,
   h1 {
@@ -1067,8 +1074,14 @@ footer {
     margin-top: 16px; }
     .container .col-left {
       padding-left: 0; }
-      .container .col-left p {
-        margin: 16px 0; }
+      .container .col-left #about_us-background-left-div {
+        margin: 36px 0; }
+      .container .col-left h2,
+      .container .col-left p,
+      .container .col-left #about_us-training_team-div,
+      .container .col-left .copy-border-div-1,
+      .container .col-left .questionnaire-div {
+        margin: 16px 0 0 0; }
       .container .col-left .questionnaire-p {
         width: 385px; }
       .container .col-left #questionnaire-homepage {
@@ -1126,16 +1139,71 @@ footer {
     width: 170px; }
     #footer-container-div #footer-links-ul li {
       width: auto; } }
-@media screen and (width: 1024px) {
+@media screen and (width: 1200px) {
   /****** NAVIGATION ******/
   #top-desktop-nav {
-    width: 100%;
-    margin-left: 0;
-    left: 0; }
+    top: 21px; }
     #top-desktop-nav #nav-logo-desktop {
-      margin-left: 65px; }
+      margin-left: 67px; }
     #top-desktop-nav #nav-ul {
-      padding-right: 50px; }
+      padding-right: 20px; }
+
+  /****** HEADER ******/
+  header h1 {
+    top: 103px;
+    left: 49px; }
+
+  /****** CAROUSEL ******/
+  .carousel-item .carousel-cta {
+    left: 55px;
+    right: 55px; }
+
+  /****** CONTAINER ******/
+  .container {
+    padding-left: 36px;
+    padding-right: 36px; }
+    .container .col-left {
+      padding-right: 76px; }
+      .container .col-left .questionnaire-p {
+        width: 345px; }
+    .container .col-right {
+      padding-left: 139px; }
+      .container .col-right .copy-border-div-1,
+      .container .col-right #copy-form-search {
+        margin: 16px 0 0 0; }
+      .container .col-right #form-search-submit {
+        left: 314px; }
+
+  #directory-listings-main,
+  #resources-listings-main {
+    margin-top: 36px; }
+
+  /****** COPY ******/
+  #copy-homepage-left-img {
+    width: 455px; }
+
+  /****** FOOTER ******/
+  #footer-container-div #footer-column-left-div {
+    margin-left: 0; }
+  #footer-container-div #footer-links-ul {
+    width: 247px; }
+
+  #footer-ellipses {
+    transform: translateY(-271px); }
+
+  #directory-main + footer,
+  #resources-main + footer,
+  #directory-listings-main + footer,
+  #resources-listings-main + footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0; } }
+@media screen and (width: 1024px) {
+  /****** NAVIGATION ******/
+  #top-desktop-nav #nav-logo-desktop {
+    margin-left: 65px; }
+  #top-desktop-nav #nav-ul {
+    padding-right: 50px; }
 
   /****** CAROUSEL ******/
   #cta-directory {
@@ -1148,11 +1216,6 @@ footer {
 
   .container .col-left #about_us-background-left-div {
     margin: 36px 0; }
-  .container .col-left .questionnaire-div,
-  .container .col-left h2,
-  .container .col-left #about_us-training_team-div,
-  .container .col-left .copy-border-div-1 {
-    margin: 16px 0 0 0; }
   .container .col-left .questionnaire-contact_form-div .questionnaire-input-text,
   .container .col-left .questionnaire-contact_form-div .questionnaire-input-textarea {
     width: 400px; }
@@ -1194,7 +1257,7 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0; } }
-@media screen and (width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 800px) {
   /****** COMMON ELEMENTS ******/
   body {
     overflow-x: hidden; }
@@ -1237,14 +1300,6 @@ footer {
   /****** CONTAINER ******/
   .container .col-left .questionnaire-p {
     width: 275px; }
-  .container .col-left #about_us-background-left-div {
-    margin: 36px 0; }
-  .container .col-left h2 {
-    margin: 16px 0; }
-  .container .col-left #about_us-training_team-div,
-  .container .col-left .copy-border-div-1,
-  .container .col-left .questionnaire-div {
-    margin: 16px 0 0 0; }
   .container .col-left .questionnaire-border-div-1,
   .container .col-left .questionnaire-input-text,
   .container .col-left .questionnaire-input-textarea {
@@ -1277,13 +1332,17 @@ footer {
       margin-right: 0;
       padding-right: 15px; }
 
+  .col-lg-6.col-sm-12 {
+    max-width: 50%; }
+
   /****** COPY ******/
   #copy-homepage-left-img,
   #homepage-background-top-right-div iframe,
   #copy-homepage-top-right-img,
   #copy-homepage-bottom-right-img,
   .container .col-right .copy-border-div-1,
-  .container .col-right input[type=search] {
+  .container .col-right input[type=search],
+  .container .col-right .about_us-community-ol {
     width: 315px; }
 
   .container .col-right img,
@@ -1292,7 +1351,7 @@ footer {
     width: 330px; }
 
   #about_us-background-left-div {
-    height: 164px; }
+    height: 174px; }
     #about_us-background-left-div .about_us-quote-blockquote {
       transform: translate(-2px, 25px); }
     #about_us-background-left-div .about_us-quote-figcaption {
@@ -1340,6 +1399,9 @@ footer {
   .listing-contact_info-span,
   .listing-ul li {
     font-size: 1rem; }
+
+  .col-sm-12 p {
+    font-size: 1rem !important; }
 
   #mobile-results-search_details .questionnaire-p {
     font-size: 1.1rem; }
@@ -1788,6 +1850,9 @@ footer {
 
 @media screen and (min-width: 360px) and (max-width: 375px) {
   /****** COMMON ELEMENTS ******/
+  .questionnaire-div .questionnaire-outline-radio .questionnaire-radio_button::before {
+    width: 32px; }
+
   /****** HEADER ******/
   header h1 {
     left: 31px; }
@@ -1795,7 +1860,7 @@ footer {
   /****** CONTAINER ******/
   .container .col-right .about_us-community-ol,
   .container .col-right p {
-    width: 315px; }
+    width: 300px; }
 
   #container-homepage-main {
     margin-top: 0; }

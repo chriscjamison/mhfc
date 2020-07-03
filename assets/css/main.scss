@@ -184,8 +184,7 @@ button,
 .homepage-mobile-copy-div input[type=search], 
 .copy-border-div-1 + p, 
 .results-a, 
-.menu-option-a, 
-.col-sm-12 p {
+.menu-option-a {
   font-size: 1rem !important;
 }
 
@@ -1391,7 +1390,26 @@ footer {
       left: 24.5%;
     }
   }
+
+  #resources-listings-main, 
+  #directory-listings-main {
+    padding-left: 34px;
+  }
 }
+
+
+
+@media screen and (min-width: 1367px) and (max-width: 1600px)  { 
+
+  /****** CTA ******/
+
+  .carousel-item {
+    .carousel-cta {
+      left: 17.75%;
+    }
+  }
+}
+
 
 
 @media screen and (min-width: 1281px) and (max-width: 1366px)  {
@@ -1433,7 +1451,7 @@ footer {
 
 
 
-@media screen and (min-width: 415px) and (max-width: 1024px) {
+@media screen and (min-width: 415px) and (max-width: 1200px) {
   
   /****** COLOR STYLING ******/
 
@@ -1536,8 +1554,16 @@ footer {
     .col-left { 
       padding-left: 0;
 
-      p {
-        margin: $spacer_sm_8 0;
+      #about_us-background-left-div {
+        margin: $spacer_med_3 0;
+      }
+
+      h2, 
+      p, 
+      #about_us-training_team-div, 
+      .copy-border-div-1, 
+      .questionnaire-div {
+        margin: $spacer_sm_8 0 0 0;
       }
 
       .questionnaire-p {
@@ -1646,15 +1672,122 @@ footer {
 
 
 
+@media screen and (width: 1200px) { 
+
+  /****** NAVIGATION ******/
+
+  #top-desktop-nav {
+    top: 21px;
+
+    #nav-logo-desktop {
+      margin-left: 67px;
+    }
+
+    #nav-ul {
+      padding-right: 20px;
+    }
+  }
+
+
+
+  /****** HEADER ******/
+
+  header {
+    h1 {
+      top: 103px;
+      left: 49px;
+    }
+  }
+
+
+
+  /****** CAROUSEL ******/
+
+  .carousel-item {
+    .carousel-cta {
+      left: 55px;
+      right: 55px;
+    }
+  }
+
+
+
+  /****** CONTAINER ******/
+
+  .container {
+    padding-left: $spacer_med_3;
+    padding-right: $spacer_med_3;
+
+    .col-left {
+      padding-right: 76px;
+
+      .questionnaire-p {
+        width: 345px;
+      }
+    }
+
+    .col-right {
+      padding-left: 139px;
+
+      .copy-border-div-1, 
+      #copy-form-search {
+        margin: $spacer_sm_8 0 0 0;
+      }
+
+      #form-search-submit {
+        left: 314px;
+      }
+    }
+  }
+
+  #directory-listings-main, 
+  #resources-listings-main {
+    margin-top: $spacer_med_3;
+  }
+
+
+
+  /****** COPY ******/
+
+  #copy-homepage-left-img {
+    width: 455px;
+  }
+
+
+
+  /****** FOOTER ******/
+
+  #footer-container-div {
+    #footer-column-left-div {
+      margin-left: 0;
+    }
+
+    #footer-links-ul {
+      width: 247px;
+    }
+  }
+
+  #footer-ellipses {
+    transform: translateY(-271px);
+  }
+
+  #directory-main + footer, 
+  #resources-main + footer, 
+  #directory-listings-main + footer, 
+  #resources-listings-main + footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
+
 @media screen and (width: 1024px) {
 
   /****** NAVIGATION ******/
 
   #top-desktop-nav {
-    width: 100%;
-    margin-left: 0;
-    left: 0;
-
     #nav-logo-desktop {
       margin-left: 65px;
     }
@@ -1685,13 +1818,6 @@ footer {
     .col-left {
       #about_us-background-left-div {
         margin: $spacer_med_3 0;
-      }
-
-      .questionnaire-div, 
-      h2, 
-      #about_us-training_team-div, 
-      .copy-border-div-1 {
-        margin: $spacer_sm_8 0 0 0;
       }
 
       .questionnaire-contact_form-div {
@@ -1768,7 +1894,7 @@ footer {
 
 
 
-@media screen and (width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 800px) {
 
   /****** COMMON ELEMENTS ******/
 
@@ -1856,20 +1982,6 @@ footer {
         width: 275px;
       }
 
-      #about_us-background-left-div {
-        margin: $spacer_med_3 0;
-      }
-
-      h2 {
-        margin: $spacer_sm_8 0;
-      }
-
-      #about_us-training_team-div, 
-      .copy-border-div-1, 
-      .questionnaire-div {
-        margin: $spacer_sm_8 0 0 0;
-      }
-
       .questionnaire-border-div-1, 
       .questionnaire-input-text, 
       .questionnaire-input-textarea {
@@ -1922,7 +2034,10 @@ footer {
       margin-right: 0;
       padding-right: 15px;
     }
-    
+  }
+
+  .col-lg-6.col-sm-12 {
+    max-width: 50%;
   }
 
 
@@ -1934,7 +2049,8 @@ footer {
   #copy-homepage-top-right-img, 
   #copy-homepage-bottom-right-img, 
   .container .col-right .copy-border-div-1, 
-  .container .col-right input[type=search] {
+  .container .col-right input[type=search], 
+  .container .col-right .about_us-community-ol {
     width: 315px;
   }
 
@@ -1945,7 +2061,7 @@ footer {
   }
 
   #about_us-background-left-div {
-    height: 164px;
+    height: 174px;
 
     .about_us-quote-blockquote {
       transform: translate(-2px, 25px);
@@ -2031,6 +2147,10 @@ footer {
   .listing-contact_info-span, 
   .listing-ul li {
     font-size: 1rem;
+  }
+
+  .col-sm-12 p  {
+    font-size: 1rem !important;
   }
 
   #mobile-results-search_details {
@@ -2718,7 +2838,13 @@ footer {
   
   /****** COMMON ELEMENTS ******/
 
-  
+  .questionnaire-div { 
+    .questionnaire-outline-radio {
+      .questionnaire-radio_button::before {
+        width: 32px;
+      }
+    }
+  } 
 
   /****** HEADER ******/
 
@@ -2736,7 +2862,7 @@ footer {
     .col-right { 
       .about_us-community-ol, 
       p { 
-        width: 315px;
+        width: 300px;
       }
     }
   }
