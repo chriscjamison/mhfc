@@ -180,9 +180,6 @@ button,
 }
 
 #top-desktop-nav #nav-ul .nav-a .nav-span, 
-.homepage-mobile-copy-div p, 
-.homepage-mobile-copy-div input[type=search], 
-.copy-border-div-1 + p, 
 .results-a, 
 .menu-option-a {
   font-size: 1rem !important;
@@ -197,7 +194,7 @@ input[type=search],
 .footer-links-a, 
 .about_us-quote-figcaption, 
 .about_us-community-ol li, 
-.about_us-community-a, 
+.about_us-community-a
 .cta-contact_us-contact_info, 
 .questionnaire-contact_form-label, 
 .questionnaire-input-text, 
@@ -2146,11 +2143,7 @@ footer {
   .listing-link-a, 
   .listing-contact_info-span, 
   .listing-ul li {
-    font-size: 1rem;
-  }
-
-  .col-sm-12 p  {
-    font-size: 1rem !important;
+    font-size: 1.1rem;
   }
 
   #mobile-results-search_details {
@@ -2531,6 +2524,13 @@ footer {
     }
 
     .col-right { 
+      h2, 
+      p, 
+      .about_us-community-ol {
+        width: 100%;
+      }
+
+
       .about_us-community-ol { 
         margin: 0 0 $spacer_med_2 0;
         
@@ -2553,6 +2553,15 @@ footer {
     }
   }
 
+  #container-homepage-main {
+    margin-top: 0;
+
+    .col-sm-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   #resources-listings-main, 
   #directory-listings-main {
     width: 100%;
@@ -2565,7 +2574,6 @@ footer {
 
   .homepage-mobile-copy-div {
     position: relative;
-    left: -15px;
 
     p {
       padding: $spacer_sm_8 $spacer_med_2 0 $spacer_med_2;
@@ -2578,7 +2586,6 @@ footer {
     padding-left: $spacer_sm_7;
     padding-right: $spacer_sm_7;
   }
-
 
   .homepage-mobile-copy-nav-div {
     width: 86px;
@@ -2617,7 +2624,6 @@ footer {
     display: block;
     position: relative;
     top: -5px;
-    left: -15px;
   }
 
   #img-middle {
@@ -2810,27 +2816,33 @@ footer {
     padding-left: $spacer_sm_8;
     text-align: left;
   }
+
+  #mobile-results-search_details {
+    margin-top: $spacer_sm_5;
+  
+    .listing-h3 {
+      padding-bottom: $spacer_sm_5;
+    }
+  
+    .questionnaire-div {
+      padding: 0;
+    }
+  
+    #questionnaire-search_details-submit {
+      margin-top: $spacer_med_2;
+    }
+  
+    #search_details-directory-button {
+      margin: $spacer_med_2 0 0 0;
+    }
+  }
+
+  .listing-button {
+    width: 100%;
+  }
 }
 
-#mobile-results-search_details {
-  margin-top: $spacer_sm_5;
 
-  .listing-h3 {
-    padding-bottom: $spacer_sm_5;
-  }
-
-  .questionnaire-div {
-    padding: 0;
-  }
-
-  #questionnaire-search_details-submit {
-    margin-top: $spacer_med_2;
-  }
-
-  #search_details-directory-button {
-    margin: $spacer_med_2 0 0 0;
-  }
-}
 
 
 
@@ -2862,7 +2874,7 @@ footer {
     .col-right { 
       .about_us-community-ol, 
       p { 
-        width: 300px;
+        width: 315px;
       }
     }
   }
@@ -2885,7 +2897,6 @@ footer {
     margin: 0;
     padding: 0;
     position: relative;
-    left: -15px;
     overflow: hidden;
   }
 
@@ -2927,12 +2938,37 @@ footer {
 
 
 
+  /****** COPY ******/
+
+  iframe, 
+  .homepage-mobile-copy-div, 
+  .copy-img {
+    width: 414px;
+  }
+
+  iframe {
+    height: 233px;
+  }
+
+
+
   /****** COMMON ELEMENTS ******/
 
   .questionnaire-div .questionnaire-outline-radio .questionnaire-radio_button {
     width: 58px;
   }
   
+  #copy-form-search {
+    #form-search-input-text {
+      width: 354px;
+    }
+
+    #form-search-submit {
+      top: -46px;
+      left: 273px;
+    }
+  }
+
 
   
   /******* SEARCH LISTINGS ******/
@@ -2940,10 +2976,6 @@ footer {
   .results-header-div .listing-h2 {
     width: 189px;
   }
-
-
-
-
 }
 
 

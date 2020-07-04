@@ -114,9 +114,6 @@ button,
   font-size: 0.9rem; }
 
 #top-desktop-nav #nav-ul .nav-a .nav-span,
-.homepage-mobile-copy-div p,
-.homepage-mobile-copy-div input[type=search],
-.copy-border-div-1 + p,
 .results-a,
 .menu-option-a {
   font-size: 1rem !important; }
@@ -130,7 +127,7 @@ input[type=search],
 .footer-links-a,
 .about_us-quote-figcaption,
 .about_us-community-ol li,
-.about_us-community-a,
+.about_us-community-a
 .cta-contact_us-contact_info,
 .questionnaire-contact_form-label,
 .questionnaire-input-text,
@@ -1398,10 +1395,7 @@ footer {
   .listing-link-a,
   .listing-contact_info-span,
   .listing-ul li {
-    font-size: 1rem; }
-
-  .col-sm-12 p {
-    font-size: 1rem !important; }
+    font-size: 1.1rem; }
 
   #mobile-results-search_details .questionnaire-p {
     font-size: 1.1rem; }
@@ -1650,6 +1644,10 @@ footer {
       margin: 16px 0; }
     .container .col-left #about_us-background-left-div {
       margin: 36px 0 26px 0; }
+    .container .col-right h2,
+    .container .col-right p,
+    .container .col-right .about_us-community-ol {
+      width: 100%; }
     .container .col-right .about_us-community-ol {
       margin: 0 0 30px 0; }
       .container .col-right .about_us-community-ol li,
@@ -1661,6 +1659,12 @@ footer {
     .container #about_us-background-left-div .about_us-quote-figcaption {
       transform: translate(53px, 2px); }
 
+  #container-homepage-main {
+    margin-top: 0; }
+    #container-homepage-main .col-sm-12 {
+      padding-left: 0;
+      padding-right: 0; }
+
   #resources-listings-main,
   #directory-listings-main {
     width: 100%;
@@ -1670,8 +1674,7 @@ footer {
     flex-direction: column; }
 
   .homepage-mobile-copy-div {
-    position: relative;
-    left: -15px; }
+    position: relative; }
     .homepage-mobile-copy-div p {
       padding: 16px 30px 0 30px;
       margin-bottom: 0; }
@@ -1708,8 +1711,7 @@ footer {
   .copy-img {
     display: block;
     position: relative;
-    top: -5px;
-    left: -15px; }
+    top: -5px; }
 
   #img-middle {
     z-index: 3; }
@@ -1836,18 +1838,21 @@ footer {
   #mobile-listings-directory-button-1 {
     margin: 30px 0 0 0;
     padding-left: 16px;
-    text-align: left; } }
-#mobile-results-search_details {
-  margin-top: 9px; }
-  #mobile-results-search_details .listing-h3 {
-    padding-bottom: 9px; }
-  #mobile-results-search_details .questionnaire-div {
-    padding: 0; }
-  #mobile-results-search_details #questionnaire-search_details-submit {
-    margin-top: 30px; }
-  #mobile-results-search_details #search_details-directory-button {
-    margin: 30px 0 0 0; }
+    text-align: left; }
 
+  #mobile-results-search_details {
+    margin-top: 9px; }
+    #mobile-results-search_details .listing-h3 {
+      padding-bottom: 9px; }
+    #mobile-results-search_details .questionnaire-div {
+      padding: 0; }
+    #mobile-results-search_details #questionnaire-search_details-submit {
+      margin-top: 30px; }
+    #mobile-results-search_details #search_details-directory-button {
+      margin: 30px 0 0 0; }
+
+  .listing-button {
+    width: 100%; } }
 @media screen and (min-width: 360px) and (max-width: 375px) {
   /****** COMMON ELEMENTS ******/
   .questionnaire-div .questionnaire-outline-radio .questionnaire-radio_button::before {
@@ -1860,7 +1865,7 @@ footer {
   /****** CONTAINER ******/
   .container .col-right .about_us-community-ol,
   .container .col-right p {
-    width: 300px; }
+    width: 315px; }
 
   #container-homepage-main {
     margin-top: 0; }
@@ -1876,7 +1881,6 @@ footer {
     margin: 0;
     padding: 0;
     position: relative;
-    left: -15px;
     overflow: hidden; }
 
   #copy-form-search #form-search-input-text {
@@ -1897,9 +1901,24 @@ footer {
   .container {
     margin-top: 180px; }
 
+  /****** COPY ******/
+  iframe,
+  .homepage-mobile-copy-div,
+  .copy-img {
+    width: 414px; }
+
+  iframe {
+    height: 233px; }
+
   /****** COMMON ELEMENTS ******/
   .questionnaire-div .questionnaire-outline-radio .questionnaire-radio_button {
     width: 58px; }
+
+  #copy-form-search #form-search-input-text {
+    width: 354px; }
+  #copy-form-search #form-search-submit {
+    top: -46px;
+    left: 273px; }
 
   /******* SEARCH LISTINGS ******/
   .results-header-div .listing-h2 {
