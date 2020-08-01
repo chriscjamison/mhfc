@@ -1,0 +1,160 @@
+        <div class="carousel-item active" id="carousel-item-landing">
+
+<!-- DESKTOP CALL TO ACTION -->
+          <div class="carousel-cta visible-desktop" id="cta-homepage">
+            <div class="cta-border-top-div">&nbsp;</div>
+            <p>
+              Find African American, faith-based mental health providers, resources, and support groups in your community
+            </p>
+            <button class="cta-button" id="cta-action">View Calendar Events</button>
+          </div>
+          <img src="/assets/img/hero_levels/home.jpg" alt="Welcome to Mental Health Friendly Communities!" class="d-block img-fluid visible-desktop">
+
+<!-- MOBILE CALL TO ACTION -->
+          <div class="carousel-cta visible-mobile" id="cta-homepage">
+            <div class="cta-border-top-div">&nbsp;</div>
+            <p>
+              Find African American, faith-based mental health providers, resources, and support groups in your community
+            </p>
+            <button class="cta-button" id="cta-action">View Calendar Events</button>
+          </div>
+          <img src="/assets/img/hero_levels/mobile/homepage.jpg" alt="Welcome to Mental Health Friendly Communities!" class="d-block img-fluid visible-mobile" id="cta-homepage-img">
+        </div>
+
+         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+<!-- ELLIPSES VIEWABLE ON HOME PAGE -->
+    <div class="visible-desktop" id="homepage-ellipses">
+      <div class="ellipse_shape" id="ellipse-blue">&nbsp;</div>
+      <div class="ellipse_shape" id="ellipse-dark_green">&nbsp;</div>
+    </div>
+
+<!-- CONTAINER FOR CONTENT -->
+    <main class="container" id="container-homepage-main">
+
+      <div class="col-6 col-left visible-desktop">
+        <div id="homepage-background-top-left-div">
+          <p class="p-first">
+            Mental Health Friendly Communities provides a listing of online resources describing 
+            mental health conditions and possible treatments to lead yourself or your loved one 
+            to a better quality of life.
+          </p>
+          <p>
+            We also offer an online directory of health care providers and support groups based 
+            in Alameda County that offer faith-based treatments and services meant to treat 
+            mental conditions.
+          </p>
+        </div>
+        <img src="/assets/img/copy/desktop/photo_homepage_left.jpg" alt="Mental Health Friendly Communities bring families back together." id="copy-homepage-left-img">
+        <p>
+          If you need information but aren&rsquo;t sure where to look on the site or aren&rsquo;t sure about your 
+          or your loved one&rsquo;s mental condition, please fill out the questionnaire below.
+        </p>
+        <div class="questionnaire-div" id="questionnaire-homepage">
+          <div class="questionnaire-border-top-div">&nbsp;</div>
+          <p class="questionnaire-p">
+            Are you looking for help for yourself or for a friend or loved one?
+          </p>
+          <div class="questionnaire-border-div-1">&nbsp;</div>
+          <form>
+            <div class="questionnaire-question-div" id="questionaire-question-homepage-1">
+              <div class="questionnaire-outline-radio">
+                <input type="radio" name="help_for" value="yourself" class="questionnaire-radio_button" id="questionnaire-radio-yourself">
+                <label class="questionnaire-label">Yourself</label>
+              </div>
+              <div class="questionnaire-outline-radio">
+                <input type="radio" name="help_for" value="other" class="questionnaire-radio_button" id="questionnaire-radio-other">
+                <label class="questionnaire-label">A friend or loved one</label>
+              </div>
+              <button class="questionnaire-button" id="questionnaire-homepage-button-1">Next Question</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-6 col-right visible-desktop">
+        <div id="homepage-background-top-right-div">
+          <iframe width="395" height="215" src="https://www.youtube.com/embed/XidXi3EqPko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <img src="/assets/img/copy/desktop/photo_homepage_right.jpg" alt="Mental Health Friendly Communities bring families back together." id="copy-homepage-top-right-img">
+        <p>
+          Otherwise, you may start browsing our listings and directories using the search field below. 
+        </p>
+        <p>
+          You may also find links to our information using the main menu.
+        </p>
+        <div class="copy-border-div-1">&nbsp;</div>
+        <form id="copy-form-search">
+          <input type="search" value="Type in search terms" id="form-search-input-text">
+          <input type="submit" value="Search" class="questionnaire-button" id="form-search-submit">
+        </form>
+        <img src="/assets/img/copy/desktop/photo_homepage_questionaire.jpg" alt="Mental Health Friendly Communities bring families back together." class="copy-questionnaire-img" id="copy-homepage-bottom-right-img">
+      </div>
+      <div class="col-sm-12 visible-mobile">
+        <iframe src="https://www.youtube.com/embed/XidXi3EqPko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="homepage-mobile-copy-div" id="copy-top">
+          <p>
+            Mental Health Friendly Communities provides an online directory 
+            of Alameda County health care providers, resources, and support groups 
+            that offer medical and emotional care. 
+          </p>
+          <p>
+            Many of the providers offer faith-based services meant 
+            to offer support using the wisdom of The Bible as a foundation.
+          </p>
+          <div class="homepage-mobile-copy-nav-div" id="copy-nav-top">
+            <a href="#copy-top" class="mobile-copy-a copy-visible-a" id="copy-top-a">&#183;</a>
+            <a href="#copy-middle" class="mobile-copy-a" id="copy-middle-a">&nbsp;</a>
+            <a href="#copy-bottom" class="mobile-copy-a" id="copy-bottom-a">&nbsp;</a>
+          </div>
+        </div>
+        <div class="homepage-mobile-copy-div" id="copy-middle">
+          <p>
+            Also, if you or someone close to you is in the throws of a mental health 
+            crisis, a loved one of someone in need of emotional support, 
+            or simply want emotional support yourself, this website offers information 
+            and resources to calm your concerns.
+          </p>
+          <div class="homepage-mobile-copy-nav-div" id="copy-nav-middle">
+            <a href="#copy-top" class="mobile-copy-a" id="copy-top-a">&nbsp;</a>
+            <a href="#copy-middle" class="mobile-copy-a copy-visible-a" id="copy-middle-a">&nbsp;</a>
+            <a href="#copy-bottom" class="mobile-copy-a" id="copy-bottom-a">&nbsp;</a>
+          </div>
+        </div>
+        <img src="/assets/img/copy/mobile/photo_homepage_girl_on_bike.jpg" alt="Mental Health Friendly Communities offer resources for emotional support for your loved one." class="copy-img" id="img-middle">
+        <div class="homepage-mobile-copy-div" id="copy-bottom">
+          <div class="homepage-mobile-copy-bottom-div" id="copy-bottom-container-1">
+            <p>
+              If you need information but aren&rsquo;t sure where on the site to look or aren&rsquo;t sure 
+              about your or your loved one&rsquo;s mental condition, please fill out the questionnaire below.
+            </p>
+            <a href="#about_us" class="copy-action-a" id="copy-questionnaire-a">Start Quesionnaire</a>
+          </div>          
+          <img src="/assets/img/copy/mobile/photo_homepage_boy_and_father.jpg" alt="Please browse the information using the search field below" class="copy-img" id="img-bottom">
+          <div class="homepage-mobile-copy-bottom-div" id="copy-bottom-container-2">
+            <p>
+              Otherwise, you may browse the information using the search field below 
+              or use the links contained within the main menu.
+            </p>
+            <form id="copy-form-search">
+              <input type="search" value="Type in search terms" id="form-search-input-text">
+              <input type="submit" value="Search" class="questionnaire-button" id="form-search-submit">
+            </form>
+          </div>   
+          <div class="homepage-mobile-copy-nav-div" id="copy-nav-bottom">
+            <a href="#copy-top" class="mobile-copy-a" id="copy-top-a">&nbsp;</a>
+            <a href="#copy-middle" class="mobile-copy-a" id="copy-middle-a">&nbsp;</a>
+            <a href="#copy-bottom" class="mobile-copy-a copy-visible-a" id="copy-bottom-a">&nbsp;</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
