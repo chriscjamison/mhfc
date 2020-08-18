@@ -6,7 +6,7 @@
       {
           "label": "Sass Compile",
           "type": "shell",
-          "command": "sass 'c:\\Users\\chris\\OneDrive\\Chris C Jamison, Inc\\Projects\\web\\mhfc\\assets\\css\\main.scss' 'c:\\Users\\chris\\OneDrive\\Chris C Jamison, Inc\\Projects\\web\\mhfc\\assets\\css\\main.css'",
+          "command": "sass 'c:\\Users\\chris\\OneDrive\\Chris C Jamison, Inc\\Projects\\web\\mhfc_wp\\wp-content\\themes\\mhfc\\static\\assets\\css\\main.scss' 'c:\\Users\\chris\\OneDrive\\Chris C Jamison, Inc\\Projects\\web\\mhfc_wp\\wp-content\\themes\\mhfc\\style.css'",
           "group": "build"
       }
   ]

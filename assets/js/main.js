@@ -8,7 +8,7 @@ $(document).ready(
     // An Object variable that will hold the jQuery object that references 
     // the menu button for mobile devices is initialized.
 
-    menu_button_selector = "#mobile-nav-a-home";
+    menu_button_selector = "#menu-item-42 a";
     // The CSS selector that refers to the HTML element containing the menu button 
     // is passed on.
 
@@ -91,7 +91,7 @@ $(document).ready(
         // A CSS class that will toggle the ability of the browser to scroll 
         // is passed on.
         ellipse_kente_shadow_selector = "menu-ellipse-kente-shadow";
-        // A CSS class tht will toggle the visibilty of a darker shadow for 
+        // A CSS class that will toggle the visibilty of a darker shadow for 
         // the border with kente pattern is passed on.
 
         current_menu_button_icon_src_value = $(menu_button_icon_element).attr("src");
@@ -109,9 +109,9 @@ $(document).ready(
         // IF/ELSE statement that toggles the menu icon used in the main menu to 
         // 'close' if the visitor is attempting to open the menu.
         if (current_menu_button_icon_index_value > -1) {
-          menu_button_icon_src_value = "/assets/img/common/icons/close.svg";
+          menu_button_icon_src_value = "/wp-content/themes/mhfc/assets/img/common/icons/close.svg";
         } else {
-          menu_button_icon_src_value = "/assets/img/common/icons/menu.svg";
+          menu_button_icon_src_value = "/wp-content/themes/mhfc/assets/img/common/icons/menu.svg";
         }
         
         $(menu_options_container_element).slideToggle(400);
@@ -177,6 +177,26 @@ $(document).ready(
         displaySearchDetails("desktop");
       }
     );
+
+    var resources_button_selector = "";
+
+    resources_button_selector = "#questionnaire-resources-submit-1";
+
+    $(resources_button_selector).click( 
+      function () {
+        window.location.href = "http://mhfc.chriscjamison.com/resources/resources-listing-online-tests/";
+      }
+    );
+
+    var directory_button_selector = "";
+
+    directory_button_selector = "#questionnaire-directory-submit-1";
+
+    $(directory_button_selector).click( 
+      function () {
+        window.location.href = "http://mhfc.chriscjamison.com/directory/directory-therapists-94501/";
+      }
+    );
   }
 );
 
@@ -203,7 +223,7 @@ function displaySearchDetails(form_type)  {
   search_results_listing_selector = "#" + form_type + "-results-listings";
   // CSS selectors that refer to the HTML elements that contain the content 
   // on the search results pages are initialized.
-console.log("search_details_div_selector = " + search_details_div_selector);
+
   search_details_div_element = $(search_details_div_selector);
   search_results_listing_element = $(search_results_listing_selector);
   // jQuery objects that refer to the HTML elements that contain the content 
@@ -237,8 +257,8 @@ console.log("search_details_div_selector = " + search_details_div_selector);
   // A String variable that will hold values for the attribute, 'src', 
   // for the 'arrow' icon are initialized.
 
-  search_details_icon_up_src_value = "/assets/img/common/icons/hide_search_details.png";
-  search_details_icon_down_src_value = "/assets/img/common/icons/search_details.png";
+  search_details_icon_up_src_value = "/wp-content/uploads/2020/08/hide_search_details.png";
+  search_details_icon_down_src_value = "/wp-content/uploads/2020/08/search_details.png";
   // URL's that refer to image files that reflect the visibility of the search details 
   // form are passed on.
 

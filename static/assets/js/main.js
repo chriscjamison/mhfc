@@ -237,8 +237,8 @@ console.log("search_details_div_selector = " + search_details_div_selector);
   // A String variable that will hold values for the attribute, 'src', 
   // for the 'arrow' icon are initialized.
 
-  search_details_icon_up_src_value = "/assets/img/common/icons/hide_search_details.png";
-  search_details_icon_down_src_value = "/assets/img/common/icons/search_details.png";
+  search_details_icon_up_src_value = "/wp-content/uploads/2020/08/hide_search_details.png";
+  search_details_icon_down_src_value = "/wp-content/uploads/2020/08/search_details.png";
   // URL's that refer to image files that reflect the visibility of the search details 
   // form are passed on.
 

@@ -21,7 +21,7 @@
 
     wp_enqueue_script("mhfc-main", get_template_directory_uri() . "/assets/js/main.js", array("mhfc-jquery"), $version, true);
     wp_enqueue_script("mhfc-jquery", "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), "3.5.1", true);
-    wp_enqueue_script("mhfc-jquery_ui", get_template_directory_uri() . "/static/assets/js/jquery-ui.jss", array("mhfc-jquery"), $version, true);
+    wp_enqueue_script("mhfc-jquery_ui", get_template_directory_uri() . "/static/assets/js/jquery-ui.js", array("mhfc-jquery"), $version, true);
     wp_enqueue_script("mhfc-popper", "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", array(), "1.16.0", true);    
     wp_enqueue_script("mhfc-boostrap", "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js", array("mhfc-popper"), "4.5.0", true);
   }
