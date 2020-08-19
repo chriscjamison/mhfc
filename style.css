@@ -1,7 +1,7 @@
 /* 
   Theme Name: MHFC
   Text Domain: MHFC
-  Version: 0.0.3
+  Version: 0.0.4
   Description: Wordpress skin for mhfcommunties.oreg
   Author: Chris Jamison
   Author URI: http://chriscjamison.com
@@ -707,6 +707,11 @@ header h1 {
   display: block;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
 #cta-homepage {
   width: 322px;
 }
@@ -818,6 +823,7 @@ header h1 {
 /****** COPY ******/
 .container {
   margin-top: 36px;
+  padding-top: 16px;
   display: flex;
 }
 .container .col-6 {
@@ -1322,9 +1328,30 @@ footer {
   }
 }
 @media screen and (min-width: 1367px) and (max-width: 1600px) {
+  /******* HEADER ELLIPSES ******/
+  header h1 {
+    top: 100px;
+    left: 14%;
+  }
+  header #header-ellipses {
+    width: 100.5%;
+    height: 175px;
+    top: -78px;
+  }
+  header #ellipse-dark_green {
+    top: -45px;
+    left: -193px;
+    transform: rotate(13deg);
+  }
+  header #ellipse-blue {
+    top: 70px;
+    left: -360px;
+    transform: rotate(2deg);
+  }
+
   /****** CTA ******/
   .carousel-item .carousel-cta {
-    left: 17.75%;
+    left: 13.75%;
   }
 }
 @media screen and (min-width: 1281px) and (max-width: 1366px) {
@@ -1338,11 +1365,24 @@ footer {
   }
 
   header h1 {
-    top: 13.5%;
+    top: 100px;
     left: 14%;
   }
   header .ellipse_shape {
     height: 108%;
+  }
+  header #header-ellipses {
+    height: 175px;
+    top: -78px;
+  }
+  header #ellipse-dark_green {
+    top: -68px;
+    left: -193px;
+  }
+  header #ellipse-blue {
+    top: 60px;
+    left: -310px;
+    transform: rotate(2deg);
   }
 
   .carousel-item .carousel-cta {
@@ -1363,7 +1403,7 @@ footer {
     margin: 16px 0 0 26px;
   }
 }
-@media screen and (min-width: 415px) and (max-width: 1200px) {
+@media screen and (min-width: 415px) and (max-width: 1280px) {
   /****** COLOR STYLING ******/
   header,
 h1 {
@@ -1376,6 +1416,10 @@ h1 {
   }
 
   /****** COMMON ELEMENTS ******/
+  html {
+    overflow: overlay;
+  }
+
   body {
     overflow-x: hidden;
   }
@@ -1385,7 +1429,9 @@ h1 {
     height: 105px;
   }
   header h1 {
-    top: 103px;
+    width: fit-content;
+    position: relative;
+    top: 22px;
     left: 47px;
     padding: 6px 16px 16px 16px;
   }
@@ -1400,16 +1446,22 @@ h1 {
   /****** NAVIGATION ******/
   #top-desktop-nav {
     width: 100%;
+    height: 83px;
     margin-left: 0;
+    position: relative;
+    top: 26px;
     left: 0;
   }
   #top-desktop-nav .custom-logo {
-    width: 209px;
     height: auto;
+    padding-left: 65px;
   }
   #top-desktop-nav #nav-ul {
     width: 100%;
     padding-left: 0;
+  }
+  #top-desktop-nav #nav-ul li {
+    margin-bottom: 0;
   }
 
   /****** CTA ******/
@@ -1605,32 +1657,36 @@ h1 {
     bottom: 0;
   }
 }
-@media screen and (width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 801px) and (max-width: 1024px) {
   /****** NAVIGATION ******/
   #top-desktop-nav .custom-logo {
     margin-left: 65px;
   }
   #top-desktop-nav #nav-ul {
-    padding-right: 50px;
+    padding-right: 39px;
   }
 
   /****** CAROUSEL ******/
   #cta-directory {
-    width: 525px;
+    width: 765px;
+    bottom: 6px;
   }
 
   /****** COPY ******/
   #copy-homepage-left-img {
-    width: 435px;
+    width: 100%;
     margin-bottom: 26px;
   }
 
   .container .col-left #about_us-background-left-div {
     margin: 36px 0;
   }
+  .container .col-left .questionnaire-p {
+    width: 88%;
+  }
   .container .col-left .questionnaire-contact_form-div .questionnaire-input-text,
 .container .col-left .questionnaire-contact_form-div .questionnaire-input-textarea {
-    width: 400px;
+    width: 92%;
   }
   .container .col-left .questionnaire-contact_form-div .questionnaire-input-textarea {
     height: 332px;
@@ -1638,14 +1694,15 @@ h1 {
   .container .col-right h2,
 .container .col-right img,
 .container .col-right .about_us-community-ol,
-.container .col-right .copy-border-div-1 {
-    width: 422px;
+.container .col-right .copy-border-div-1,
+.container .col-right p {
+    width: calc(100% - 26px);
   }
   .container .col-right #copy-contact_us-right-img {
-    margin-left: 26px;
+    margin: 0;
   }
   .container .col-right input.gsc-input {
-    width: 422px !important;
+    width: 106% !important;
   }
   .container .col-right .copy-border-div-1,
 .container .col-right .search-h2 {
@@ -1657,7 +1714,15 @@ h1 {
   .container .col-right .gsc-search-button.gsc-search-button-v2 {
     width: 47px;
     top: 1px;
-    left: -51px;
+    left: -58%;
+  }
+
+  .questionnaire-div .questionnaire-outline-radio .questionnaire-label {
+    margin: 16px 0 0 13px;
+  }
+
+  #homepage-background-top-right-div iframe {
+    width: 100%;
   }
 
   #copy-homepage-bottom-right-img {
@@ -1680,18 +1745,34 @@ h1 {
     margin: 16px 0 0 0 !important;
   }
 
+  #desktop-results-search_details .questionnaire-div .gsc-search-button.gsc-search-button-v2 {
+    width: 45px;
+    margin: 11px 0 0 0;
+    left: -58px;
+  }
+
   #resources-listings-main,
-#directory-listings-main #search-listings-main {
-    margin-top: 26px;
-    padding-left: 32px;
-    padding-right: 32px;
-    top: 26px;
+#directory-listings-main,
+#search-listings-main {
+    min-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 65px;
+    padding-right: 65px;
+    top: 72px;
+  }
+
+  #mobile-menu-options-div + p:first-of-type,
+#resources-listings-main > p:first-of-type,
+#directory-listings-main > p:first-of-type,
+#search-listings-main > p:first-of-type {
+    display: none;
   }
 
   #directory-listings-main + p + footer.visible-desktop,
 #resources-listings-main + p + footer.visible-desktop,
 #search-listings-main + p + footer.visible-desktop {
-    top: 0;
+    top: 72px;
   }
 
   #about_us-training_team-div .about_us-training_team-photo-div {
@@ -1701,7 +1782,7 @@ h1 {
 
   /****** FOOTER ******/
   #footer-ellipses {
-    transform: translateY(-295px);
+    transform: translateY(-314px);
   }
 
   #directory-listings-main + footer,
@@ -1709,6 +1790,10 @@ h1 {
     width: 100%;
     position: absolute;
     bottom: 0;
+  }
+
+  #footer-container-div #footer-links-ul {
+    width: 178px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 800px) {
