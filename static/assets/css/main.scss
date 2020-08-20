@@ -1870,6 +1870,210 @@ footer {
 }
 
 
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .carousel-item { 
+    .carousel-cta {
+      left: 177px;
+    }
+  }
+    
+  .container {
+    max-width: 890px;
+
+    .col-left {
+      div, 
+      p, 
+      h2 {
+        width: 395px;
+        // float: right;
+      }
+    
+      #copy-homepage-left-img {
+        width: 395px;
+      }
+
+      .questionnaire-div {
+        margin: $spacer_med_1 $spacer_med_3 0 0;
+        float: left;
+      }
+
+      #questionnaire-contact_form {
+        margin: 0 $spacer_med_3 0 0;
+      }
+
+      /* .questionnaire-border-top-div {
+        width: 360px;
+      } */
+
+      .questionnaire-p {
+        width: 335px;
+      }
+
+      .questionnaire-border-div-1, 
+      .questionnaire-outline-radio + p,  
+      .questionnaire-input-text, 
+      .questionnaire-input-textarea {
+        width: 344px;
+      }
+
+      .questionnaire-border-div-1 {
+        margin: 0 0 $spacer_sm_6 $spacer_med_1;
+      }
+
+      .questionnaire-question-div {
+        width: 310px;
+        float: left;
+      }
+      
+      .questionnaire-outline-radio {
+        width: 310px;
+        .questionnaire-radio_button {
+          height: 50px;
+        }
+
+        .questionnaire-label {
+          margin: 10px 0 0 $spacer_sm_6;
+        }
+      }
+
+      .questionnaire-button-div {
+        width: 310px;
+      }
+
+      .listing-p {
+        width: 378px;
+      }
+    }
+
+    .col-right {
+      form {
+        margin: $spacer_sm_8 0 0 $spacer_med_1;
+      }
+
+      .gsc-search-button.gsc-search-button-v2 {
+        left: -87px;
+      }
+
+      .search-h2 + .copy-border-div-1, 
+      .search-h2 + .copy-border-div-1 + div + #___gcse_0 form {
+        margin: $spacer_sm_8 0 0 0;
+      }
+
+      .content-about_us-right-p {
+        margin: $spacer_sm_8 0 0 0;
+      }
+
+      #copy-directory-questionnaire-img, 
+      #copy-resources-questionnaire-img {
+        margin: $spacer_med_1 0 0 0;
+      }
+    }
+
+    #copy-contact_us-right-img {
+      margin: 0;
+    }
+  }
+
+  #copy-homepage-bottom-right-img {
+    margin: $spacer_sm_6 0 0 $spacer_med_1;
+  }
+
+  #resources-listings-main, 
+  #directory-listings-main, 
+  #search-listings-main {
+    min-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 65px;
+    padding-right: 65px;
+    top: 72px;
+  }
+
+  #resources-listings-main, 
+  #directory-listings-main {
+    .col-left {
+      margin-right: 0;
+    }
+  }
+  
+  #mobile-menu-options-div + p:first-of-type, 
+  #resources-listings-main > p:first-of-type, 
+  #directory-listings-main > p:first-of-type,
+  .listing-directory-img + p, 
+  #search-listings-main > p:first-of-type {
+    display: none;
+  }
+
+  .listing-directory-img + p {
+    float: left;
+  }
+
+  .listing-contact_info_container-div {
+    width: 290px !important;
+    margin-top: 0 !important;
+  }
+
+  .results-listing-div { 
+    .listing-bullet-div {
+      width: 10px !important;
+    }
+  }
+
+  .results-listing-div.listing-directory { 
+    width: 505px !important;
+    margin-top: $spacer_sm_8;
+  }
+  
+  #about_us-background-left-div {
+    height: 207px;
+    background-position: 0% 0;
+  }
+
+  #about_us-background-left-div { 
+    .about_us-quote-p {
+      transform: translate(30px, 40px);
+    }
+
+    .about_us-quote-figcaption {
+      transform: translate(63px, 42px);
+    }
+  }
+
+  #about_us-training_team-div { 
+    .about_us-training_team-member-div {
+      width: 115px;
+    }
+
+    #training_team-hj {
+      width: 86px;
+    }
+
+    .about_us-training_team-photo-div {
+      width: 111px;
+      height: 163px;
+      background-repeat: no-repeat;
+      background-size: 377px;
+    }
+  }
+
+  .questionnaire-contact_form-div {
+    width: 334px;
+  }
+
+  
+
+  #footer-ellipses {
+    transform: translateY(-311px);
+  }  
+
+  #directory-listings-main + p + footer.visible-desktop, 
+  #resources-listings-main + p + footer.visible-desktop, 
+  #search-listings-main + p + footer.visible-desktop {
+    top: 72px;
+  }
+}
+
+
 
 @media screen and (width: 1200px) { 
 

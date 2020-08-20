@@ -1580,6 +1580,171 @@ h1 {
     width: auto;
   }
 }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .carousel-item .carousel-cta {
+    left: 177px;
+  }
+
+  .container {
+    max-width: 890px;
+  }
+  .container .col-left {
+    /* .questionnaire-border-top-div {
+      width: 360px;
+    } */
+  }
+  .container .col-left div,
+.container .col-left p,
+.container .col-left h2 {
+    width: 395px;
+  }
+  .container .col-left #copy-homepage-left-img {
+    width: 395px;
+  }
+  .container .col-left .questionnaire-div {
+    margin: 26px 36px 0 0;
+    float: left;
+  }
+  .container .col-left #questionnaire-contact_form {
+    margin: 0 36px 0 0;
+  }
+  .container .col-left .questionnaire-p {
+    width: 335px;
+  }
+  .container .col-left .questionnaire-border-div-1,
+.container .col-left .questionnaire-outline-radio + p,
+.container .col-left .questionnaire-input-text,
+.container .col-left .questionnaire-input-textarea {
+    width: 344px;
+  }
+  .container .col-left .questionnaire-border-div-1 {
+    margin: 0 0 13px 26px;
+  }
+  .container .col-left .questionnaire-question-div {
+    width: 310px;
+    float: left;
+  }
+  .container .col-left .questionnaire-outline-radio {
+    width: 310px;
+  }
+  .container .col-left .questionnaire-outline-radio .questionnaire-radio_button {
+    height: 50px;
+  }
+  .container .col-left .questionnaire-outline-radio .questionnaire-label {
+    margin: 10px 0 0 13px;
+  }
+  .container .col-left .questionnaire-button-div {
+    width: 310px;
+  }
+  .container .col-left .listing-p {
+    width: 378px;
+  }
+  .container .col-right form {
+    margin: 16px 0 0 26px;
+  }
+  .container .col-right .gsc-search-button.gsc-search-button-v2 {
+    left: -87px;
+  }
+  .container .col-right .search-h2 + .copy-border-div-1,
+.container .col-right .search-h2 + .copy-border-div-1 + div + #___gcse_0 form {
+    margin: 16px 0 0 0;
+  }
+  .container .col-right .content-about_us-right-p {
+    margin: 16px 0 0 0;
+  }
+  .container .col-right #copy-directory-questionnaire-img,
+.container .col-right #copy-resources-questionnaire-img {
+    margin: 26px 0 0 0;
+  }
+  .container #copy-contact_us-right-img {
+    margin: 0;
+  }
+
+  #copy-homepage-bottom-right-img {
+    margin: 13px 0 0 26px;
+  }
+
+  #resources-listings-main,
+#directory-listings-main,
+#search-listings-main {
+    min-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 65px;
+    padding-right: 65px;
+    top: 72px;
+  }
+
+  #resources-listings-main .col-left,
+#directory-listings-main .col-left {
+    margin-right: 0;
+  }
+
+  #mobile-menu-options-div + p:first-of-type,
+#resources-listings-main > p:first-of-type,
+#directory-listings-main > p:first-of-type,
+.listing-directory-img + p,
+#search-listings-main > p:first-of-type {
+    display: none;
+  }
+
+  .listing-directory-img + p {
+    float: left;
+  }
+
+  .listing-contact_info_container-div {
+    width: 290px !important;
+    margin-top: 0 !important;
+  }
+
+  .results-listing-div .listing-bullet-div {
+    width: 10px !important;
+  }
+
+  .results-listing-div.listing-directory {
+    width: 505px !important;
+    margin-top: 16px;
+  }
+
+  #about_us-background-left-div {
+    height: 207px;
+    background-position: 0% 0;
+  }
+
+  #about_us-background-left-div .about_us-quote-p {
+    transform: translate(30px, 40px);
+  }
+  #about_us-background-left-div .about_us-quote-figcaption {
+    transform: translate(63px, 42px);
+  }
+
+  #about_us-training_team-div .about_us-training_team-member-div {
+    width: 115px;
+  }
+  #about_us-training_team-div #training_team-hj {
+    width: 86px;
+  }
+  #about_us-training_team-div .about_us-training_team-photo-div {
+    width: 111px;
+    height: 163px;
+    background-repeat: no-repeat;
+    background-size: 377px;
+  }
+
+  .questionnaire-contact_form-div {
+    width: 334px;
+  }
+
+  #footer-ellipses {
+    transform: translateY(-311px);
+  }
+
+  #directory-listings-main + p + footer.visible-desktop,
+#resources-listings-main + p + footer.visible-desktop,
+#search-listings-main + p + footer.visible-desktop {
+    top: 72px;
+  }
+}
 @media screen and (width: 1200px) {
   /****** NAVIGATION ******/
   #top-desktop-nav {
