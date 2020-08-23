@@ -1,7 +1,7 @@
 /* 
   Theme Name: MHFC
   Text Domain: MHFC
-  Version: 0.0.4
+  Version: 0.0.9
   Description: Wordpress skin for mhfcommunties.oreg
   Author: Chris Jamison
   Author URI: http://chriscjamison.com
@@ -1237,7 +1237,7 @@ header h1 {
   width: 99.5%;
   height: 56px;
   position: relative;
-  transform: translateY(-294px);
+  transform: translateY(-311px);
   z-index: 1;
 }
 #footer-ellipses .ellipse_shape {
@@ -1560,8 +1560,13 @@ h1 {
     height: 272px;
   }
 
-  #footer-container-div #nav-logo-desktop {
-    width: 209px;
+  #footer-container-div {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #footer-container-div .custom-logo {
+    width: 227px;
+    height: auto;
   }
   #footer-container-div #footer-contact_info-div {
     margin-left: 97px;
@@ -1824,9 +1829,6 @@ h1 {
 }
 @media screen and (min-width: 801px) and (max-width: 1024px) {
   /****** NAVIGATION ******/
-  #top-desktop-nav .custom-logo {
-    margin-left: 65px;
-  }
   #top-desktop-nav #nav-ul {
     padding-right: 39px;
   }
@@ -1886,8 +1888,13 @@ h1 {
     margin: 16px 0 0 13px;
   }
 
+  main.container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   #homepage-background-top-right-div iframe {
-    width: 100%;
+    width: 407px;
   }
 
   #copy-homepage-bottom-right-img {
@@ -1907,7 +1914,14 @@ h1 {
   }
 
   .content-about_us-right-p {
-    margin: 16px 0 0 0 !important;
+    margin: 16px 0 0 26px !important;
+  }
+
+  #copy-about_us-right-img,
+#copy-about_us-right-img + p + h2,
+.container .col-right .about_us-community-ol,
+.container .col-right #copy-contact_us-right-img {
+    margin-left: 26px;
   }
 
   #desktop-results-search_details .questionnaire-div .gsc-search-button.gsc-search-button-v2 {
@@ -1947,7 +1961,7 @@ h1 {
 
   /****** FOOTER ******/
   #footer-ellipses {
-    transform: translateY(-314px);
+    transform: translateY(-292px);
   }
 
   #directory-listings-main + footer,
@@ -1971,6 +1985,10 @@ h1 {
     font-size: 1.2rem;
   }
 
+  #top-desktop-nav .nav-span {
+    font-size: 0.9rem !important;
+  }
+
   /****** HEADER ******/
   header #header-ellipses {
     display: none !important;
@@ -1978,13 +1996,13 @@ h1 {
 
   /****** NAVIGATION ******/
   #top-desktop-nav .custom-logo {
-    margin-left: 36px;
+    margin-left: 0;
   }
   #top-desktop-nav #nav-ul {
-    padding-right: 36px;
+    padding-right: 60px;
   }
   #top-desktop-nav #nav-ul li {
-    width: 98px;
+    width: 89px;
   }
 
   /****** COMMON ELEMENTS ******/
@@ -2010,11 +2028,12 @@ h1 {
 
   /****** CAROUSEL ******/
   #cta-about_us {
-    width: 695px;
+    width: 730px;
   }
 
-  #cta-directory {
-    width: 695px;
+  #cta-directory,
+#cta-resources {
+    width: 730px;
     bottom: 3px;
   }
 
@@ -2029,15 +2048,10 @@ h1 {
   .container .col-left .questionnaire-border-div-1,
 .container .col-left .questionnaire-input-text,
 .container .col-left .questionnaire-input-textarea {
-    width: 275px;
+    width: 267px;
   }
   .container .col-left .questionnaire-input-textarea {
     height: 175px;
-  }
-  .container .col-right {
-    /* .copy-border-div-1 {
-      margin: $spacer_sm_8 0 0 0;
-    } */
   }
   .container .col-right p {
     width: 315px;
@@ -2059,6 +2073,14 @@ h1 {
   .container .col-right .content-about_us-right-p {
     margin: 16px 0 0 0;
   }
+  .container .col-right .listing-p {
+    width: 254px;
+  }
+
+  main.container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
   #resources-main .col-right,
 #directory-main .col-right {
@@ -2073,7 +2095,7 @@ h1 {
 
   #resources-listings-main,
 #directory-listings-main {
-    margin-top: 26px;
+    margin-top: 42px;
     padding-left: 41px;
     padding-right: 41px;
   }
@@ -2098,11 +2120,7 @@ h1 {
   }
 
   /****** COPY ******/
-  #copy-homepage-left-img,
-#homepage-background-top-right-div iframe,
-#copy-homepage-top-right-img,
-#copy-homepage-bottom-right-img,
-.container .col-right img,
+  .container .col-right img,
 .container .col-right .copy-border-div-1,
 .container .col-right .about_us-community-ol,
 .container .col-right .search-h2 {
@@ -2111,6 +2129,19 @@ h1 {
 
   .container .col-right input.gsc-input {
     width: 315px !important;
+  }
+
+  .content-p + .copy-border-div-1 + div + #___gcse_0 input.gsc-input {
+    width: 294px !important;
+  }
+
+  #copy-homepage-left-img,
+#homepage-background-top-right-div iframe,
+#copy-homepage-top-right-img,
+#copy-homepage-bottom-right-img,
+#homepage-background-top-right-div + div + p,
+.container .col-right .content-p + .copy-border-div-1 {
+    width: 294px;
   }
 
   #copy-homepage-bottom-right-img {
@@ -2148,12 +2179,40 @@ h1 {
     background-position-x: -176px;
   }
 
+  #desktop-results-search_details {
+    width: 100%;
+  }
+  #desktop-results-search_details #desktop-questionnaire-search_details {
+    width: 100%;
+  }
+  #desktop-results-search_details .questionnaire-div #___gcse_0 {
+    width: 628px;
+  }
+  #desktop-results-search_details .questionnaire-div div {
+    display: block;
+  }
+  #desktop-results-search_details .questionnaire-div #gs_id50 {
+    width: 100% !important;
+  }
+  #desktop-results-search_details .questionnaire-div .gsc-input {
+    width: 610px !important;
+  }
+  #desktop-results-search_details .questionnaire-div .gsc-search-button.gsc-search-button-v2 {
+    width: 47px;
+    margin: 11px 0 0 0;
+    left: -58px;
+  }
+
+  .container #copy-contact_us-right-img {
+    margin: 0;
+  }
+
   /****** FOOTER ******/
   #footer-container-div #footer-column-left-div {
     margin-left: 0;
   }
   #footer-container-div #footer-links-ul {
-    width: 136px;
+    width: 147px;
   }
 
   #directory-listings-main + p + footer.visible-desktop,
@@ -2164,6 +2223,27 @@ h1 {
 
   #footer-ellipses {
     transform: translateY(-293px);
+  }
+}
+/* ****** SAMSUNG GALAXY TAB A ****** */
+@media screen and (width: 800px) {
+  /****** MAIN NAVIGATION ******/
+  #resources-listings-main,
+#directory-listings-main {
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+}
+/* ****** APPLE IPAD ****** */
+@media screen and (width: 768px) {
+  /****** MAIN NAVIGATION ******/
+  #top-desktop-nav #nav-ul li {
+    width: 86px;
+  }
+
+  /****** COPY ******/
+  #desktop-results-search_details .questionnaire-div .gsc-input {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 414px) {
@@ -2538,12 +2618,27 @@ body {
     transform: translate(53px, 2px);
   }
 
+  .mobile-sub_page-main {
+    padding-top: 0;
+  }
+
+  #resources-listings-main,
+#directory-listings-main,
+#search-listings-main {
+    top: 0;
+  }
+
   #container-homepage-main {
     margin-top: 0;
   }
   #container-homepage-main .col-sm-12 {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  #copy-bottom-container-2 #___gcse_1 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   #resources-listings-main,

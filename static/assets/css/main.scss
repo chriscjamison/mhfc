@@ -1,7 +1,7 @@
 /* 
   Theme Name: MHFC
   Text Domain: MHFC
-  Version: 0.0.4
+  Version: 0.0.9
   Description: Wordpress skin for mhfcommunties.oreg
   Author: Chris Jamison
   Author URI: http://chriscjamison.com
@@ -1426,7 +1426,7 @@ header {
   width: 99.5%;
   height: 56px;
   position: relative;
-  transform: translateY(-294px);
+  transform: translateY(-311px);
   z-index: 1;
 
   .ellipse_shape {
@@ -1842,8 +1842,12 @@ footer {
   }
 
   #footer-container-div {
-    #nav-logo-desktop {
-      width: 209px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .custom-logo {
+      width: 227px;
+      height: auto;
     }
 
     #footer-contact_info-div {
@@ -2190,10 +2194,6 @@ footer {
   /****** NAVIGATION ******/
 
   #top-desktop-nav {
-    .custom-logo {
-      margin-left: 65px;
-    }
-
     #nav-ul {
       padding-right: 39px;
     }
@@ -2281,9 +2281,14 @@ footer {
     }
   }
 
+  main.container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   #homepage-background-top-right-div { 
     iframe {
-      width: 100%;
+      width: 407px;
     }
   }
 
@@ -2307,7 +2312,14 @@ footer {
   }
 
   .content-about_us-right-p {
-    margin: $spacer_sm_8 0 0 0 !important;
+    margin: $spacer_sm_8 0 0 $spacer_med_1 !important;
+  }
+
+  #copy-about_us-right-img, 
+  #copy-about_us-right-img + p + h2, 
+  .container .col-right .about_us-community-ol, 
+  .container .col-right #copy-contact_us-right-img {
+    margin-left: $spacer_med_1;
   }
 
   #desktop-results-search_details { 
@@ -2356,7 +2368,7 @@ footer {
   /****** FOOTER ******/
 
   #footer-ellipses {
-    transform: translateY(-314px);
+    transform: translateY(-292px);
   }
 
   #directory-listings-main + footer, 
@@ -2379,15 +2391,26 @@ footer {
 
   /****** TYPOGRAPHIC STYLING ******/
 
-  #about_us-background-left-div .about_us-quote-p {
-    font-size: 1.5rem;
+  #about_us-background-left-div { 
+    .about_us-quote-p {
+      font-size: 1.5rem;
+    }
   }
 
-  .container .col-left .questionnaire-p {
-    font-size: 1.2rem;
+  .container { 
+    .col-left { 
+      .questionnaire-p {
+        font-size: 1.2rem;
+      }
+    } 
   }
 
- 
+  #top-desktop-nav { 
+    .nav-span {
+      font-size: 0.9rem !important;
+    }
+  }
+  
 
   /****** HEADER ******/
 
@@ -2403,14 +2426,14 @@ footer {
 
   #top-desktop-nav {
    .custom-logo {
-      margin-left: $spacer_med_3;
+      margin-left: 0;
     }
 
     #nav-ul {
-      padding-right: $spacer_med_3;
+      padding-right: 60px;
 
       li {
-        width: 98px;
+        width: 89px;
       }
     }
   }
@@ -2452,21 +2475,23 @@ footer {
   /****** CAROUSEL ******/
   
   #cta-about_us {
-    width: 695px;
+    width: 730px;
   }
 
-  #cta-directory {
-    width: 695px;
+  #cta-directory, 
+  #cta-resources {
+    width: 730px;
     bottom: 3px;
   }
-  
+
   #cta-contact_us {
     bottom: 3px;
   }
 
 
-  /****** CONTAINER ******/
 
+  /****** CONTAINER ******/
+  
   .container {
     .col-left {
       .questionnaire-p {
@@ -2476,7 +2501,7 @@ footer {
       .questionnaire-border-div-1, 
       .questionnaire-input-text, 
       .questionnaire-input-textarea {
-        width: 275px;
+        width: 267px;
       }
 
       .questionnaire-input-textarea {
@@ -2512,10 +2537,16 @@ footer {
         margin: $spacer_sm_8 0 0 0;
       }
 
-      /* .copy-border-div-1 {
-        margin: $spacer_sm_8 0 0 0;
-      } */
+      .listing-p {
+        width: 254px;
+      }
     }
+  }
+
+  
+  main.container {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   #resources-main, 
@@ -2532,7 +2563,7 @@ footer {
 
   #resources-listings-main, 
   #directory-listings-main {
-    margin-top: $spacer_med_1;
+    margin-top: 42px;
     padding-left: 41px;
     padding-right: 41px;
 
@@ -2560,10 +2591,6 @@ footer {
 
   /****** COPY ******/
 
-  #copy-homepage-left-img, 
-  #homepage-background-top-right-div iframe, 
-  #copy-homepage-top-right-img, 
-  #copy-homepage-bottom-right-img, 
   .container .col-right img, 
   .container .col-right .copy-border-div-1, 
   .container .col-right .about_us-community-ol, 
@@ -2574,6 +2601,19 @@ footer {
   .container .col-right input.gsc-input {
     width: 315px !important;
   }
+
+  .content-p + .copy-border-div-1 + div + #___gcse_0 input.gsc-input {
+    width: 294px !important;
+  }
+
+  #copy-homepage-left-img, 
+  #homepage-background-top-right-div iframe, 
+  #copy-homepage-top-right-img, 
+  #copy-homepage-bottom-right-img, 
+  #homepage-background-top-right-div + div + p, 
+  .container .col-right .content-p + .copy-border-div-1 {
+    width: 294px;
+  } 
 
   #copy-homepage-bottom-right-img {
     margin: $spacer_med_1 0 0 $spacer_med_1;
@@ -2617,6 +2657,41 @@ footer {
     }
   }
 
+  #desktop-results-search_details { 
+    width: 100%;
+
+    #desktop-questionnaire-search_details {
+      width: 100%;
+    }
+
+    .questionnaire-div {
+      #___gcse_0 {
+        width: 628px;
+      }
+
+      div {
+        display: block;
+      }
+
+      #gs_id50 {
+        width: 100% !important;
+      }
+
+      .gsc-input {
+        width: 610px !important;
+      }
+
+      .gsc-search-button.gsc-search-button-v2 {
+        width: 47px;
+        margin: 11px 0 0 0;
+        left: -58px;
+      }
+    }
+  }
+
+  .container #copy-contact_us-right-img {
+    margin: 0;
+  }
 
 
   /****** FOOTER ******/
@@ -2627,7 +2702,7 @@ footer {
     }
 
     #footer-links-ul {
-      width: 136px;
+      width: 147px;
     }
   }
   
@@ -2639,6 +2714,50 @@ footer {
 
   #footer-ellipses {
     transform: translateY(-293px);
+  }
+}
+
+
+
+/* ****** SAMSUNG GALAXY TAB A ****** */
+@media screen and (width: 800px) {
+
+
+  /****** MAIN NAVIGATION ******/
+
+  #resources-listings-main, 
+  #directory-listings-main {
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+}
+
+
+
+/* ****** APPLE IPAD ****** */
+@media screen and (width: 768px) {
+
+
+  /****** MAIN NAVIGATION ******/
+
+  #top-desktop-nav {
+    #nav-ul {
+      li {
+        width: 86px;
+      }
+    }
+  }
+
+
+
+  /****** COPY ******/
+
+  #desktop-results-search_details { 
+    .questionnaire-div {
+      .gsc-input {
+        width: 100% !important;
+      }
+    }
   }
 }
 
@@ -3097,12 +3216,29 @@ footer {
     }
   }
 
+  .mobile-sub_page-main {
+    padding-top: 0;
+  }
+
+  #resources-listings-main, 
+  #directory-listings-main, 
+  #search-listings-main {
+    top: 0;
+  }
+
   #container-homepage-main {
     margin-top: 0;
 
     .col-sm-12 {
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+
+  #copy-bottom-container-2 {
+    #___gcse_1 {
+      padding-left: 24px;
+      padding-right: 24px;
     }
   }
 
